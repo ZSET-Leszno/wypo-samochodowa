@@ -1,1 +1,1 @@
-# wypo-samochodowa
+Autorzy: Michał, Igor
