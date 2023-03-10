@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b52d023e-96a4-4d47-ac34-3998f40c2257" name="Changes" comment="feat: add backendfiles instead of frontend, create custom core file for web">
+    <list default="true" id="b52d023e-96a4-4d47-ac34-3998f40c2257" name="Changes" comment="feat: add base_url to blade files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/partials/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/partials/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Config/AppConfig.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Config/AppConfig.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/HomeController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +23,6 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
@@ -107,7 +105,7 @@
       <workItem from="1678400378019" duration="22000" />
       <workItem from="1678400815176" duration="521000" />
       <workItem from="1678452391555" duration="1865000" />
-      <workItem from="1678454360471" duration="580000" />
+      <workItem from="1678454360471" duration="899000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add backendfiles instead of frontend, create custom core file for web">
       <created>1678454633386</created>
@@ -116,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678454633386</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat: add base_url to blade files">
+      <created>1678454964340</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1678454964340</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,6 +140,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: add backendfiles instead of frontend, create custom core file for web" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add backendfiles instead of frontend, create custom core file for web" />
+    <MESSAGE value="feat: add base_url to blade files" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add base_url to blade files" />
   </component>
 </project>
