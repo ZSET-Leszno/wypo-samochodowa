@@ -1,6 +1,6 @@
 <!--footer section start-->
 <footer class="footer-section">
-    <div class="footer-wrapper position-relative z-1 overflow-hidden has-banner" data-background="assets/img/shapes/texture-bg.png">
+    <div class="footer-wrapper position-relative z-1 overflow-hidden has-banner" data-background="{{ $config->base_url }}assets/img/shapes/texture-bg.png">
         <div class="footer-copyright">
             <div class="container">
                 <div class="row align-items-center">
@@ -31,27 +31,27 @@
 <!--scrolltop button end-->
 
 <!--build:js-->
-<script src="assets/js/vendors/jquery.min.js"></script>
-<script src="assets/js/vendors/jquery-ui.min.js"></script>
-<script src="assets/js/vendors/appear.js"></script>
-<script src="assets/js/vendors/popper.min.js"></script>
-<script src="assets/js/vendors/bootstrap.min.js"></script>
-<script src="assets/js/vendors/easing.min.js"></script>
-<script src="assets/js/vendors/swiper.min.js"></script>
-<script src="assets/js/vendors/massonry.min.js"></script>
-<script src="assets/js/vendors/bootstrap-slider.js"></script>
-<script src="assets/js/vendors/magnific-popup.js"></script>
-<script src="assets/js/vendors/waypoints.js"></script>
-<script src="assets/js/vendors/counterup.js"></script>
-<script src="assets/js/vendors/isotop.pkgd.min.js"></script>
-<script src="assets/js/vendors/moment.min.js"></script>
-<script src="assets/js/vendors/date-picker.min.js"></script>
-<script src="assets/js/vendors/progressbar.js"></script>
-<script src="assets/js/vendors/slick.js"></script>
-<script src="assets/js/vendors/countdown.min.js"></script>
-<script src="assets/js/vendors/custom-scrollbar.js"></script>
-<script src="assets/js/vendors/price-range.js"></script>
-<script src="assets/js/vendors/image-rotate.min.js"></script>
-<script src="assets/js/app.js"></script>
+<script src="{{ $config->base_url }}assets/js/vendors/jquery.min.js"></script>
+<script src="{{ $config->base_url }}assets/js/vendors/jquery-ui.min.js"></script>
+<script src="{{ $config->base_url }}assets/js/vendors/appear.js"></script>
+<script src="{{ $config->base_url }}assets/js/vendors/popper.min.js"></script>
+<script src="{{ $config->base_url }}assets/js/vendors/bootstrap.min.js"></script>
+<script src="{{ $config->base_url }}assets/js/vendors/easing.min.js"></script>
+<script src="{{ $config->base_url }}assets/js/vendors/swiper.min.js"></script>
+<script src="{{ $config->base_url }}assets/js/vendors/massonry.min.js"></script>
+<script src="{{ $config->base_url }}assets/js/vendors/bootstrap-slider.js"></script>
+<script src="{{ $config->base_url }}assets/js/vendors/magnific-popup.js"></script>
+<script src="{{ $config->base_url }}assets/js/vendors/waypoints.js"></script>
+<script src="{{ $config->base_url }}assets/js/vendors/counterup.js"></script>
+<script src="{{ $config->base_url }}assets/js/vendors/isotop.pkgd.min.js"></script>
+<script src="{{ $config->base_url }}assets/js/vendors/moment.min.js"></script>
+<script src="{{ $config->base_url }}assets/js/vendors/date-picker.min.js"></script>
+<script src="{{ $config->base_url }}assets/js/vendors/progressbar.js"></script>
+<script src="{{ $config->base_url }}assets/js/vendors/slick.js"></script>
+<script src="{{ $config->base_url }}assets/js/vendors/countdown.min.js"></script>
+<script src="{{ $config->base_url }}assets/js/vendors/custom-scrollbar.js"></script>
+<script src="{{ $config->base_url }}assets/js/vendors/price-range.js"></script>
+<script src="{{ $config->base_url }}assets/js/vendors/image-rotate.min.js"></script>
+<script src="{{ $config->base_url }}assets/js/app.js"></script>
 </body>
 </html>

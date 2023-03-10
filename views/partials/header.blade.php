@@ -17,11 +17,11 @@
     <meta name="description" content="CarShare - " />
     <meta name="author" content="michus.studio" />
     <!--favicon icon-->
-    <link rel="icon" href="assets/img/favicon.png" type="image/png" sizes="16x16" />
+    <link rel="icon" href="{{ $config->base_url }}assets/img/favicon.png" type="image/png" sizes="16x16" />
     <!--title-->
     <title>CarShare - </title>
     <!--style:css-->
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="{{ $config->base_url }}assets/css/main.css" />
 </head>
 
 <body>
@@ -70,7 +70,7 @@
                 <div class="row align-items-center">
                     <div class="col-6 col-lg-3">
                         <div class="logo-wrapper">
-                            <a href="index.html"><img src="assets/img/logo.webp" alt="logo"></a>
+                            <a href="index.html"><img src="{{ $config->base_url }}assets/img/logo.webp" alt="logo"></a>
                         </div>
                     </div>
                     <div class="col-6 col-lg-9">
@@ -104,7 +104,7 @@
     <!--mobile menu start-->
     <div class="mobile-menu position-fixed bg-white deep-shadow">
         <button class="close-menu position-absolute"><i class="fa-solid fa-xmark"></i></button>
-        <a href="index.html" class="logo-wrapper bg-secondary d-block mt-4 p-3 rounded-1 text-center"><img src="assets/img/logo.webp" alt="logo" class="img-fluid"></a>
+        <a href="index.html" class="logo-wrapper bg-secondary d-block mt-4 p-3 rounded-1 text-center"><img src="{{ $config->base_url }}assets/img/logo.webp" alt="logo" class="img-fluid"></a>
         <nav class="mobile-menu-wrapper mt-40">
             <ul>
                 <li><a href="index.html">Strona Główna</a></li>

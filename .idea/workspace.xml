@@ -5,286 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b52d023e-96a4-4d47-ac34-3998f40c2257" name="Changes" comment="feat: add backendfiles instead of frontend, create custom core file for web">
-      <change afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/.htaccess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Config/AppConfig.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Config/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Controllers/BaseController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Controllers/HomeController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Controllers/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Database/DatabaseHandler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Database/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Exceptions/InvalidRouteControllerParameters.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Exceptions/RouteNotFoundException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Exceptions/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Helpers/MainHelper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Helpers/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Routing/RouteManager.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Routing/Router.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Routing/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Routing/routes.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Validation/Rules/Required.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Validation/Rules/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Validation/Validator.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Validation/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/WhoopsHandler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/.htaccess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/home.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/partials/footer.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/partials/header.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views_cache/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views_cache/.htaccess" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/discord.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/fa-brands-400.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/fa-brands-400.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/fa-regular-400.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/fa-regular-400.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/fa-solid-900.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/fa-solid-900.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/fa-v4compatibility.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/fa-v4compatibility.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/flaticon.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/flaticon.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/flaticon.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/flaticon.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/flaticon.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/brands/acura.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/brands/audi-lg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/brands/compact-white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/brands/construction.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/brands/convertible-white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/brands/coup-white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/brands/crossover-white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/brands/disposal.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/brands/excavator-2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/brands/excavator.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/brands/ferrari-blue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/brands/ferrari-lg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/brands/ferrari-white.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/brands/ferrari.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/brands/ferrari.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/brands/home-building.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/brands/honda-white.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/brands/honda.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/brands/hyundai-blue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/brands/hyundai-lg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/brands/hyundai-white.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/brands/hyundai.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/brands/hyundai.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/brands/mahindra-blue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/brands/mahindra-lg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/brands/mercedes-lg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/brands/mercedes-white.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/brands/mercedes.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/brands/mitsubishi-blue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/brands/mitsubishi-lg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/brands/nissan.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/brands/pickup-white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/brands/sedan-white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/brands/sport-white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/brands/suv-white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/brands/toyota-blue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/brands/toyota-lg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/brands/toyota-white.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/brands/toyota.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/brands/volkswagen-blue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/brands/volkswagen-white.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/brands/volkswagen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/brands/volkswagen.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/brands/wagon-white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/dealers/01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/dealers/02.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/dealers/03.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/dealers/04.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/dealers/apps-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/dealers/blog-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/dealers/blog-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/dealers/blog-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/dealers/cta-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/dealers/dealer-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/dealers/dealer-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/dealers/dealer-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/dealers/dealer-info-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/dealers/hero-bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/dealers/man.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/dealers/offer-car-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/dealers/pl-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/dealers/pl-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/dealers/pl-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/favicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/home/add-banner-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/home/add-banner-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/home/apps-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/home/author-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/home/blog-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/home/blog-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/home/blog-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/home/car-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/home/car-10-lg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/home/car-11-lg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/home/car-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/home/car-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/home/car-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/home/car-5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/home/car-6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/home/car-7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/home/car-8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/home/car-red.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/home/footer-car-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/home/footer-car-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/home/hero-car-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/home/hero-car-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/home/hero-car-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/home/video-bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icons/air.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icons/arrow-black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icons/bell.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icons/brake.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icons/cable.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icons/cards.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icons/comment-bg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icons/comment.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icons/compact-red.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icons/compact.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icons/convertible-red.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icons/convertible.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icons/coup-red.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icons/coup.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icons/crossover-red.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icons/crossover.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icons/flag-bd.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icons/flag-china.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icons/flag-usa.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icons/key.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icons/mail.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icons/mpv-red.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icons/mpv.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icons/pickup-red.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icons/pickup.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icons/pin-bg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icons/pin.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icons/pointer-bg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icons/pointer.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icons/quote-icon-sm.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icons/quote-icon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icons/quote.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icons/quote.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icons/rocket.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icons/sale.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icons/sedan-red.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icons/sedan.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icons/shield.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icons/sport-coupe-red.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icons/sport-coupe.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icons/suv-red.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icons/suv.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icons/tire.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icons/wagon-red.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icons/wagon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/inventory/banner.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/inventory/car-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/inventory/car-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/inventory/car-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/inventory/car-lg-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/inventory/car-lg-thumb-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/inventory/car-sm-thumb-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/inventory/list-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/inventory/list-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/inventory/list-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/inventory/list-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/inventory/list-5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/inventory/list-6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/inventory/list-7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/inventory/video-bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/logo.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/rental/banner.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shapes/about-bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shapes/apps-bg-shape.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shapes/ball.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shapes/banner-bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shapes/banner-wave.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shapes/bg-blur.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shapes/bg-net-overlay.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shapes/blog-badge.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shapes/blur-part-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shapes/blur-part-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shapes/border-left-linear.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shapes/border-right-linear.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shapes/box-bg-shape.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shapes/clients-circle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shapes/cta-shape-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shapes/dl2-bg-dot-left.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shapes/dl2-bg-dot-right.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shapes/dl2-dot-shape.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shapes/dot-red-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shapes/dot-shape.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shapes/doted-white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shapes/dots-wide.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shapes/dots.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shapes/el-bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shapes/el-blur-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shapes/el-doted-box.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shapes/el-dots.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shapes/el-wave.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shapes/green-hero-shape.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shapes/leaf-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shapes/leaf.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shapes/map-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shapes/net-left.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shapes/net-shape.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shapes/net.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shapes/offer-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shapes/offer-double-circle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shapes/offer-road.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shapes/plus-rectangle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shapes/primary-tire-gradient.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shapes/signature.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shapes/socket-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shapes/socket.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shapes/texture-bg-yellow.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shapes/texture-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shapes/texture-shape.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shapes/tire-circle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shapes/tire-primary-light.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shapes/tire-print-left.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shapes/tire-print-left.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shapes/tire-print-right.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shapes/tire-print-right.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shapes/tire-shape-white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shapes/tire-shape.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shapes/title-shape.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/shapes/wave-yellow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/vendors/appear.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/vendors/bootstrap-slider.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/vendors/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/vendors/countdown.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/vendors/counterup.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/vendors/custom-scrollbar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/vendors/date-picker.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/vendors/easing.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/vendors/image-rotate.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/vendors/isotop.pkgd.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/vendors/jquery-ui.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/vendors/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/vendors/magnific-popup.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/vendors/massonry.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/vendors/moment.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/vendors/popper.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/vendors/price-range.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/vendors/progressbar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/vendors/slick.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/vendors/swiper.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/vendors/waypoints.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/partials/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/partials/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/header.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -337,6 +61,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.keymap",
     "vue.rearranger.settings.migration": "true"
   }
@@ -382,12 +107,31 @@
       <workItem from="1678400378019" duration="22000" />
       <workItem from="1678400815176" duration="521000" />
       <workItem from="1678452391555" duration="1865000" />
-      <workItem from="1678454360471" duration="248000" />
+      <workItem from="1678454360471" duration="580000" />
     </task>
+    <task id="LOCAL-00001" summary="feat: add backendfiles instead of frontend, create custom core file for web">
+      <created>1678454633386</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1678454633386</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: add backendfiles instead of frontend, create custom core file for web" />

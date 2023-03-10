@@ -5,7 +5,7 @@
         <div class="swiper at-hero-slider-wrapper" data-speed="900">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <div class="dl-hero-single" data-background="assets/img/shapes/texture-bg.png">
+                    <div class="dl-hero-single" data-background="{{ $config->base_url }}assets/img/shapes/texture-bg.png">
                         <div class="container">
                             <div class="at_hero_slider">
                                 <div class="row">
@@ -30,7 +30,7 @@
                                     </div>
                                     <div class="col-xl-5">
                                         <div class="at-hero-banner position-relative mt-4 mt-sm-0">
-                                            <img src="assets/img/home/hero-car-1.png" alt="car" class="at_hero_car">
+                                            <img src="{{ $config->base_url }}assets/img/home/hero-car-1.png" alt="car" class="at_hero_car">
                                         </div>
                                     </div>
                                 </div>
@@ -39,7 +39,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="dl-hero-single" data-background="assets/img/shapes/texture-bg.png">
+                    <div class="dl-hero-single" data-background="{{ $config->base_url }}assets/img/shapes/texture-bg.png">
                         <div class="container">
                             <div class="at_hero_slider">
                                 <div class="row">
@@ -64,7 +64,7 @@
                                     </div>
                                     <div class="col-xl-5">
                                         <div class="at-hero-banner position-relative mt-4 mt-sm-0">
-                                            <img src="assets/img/home/hero-car-2.png" alt="car" class="at_hero_car">
+                                            <img src="{{ $config->base_url }}assets/img/home/hero-car-2.png" alt="car" class="at_hero_car">
                                         </div>
                                     </div>
                                 </div>
@@ -73,7 +73,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="dl-hero-single" data-background="assets/img/shapes/texture-bg.png">
+                    <div class="dl-hero-single" data-background="{{ $config->base_url }}assets/img/shapes/texture-bg.png">
                         <div class="container">
                             <div class="at_hero_slider">
                                 <div class="row">
@@ -98,7 +98,7 @@
                                     </div>
                                     <div class="col-xl-5">
                                         <div class="at-hero-banner position-relative mt-4 mt-sm-0">
-                                            <img src="assets/img/home/hero-car-3.png" alt="car" class="at_hero_car">
+                                            <img src="{{ $config->base_url }}assets/img/home/hero-car-3.png" alt="car" class="at_hero_car">
                                         </div>
                                     </div>
                                 </div>
@@ -202,33 +202,33 @@
             <div class="brands-filter mt-5">
                 <ul class="nav nav-tabs border-0 justify-content-center flex-wrap">
                     <li><a href="#honda" class="active" data-bs-toggle="tab">
-                            <img src="assets/img/brands/honda.svg" alt="honda" class="icon-red">
-                            <img src="assets/img/brands/honda-white.svg" alt="honda" class="icon-white">
+                            <img src="{{ $config->base_url }}assets/img/brands/honda.svg" alt="honda" class="icon-red">
+                            <img src="{{ $config->base_url }}assets/img/brands/honda-white.svg" alt="honda" class="icon-white">
                             <span class="ms-4">Honda</span>
                         </a></li>
                     <li><a href="#toyota" data-bs-toggle="tab">
-                            <img src="assets/img/brands/toyota.svg" alt="toyota" class="icon-red">
-                            <img src="assets/img/brands/toyota-white.svg" alt="toyota" class="icon-white">
+                            <img src="{{ $config->base_url }}assets/img/brands/toyota.svg" alt="toyota" class="icon-red">
+                            <img src="{{ $config->base_url }}assets/img/brands/toyota-white.svg" alt="toyota" class="icon-white">
                             <span class="ms-4">Toyota</span>
                         </a></li>
                     <li><a href="#mercedes" data-bs-toggle="tab">
-                            <img src="assets/img/brands/mercedes.svg" alt="toyota" class="icon-red">
-                            <img src="assets/img/brands/mercedes-white.svg" alt="toyota" class="icon-white">
+                            <img src="{{ $config->base_url }}assets/img/brands/mercedes.svg" alt="toyota" class="icon-red">
+                            <img src="{{ $config->base_url }}assets/img/brands/mercedes-white.svg" alt="toyota" class="icon-white">
                             <span class="ms-4">Mercedes Benz</span>
                         </a></li>
                     <li><a href="#volkswagen" data-bs-toggle="tab">
-                            <img src="assets/img/brands/volkswagen.svg" alt="toyota" class="icon-red">
-                            <img src="assets/img/brands/volkswagen-white.svg" alt="toyota" class="icon-white">
+                            <img src="{{ $config->base_url }}assets/img/brands/volkswagen.svg" alt="toyota" class="icon-red">
+                            <img src="{{ $config->base_url }}assets/img/brands/volkswagen-white.svg" alt="toyota" class="icon-white">
                             <span class="ms-4">Volkswagen</span>
                         </a></li>
                     <li><a href="#hyundai" data-bs-toggle="tab">
-                            <img src="assets/img/brands/hyundai.svg" alt="toyota" class="icon-red">
-                            <img src="assets/img/brands/hyundai-white.svg" alt="toyota" class="icon-white">
+                            <img src="{{ $config->base_url }}assets/img/brands/hyundai.svg" alt="toyota" class="icon-red">
+                            <img src="{{ $config->base_url }}assets/img/brands/hyundai-white.svg" alt="toyota" class="icon-white">
                             <span class="ms-4">Hyundai</span>
                         </a></li>
                     <li><a href="#ferrari" data-bs-toggle="tab">
-                            <img src="assets/img/brands/ferrari.svg" alt="toyota" class="icon-red">
-                            <img src="assets/img/brands/ferrari-white.svg" alt="toyota" class="icon-white">
+                            <img src="{{ $config->base_url }}assets/img/brands/ferrari.svg" alt="toyota" class="icon-red">
+                            <img src="{{ $config->base_url }}assets/img/brands/ferrari-white.svg" alt="toyota" class="icon-white">
                             <span class="ms-4">Ferrari</span>
                         </a></li>
                 </ul>
@@ -237,80 +237,80 @@
                         <div class="ct-row d-flex align-items-center justify-content-center flex-wrap">
                             <div class="ct-col">
                                 <div class="brand-card text-center bg-white position-relative rounded">
-                                    <img src="assets/img/icons/crossover.svg" alt="crossover" class="img-fluid icon-black">
-                                    <img src="assets/img/icons/crossover-red.svg" alt="crossover" class="img-fluid icon-red">
+                                    <img src="{{ $config->base_url }}assets/img/icons/crossover.svg" alt="crossover" class="img-fluid icon-black">
+                                    <img src="{{ $config->base_url }}assets/img/icons/crossover-red.svg" alt="crossover" class="img-fluid icon-red">
                                     <h5 class="mt-3 mb-0">Crossover</h5>
                                     <a href="inventory-listing.html" class="explore-btn position-absolute text-white"><i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
                             <div class="ct-col">
                                 <div class="brand-card text-center bg-white position-relative rounded">
-                                    <img src="assets/img/icons/suv.svg" alt="crossover" class="img-fluid icon-black">
-                                    <img src="assets/img/icons/suv-red.svg" alt="crossover" class="img-fluid icon-red">
+                                    <img src="{{ $config->base_url }}assets/img/icons/suv.svg" alt="crossover" class="img-fluid icon-black">
+                                    <img src="{{ $config->base_url }}assets/img/icons/suv-red.svg" alt="crossover" class="img-fluid icon-red">
                                     <h5 class="mt-3 mb-0">Suv</h5>
                                     <a href="inventory-listing.html" class="explore-btn position-absolute text-white"><i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
                             <div class="ct-col">
                                 <div class="brand-card text-center bg-white position-relative rounded">
-                                    <img src="assets/img/icons/sedan.svg" alt="crossover" class="img-fluid icon-black">
-                                    <img src="assets/img/icons/sedan-red.svg" alt="crossover" class="img-fluid icon-red">
+                                    <img src="{{ $config->base_url }}assets/img/icons/sedan.svg" alt="crossover" class="img-fluid icon-black">
+                                    <img src="{{ $config->base_url }}assets/img/icons/sedan-red.svg" alt="crossover" class="img-fluid icon-red">
                                     <h5 class="mt-3 mb-0">Sedan</h5>
                                     <a href="inventory-listing.html" class="explore-btn position-absolute text-white"><i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
                             <div class="ct-col">
                                 <div class="brand-card text-center bg-white position-relative rounded">
-                                    <img src="assets/img/icons/wagon.svg" alt="crossover" class="img-fluid icon-black">
-                                    <img src="assets/img/icons/wagon-red.svg" alt="crossover" class="img-fluid icon-red">
+                                    <img src="{{ $config->base_url }}assets/img/icons/wagon.svg" alt="crossover" class="img-fluid icon-black">
+                                    <img src="{{ $config->base_url }}assets/img/icons/wagon-red.svg" alt="crossover" class="img-fluid icon-red">
                                     <h5 class="mt-3 mb-0">Wagon</h5>
                                     <a href="inventory-listing.html" class="explore-btn position-absolute text-white"><i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
                             <div class="ct-col">
                                 <div class="brand-card text-center bg-white position-relative rounded">
-                                    <img src="assets/img/icons/coup.svg" alt="crossover" class="img-fluid icon-black">
-                                    <img src="assets/img/icons/coup-red.svg" alt="crossover" class="img-fluid icon-red">
+                                    <img src="{{ $config->base_url }}assets/img/icons/coup.svg" alt="crossover" class="img-fluid icon-black">
+                                    <img src="{{ $config->base_url }}assets/img/icons/coup-red.svg" alt="crossover" class="img-fluid icon-red">
                                     <h5 class="mt-3 mb-0">Coup</h5>
                                     <a href="inventory-listing.html" class="explore-btn position-absolute text-white"><i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
                             <div class="ct-col">
                                 <div class="brand-card text-center bg-white position-relative rounded">
-                                    <img src="assets/img/icons/convertible.svg" alt="crossover" class="img-fluid icon-black">
-                                    <img src="assets/img/icons/convertible-red.svg" alt="crossover" class="img-fluid icon-red">
+                                    <img src="{{ $config->base_url }}assets/img/icons/convertible.svg" alt="crossover" class="img-fluid icon-black">
+                                    <img src="{{ $config->base_url }}assets/img/icons/convertible-red.svg" alt="crossover" class="img-fluid icon-red">
                                     <h5 class="mt-3 mb-0">Convertible</h5>
                                     <a href="inventory-listing.html" class="explore-btn position-absolute text-white"><i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
                             <div class="ct-col">
                                 <div class="brand-card text-center bg-white position-relative rounded">
-                                    <img src="assets/img/icons/compact.svg" alt="crossover" class="img-fluid icon-black">
-                                    <img src="assets/img/icons/compact-red.svg" alt="crossover" class="img-fluid icon-red">
+                                    <img src="{{ $config->base_url }}assets/img/icons/compact.svg" alt="crossover" class="img-fluid icon-black">
+                                    <img src="{{ $config->base_url }}assets/img/icons/compact-red.svg" alt="crossover" class="img-fluid icon-red">
                                     <h5 class="mt-3 mb-0">Compact</h5>
                                     <a href="inventory-listing.html" class="explore-btn position-absolute text-white"><i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
                             <div class="ct-col">
                                 <div class="brand-card text-center bg-white position-relative rounded">
-                                    <img src="assets/img/icons/sport-coupe.svg" alt="crossover" class="img-fluid icon-black">
-                                    <img src="assets/img/icons/sport-coupe-red.svg" alt="crossover" class="img-fluid icon-red">
+                                    <img src="{{ $config->base_url }}assets/img/icons/sport-coupe.svg" alt="crossover" class="img-fluid icon-black">
+                                    <img src="{{ $config->base_url }}assets/img/icons/sport-coupe-red.svg" alt="crossover" class="img-fluid icon-red">
                                     <h5 class="mt-3 mb-0">Sport Coupe</h5>
                                     <a href="inventory-listing.html" class="explore-btn position-absolute text-white"><i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
                             <div class="ct-col">
                                 <div class="brand-card text-center bg-white position-relative rounded">
-                                    <img src="assets/img/icons/pickup.svg" alt="crossover" class="img-fluid icon-black">
-                                    <img src="assets/img/icons/pickup-red.svg" alt="crossover" class="img-fluid icon-red">
+                                    <img src="{{ $config->base_url }}assets/img/icons/pickup.svg" alt="crossover" class="img-fluid icon-black">
+                                    <img src="{{ $config->base_url }}assets/img/icons/pickup-red.svg" alt="crossover" class="img-fluid icon-red">
                                     <h5 class="mt-3 mb-0">Pickup</h5>
                                     <a href="inventory-listing.html" class="explore-btn position-absolute text-white"><i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
                             <div class="ct-col">
                                 <div class="brand-card text-center bg-white position-relative rounded">
-                                    <img src="assets/img/icons/mpv.svg" alt="crossover" class="img-fluid icon-black">
-                                    <img src="assets/img/icons/mpv-red.svg" alt="crossover" class="img-fluid icon-red">
+                                    <img src="{{ $config->base_url }}assets/img/icons/mpv.svg" alt="crossover" class="img-fluid icon-black">
+                                    <img src="{{ $config->base_url }}assets/img/icons/mpv-red.svg" alt="crossover" class="img-fluid icon-red">
                                     <h5 class="mt-3 mb-0">Family MPV</h5>
                                     <a href="inventory-listing.html" class="explore-btn position-absolute text-white"><i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
@@ -321,80 +321,80 @@
                         <div class="ct-row d-flex align-items-center justify-content-center flex-wrap">
                             <div class="ct-col">
                                 <div class="brand-card text-center bg-white position-relative rounded">
-                                    <img src="assets/img/icons/convertible.svg" alt="crossover" class="img-fluid icon-black">
-                                    <img src="assets/img/icons/convertible-red.svg" alt="crossover" class="img-fluid icon-red">
+                                    <img src="{{ $config->base_url }}assets/img/icons/convertible.svg" alt="crossover" class="img-fluid icon-black">
+                                    <img src="{{ $config->base_url }}assets/img/icons/convertible-red.svg" alt="crossover" class="img-fluid icon-red">
                                     <h5 class="mt-3 mb-0">Convertible</h5>
                                     <a href="inventory-listing.html" class="explore-btn position-absolute text-white"><i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
                             <div class="ct-col">
                                 <div class="brand-card text-center bg-white position-relative rounded">
-                                    <img src="assets/img/icons/compact.svg" alt="crossover" class="img-fluid icon-black">
-                                    <img src="assets/img/icons/compact-red.svg" alt="crossover" class="img-fluid icon-red">
+                                    <img src="{{ $config->base_url }}assets/img/icons/compact.svg" alt="crossover" class="img-fluid icon-black">
+                                    <img src="{{ $config->base_url }}assets/img/icons/compact-red.svg" alt="crossover" class="img-fluid icon-red">
                                     <h5 class="mt-3 mb-0">Compact</h5>
                                     <a href="inventory-listing.html" class="explore-btn position-absolute text-white"><i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
                             <div class="ct-col">
                                 <div class="brand-card text-center bg-white position-relative rounded">
-                                    <img src="assets/img/icons/sport-coupe.svg" alt="crossover" class="img-fluid icon-black">
-                                    <img src="assets/img/icons/sport-coupe-red.svg" alt="crossover" class="img-fluid icon-red">
+                                    <img src="{{ $config->base_url }}assets/img/icons/sport-coupe.svg" alt="crossover" class="img-fluid icon-black">
+                                    <img src="{{ $config->base_url }}assets/img/icons/sport-coupe-red.svg" alt="crossover" class="img-fluid icon-red">
                                     <h5 class="mt-3 mb-0">Sport Coupe</h5>
                                     <a href="inventory-listing.html" class="explore-btn position-absolute text-white"><i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
                             <div class="ct-col">
                                 <div class="brand-card text-center bg-white position-relative rounded">
-                                    <img src="assets/img/icons/pickup.svg" alt="crossover" class="img-fluid icon-black">
-                                    <img src="assets/img/icons/pickup-red.svg" alt="crossover" class="img-fluid icon-red">
+                                    <img src="{{ $config->base_url }}assets/img/icons/pickup.svg" alt="crossover" class="img-fluid icon-black">
+                                    <img src="{{ $config->base_url }}assets/img/icons/pickup-red.svg" alt="crossover" class="img-fluid icon-red">
                                     <h5 class="mt-3 mb-0">Pickup</h5>
                                     <a href="inventory-listing.html" class="explore-btn position-absolute text-white"><i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
                             <div class="ct-col">
                                 <div class="brand-card text-center bg-white position-relative rounded">
-                                    <img src="assets/img/icons/mpv.svg" alt="crossover" class="img-fluid icon-black">
-                                    <img src="assets/img/icons/mpv-red.svg" alt="crossover" class="img-fluid icon-red">
+                                    <img src="{{ $config->base_url }}assets/img/icons/mpv.svg" alt="crossover" class="img-fluid icon-black">
+                                    <img src="{{ $config->base_url }}assets/img/icons/mpv-red.svg" alt="crossover" class="img-fluid icon-red">
                                     <h5 class="mt-3 mb-0">Family MPV</h5>
                                     <a href="inventory-listing.html" class="explore-btn position-absolute text-white"><i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
                             <div class="ct-col">
                                 <div class="brand-card text-center bg-white position-relative rounded">
-                                    <img src="assets/img/icons/crossover.svg" alt="crossover" class="img-fluid icon-black">
-                                    <img src="assets/img/icons/crossover-red.svg" alt="crossover" class="img-fluid icon-red">
+                                    <img src="{{ $config->base_url }}assets/img/icons/crossover.svg" alt="crossover" class="img-fluid icon-black">
+                                    <img src="{{ $config->base_url }}assets/img/icons/crossover-red.svg" alt="crossover" class="img-fluid icon-red">
                                     <h5 class="mt-3 mb-0">Crossover</h5>
                                     <a href="inventory-listing.html" class="explore-btn position-absolute text-white"><i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
                             <div class="ct-col">
                                 <div class="brand-card text-center bg-white position-relative rounded">
-                                    <img src="assets/img/icons/suv.svg" alt="crossover" class="img-fluid icon-black">
-                                    <img src="assets/img/icons/suv-red.svg" alt="crossover" class="img-fluid icon-red">
+                                    <img src="{{ $config->base_url }}assets/img/icons/suv.svg" alt="crossover" class="img-fluid icon-black">
+                                    <img src="{{ $config->base_url }}assets/img/icons/suv-red.svg" alt="crossover" class="img-fluid icon-red">
                                     <h5 class="mt-3 mb-0">Suv</h5>
                                     <a href="inventory-listing.html" class="explore-btn position-absolute text-white"><i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
                             <div class="ct-col">
                                 <div class="brand-card text-center bg-white position-relative rounded">
-                                    <img src="assets/img/icons/sedan.svg" alt="crossover" class="img-fluid icon-black">
-                                    <img src="assets/img/icons/sedan-red.svg" alt="crossover" class="img-fluid icon-red">
+                                    <img src="{{ $config->base_url }}assets/img/icons/sedan.svg" alt="crossover" class="img-fluid icon-black">
+                                    <img src="{{ $config->base_url }}assets/img/icons/sedan-red.svg" alt="crossover" class="img-fluid icon-red">
                                     <h5 class="mt-3 mb-0">Sedan</h5>
                                     <a href="inventory-listing.html" class="explore-btn position-absolute text-white"><i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
                             <div class="ct-col">
                                 <div class="brand-card text-center bg-white position-relative rounded">
-                                    <img src="assets/img/icons/wagon.svg" alt="crossover" class="img-fluid icon-black">
-                                    <img src="assets/img/icons/wagon-red.svg" alt="crossover" class="img-fluid icon-red">
+                                    <img src="{{ $config->base_url }}assets/img/icons/wagon.svg" alt="crossover" class="img-fluid icon-black">
+                                    <img src="{{ $config->base_url }}assets/img/icons/wagon-red.svg" alt="crossover" class="img-fluid icon-red">
                                     <h5 class="mt-3 mb-0">Wagon</h5>
                                     <a href="inventory-listing.html" class="explore-btn position-absolute text-white"><i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
                             <div class="ct-col">
                                 <div class="brand-card text-center bg-white position-relative rounded">
-                                    <img src="assets/img/icons/coup.svg" alt="crossover" class="img-fluid icon-black">
-                                    <img src="assets/img/icons/coup-red.svg" alt="crossover" class="img-fluid icon-red">
+                                    <img src="{{ $config->base_url }}assets/img/icons/coup.svg" alt="crossover" class="img-fluid icon-black">
+                                    <img src="{{ $config->base_url }}assets/img/icons/coup-red.svg" alt="crossover" class="img-fluid icon-red">
                                     <h5 class="mt-3 mb-0">Coup</h5>
                                     <a href="inventory-listing.html" class="explore-btn position-absolute text-white"><i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
@@ -405,80 +405,80 @@
                         <div class="ct-row d-flex align-items-center justify-content-center flex-wrap">
                             <div class="ct-col">
                                 <div class="brand-card text-center bg-white position-relative rounded">
-                                    <img src="assets/img/icons/wagon.svg" alt="crossover" class="img-fluid icon-black">
-                                    <img src="assets/img/icons/wagon-red.svg" alt="crossover" class="img-fluid icon-red">
+                                    <img src="{{ $config->base_url }}assets/img/icons/wagon.svg" alt="crossover" class="img-fluid icon-black">
+                                    <img src="{{ $config->base_url }}assets/img/icons/wagon-red.svg" alt="crossover" class="img-fluid icon-red">
                                     <h5 class="mt-3 mb-0">Wagon</h5>
                                     <a href="inventory-listing.html" class="explore-btn position-absolute text-white"><i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
                             <div class="ct-col">
                                 <div class="brand-card text-center bg-white position-relative rounded">
-                                    <img src="assets/img/icons/coup.svg" alt="crossover" class="img-fluid icon-black">
-                                    <img src="assets/img/icons/coup-red.svg" alt="crossover" class="img-fluid icon-red">
+                                    <img src="{{ $config->base_url }}assets/img/icons/coup.svg" alt="crossover" class="img-fluid icon-black">
+                                    <img src="{{ $config->base_url }}assets/img/icons/coup-red.svg" alt="crossover" class="img-fluid icon-red">
                                     <h5 class="mt-3 mb-0">Coup</h5>
                                     <a href="inventory-listing.html" class="explore-btn position-absolute text-white"><i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
                             <div class="ct-col">
                                 <div class="brand-card text-center bg-white position-relative rounded">
-                                    <img src="assets/img/icons/convertible.svg" alt="crossover" class="img-fluid icon-black">
-                                    <img src="assets/img/icons/convertible-red.svg" alt="crossover" class="img-fluid icon-red">
+                                    <img src="{{ $config->base_url }}assets/img/icons/convertible.svg" alt="crossover" class="img-fluid icon-black">
+                                    <img src="{{ $config->base_url }}assets/img/icons/convertible-red.svg" alt="crossover" class="img-fluid icon-red">
                                     <h5 class="mt-3 mb-0">Convertible</h5>
                                     <a href="inventory-listing.html" class="explore-btn position-absolute text-white"><i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
                             <div class="ct-col">
                                 <div class="brand-card text-center bg-white position-relative rounded">
-                                    <img src="assets/img/icons/compact.svg" alt="crossover" class="img-fluid icon-black">
-                                    <img src="assets/img/icons/compact-red.svg" alt="crossover" class="img-fluid icon-red">
+                                    <img src="{{ $config->base_url }}assets/img/icons/compact.svg" alt="crossover" class="img-fluid icon-black">
+                                    <img src="{{ $config->base_url }}assets/img/icons/compact-red.svg" alt="crossover" class="img-fluid icon-red">
                                     <h5 class="mt-3 mb-0">Compact</h5>
                                     <a href="inventory-listing.html" class="explore-btn position-absolute text-white"><i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
                             <div class="ct-col">
                                 <div class="brand-card text-center bg-white position-relative rounded">
-                                    <img src="assets/img/icons/sport-coupe.svg" alt="crossover" class="img-fluid icon-black">
-                                    <img src="assets/img/icons/sport-coupe-red.svg" alt="crossover" class="img-fluid icon-red">
+                                    <img src="{{ $config->base_url }}assets/img/icons/sport-coupe.svg" alt="crossover" class="img-fluid icon-black">
+                                    <img src="{{ $config->base_url }}assets/img/icons/sport-coupe-red.svg" alt="crossover" class="img-fluid icon-red">
                                     <h5 class="mt-3 mb-0">Sport Coupe</h5>
                                     <a href="inventory-listing.html" class="explore-btn position-absolute text-white"><i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
                             <div class="ct-col">
                                 <div class="brand-card text-center bg-white position-relative rounded">
-                                    <img src="assets/img/icons/pickup.svg" alt="crossover" class="img-fluid icon-black">
-                                    <img src="assets/img/icons/pickup-red.svg" alt="crossover" class="img-fluid icon-red">
+                                    <img src="{{ $config->base_url }}assets/img/icons/pickup.svg" alt="crossover" class="img-fluid icon-black">
+                                    <img src="{{ $config->base_url }}assets/img/icons/pickup-red.svg" alt="crossover" class="img-fluid icon-red">
                                     <h5 class="mt-3 mb-0">Pickup</h5>
                                     <a href="inventory-listing.html" class="explore-btn position-absolute text-white"><i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
                             <div class="ct-col">
                                 <div class="brand-card text-center bg-white position-relative rounded">
-                                    <img src="assets/img/icons/mpv.svg" alt="crossover" class="img-fluid icon-black">
-                                    <img src="assets/img/icons/mpv-red.svg" alt="crossover" class="img-fluid icon-red">
+                                    <img src="{{ $config->base_url }}assets/img/icons/mpv.svg" alt="crossover" class="img-fluid icon-black">
+                                    <img src="{{ $config->base_url }}assets/img/icons/mpv-red.svg" alt="crossover" class="img-fluid icon-red">
                                     <h5 class="mt-3 mb-0">Family MPV</h5>
                                     <a href="inventory-listing.html" class="explore-btn position-absolute text-white"><i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
                             <div class="ct-col">
                                 <div class="brand-card text-center bg-white position-relative rounded">
-                                    <img src="assets/img/icons/crossover.svg" alt="crossover" class="img-fluid icon-black">
-                                    <img src="assets/img/icons/crossover-red.svg" alt="crossover" class="img-fluid icon-red">
+                                    <img src="{{ $config->base_url }}assets/img/icons/crossover.svg" alt="crossover" class="img-fluid icon-black">
+                                    <img src="{{ $config->base_url }}assets/img/icons/crossover-red.svg" alt="crossover" class="img-fluid icon-red">
                                     <h5 class="mt-3 mb-0">Crossover</h5>
                                     <a href="inventory-listing.html" class="explore-btn position-absolute text-white"><i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
                             <div class="ct-col">
                                 <div class="brand-card text-center bg-white position-relative rounded">
-                                    <img src="assets/img/icons/suv.svg" alt="crossover" class="img-fluid icon-black">
-                                    <img src="assets/img/icons/suv-red.svg" alt="crossover" class="img-fluid icon-red">
+                                    <img src="{{ $config->base_url }}assets/img/icons/suv.svg" alt="crossover" class="img-fluid icon-black">
+                                    <img src="{{ $config->base_url }}assets/img/icons/suv-red.svg" alt="crossover" class="img-fluid icon-red">
                                     <h5 class="mt-3 mb-0">Suv</h5>
                                     <a href="inventory-listing.html" class="explore-btn position-absolute text-white"><i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
                             <div class="ct-col">
                                 <div class="brand-card text-center bg-white position-relative rounded">
-                                    <img src="assets/img/icons/sedan.svg" alt="crossover" class="img-fluid icon-black">
-                                    <img src="assets/img/icons/sedan-red.svg" alt="crossover" class="img-fluid icon-red">
+                                    <img src="{{ $config->base_url }}assets/img/icons/sedan.svg" alt="crossover" class="img-fluid icon-black">
+                                    <img src="{{ $config->base_url }}assets/img/icons/sedan-red.svg" alt="crossover" class="img-fluid icon-red">
                                     <h5 class="mt-3 mb-0">Sedan</h5>
                                     <a href="inventory-listing.html" class="explore-btn position-absolute text-white"><i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
@@ -489,80 +489,80 @@
                         <div class="ct-row d-flex align-items-center justify-content-center flex-wrap">
                             <div class="ct-col">
                                 <div class="brand-card text-center bg-white position-relative rounded">
-                                    <img src="assets/img/icons/crossover.svg" alt="crossover" class="img-fluid icon-black">
-                                    <img src="assets/img/icons/crossover-red.svg" alt="crossover" class="img-fluid icon-red">
+                                    <img src="{{ $config->base_url }}assets/img/icons/crossover.svg" alt="crossover" class="img-fluid icon-black">
+                                    <img src="{{ $config->base_url }}assets/img/icons/crossover-red.svg" alt="crossover" class="img-fluid icon-red">
                                     <h5 class="mt-3 mb-0">Crossover</h5>
                                     <a href="inventory-listing.html" class="explore-btn position-absolute text-white"><i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
                             <div class="ct-col">
                                 <div class="brand-card text-center bg-white position-relative rounded">
-                                    <img src="assets/img/icons/suv.svg" alt="crossover" class="img-fluid icon-black">
-                                    <img src="assets/img/icons/suv-red.svg" alt="crossover" class="img-fluid icon-red">
+                                    <img src="{{ $config->base_url }}assets/img/icons/suv.svg" alt="crossover" class="img-fluid icon-black">
+                                    <img src="{{ $config->base_url }}assets/img/icons/suv-red.svg" alt="crossover" class="img-fluid icon-red">
                                     <h5 class="mt-3 mb-0">Suv</h5>
                                     <a href="inventory-listing.html" class="explore-btn position-absolute text-white"><i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
                             <div class="ct-col">
                                 <div class="brand-card text-center bg-white position-relative rounded">
-                                    <img src="assets/img/icons/convertible.svg" alt="crossover" class="img-fluid icon-black">
-                                    <img src="assets/img/icons/convertible-red.svg" alt="crossover" class="img-fluid icon-red">
+                                    <img src="{{ $config->base_url }}assets/img/icons/convertible.svg" alt="crossover" class="img-fluid icon-black">
+                                    <img src="{{ $config->base_url }}assets/img/icons/convertible-red.svg" alt="crossover" class="img-fluid icon-red">
                                     <h5 class="mt-3 mb-0">Convertible</h5>
                                     <a href="inventory-listing.html" class="explore-btn position-absolute text-white"><i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
                             <div class="ct-col">
                                 <div class="brand-card text-center bg-white position-relative rounded">
-                                    <img src="assets/img/icons/compact.svg" alt="crossover" class="img-fluid icon-black">
-                                    <img src="assets/img/icons/compact-red.svg" alt="crossover" class="img-fluid icon-red">
+                                    <img src="{{ $config->base_url }}assets/img/icons/compact.svg" alt="crossover" class="img-fluid icon-black">
+                                    <img src="{{ $config->base_url }}assets/img/icons/compact-red.svg" alt="crossover" class="img-fluid icon-red">
                                     <h5 class="mt-3 mb-0">Compact</h5>
                                     <a href="inventory-listing.html" class="explore-btn position-absolute text-white"><i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
                             <div class="ct-col">
                                 <div class="brand-card text-center bg-white position-relative rounded">
-                                    <img src="assets/img/icons/sport-coupe.svg" alt="crossover" class="img-fluid icon-black">
-                                    <img src="assets/img/icons/sport-coupe-red.svg" alt="crossover" class="img-fluid icon-red">
+                                    <img src="{{ $config->base_url }}assets/img/icons/sport-coupe.svg" alt="crossover" class="img-fluid icon-black">
+                                    <img src="{{ $config->base_url }}assets/img/icons/sport-coupe-red.svg" alt="crossover" class="img-fluid icon-red">
                                     <h5 class="mt-3 mb-0">Sport Coupe</h5>
                                     <a href="inventory-listing.html" class="explore-btn position-absolute text-white"><i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
                             <div class="ct-col">
                                 <div class="brand-card text-center bg-white position-relative rounded">
-                                    <img src="assets/img/icons/sedan.svg" alt="crossover" class="img-fluid icon-black">
-                                    <img src="assets/img/icons/sedan-red.svg" alt="crossover" class="img-fluid icon-red">
+                                    <img src="{{ $config->base_url }}assets/img/icons/sedan.svg" alt="crossover" class="img-fluid icon-black">
+                                    <img src="{{ $config->base_url }}assets/img/icons/sedan-red.svg" alt="crossover" class="img-fluid icon-red">
                                     <h5 class="mt-3 mb-0">Sedan</h5>
                                     <a href="inventory-listing.html" class="explore-btn position-absolute text-white"><i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
                             <div class="ct-col">
                                 <div class="brand-card text-center bg-white position-relative rounded">
-                                    <img src="assets/img/icons/wagon.svg" alt="crossover" class="img-fluid icon-black">
-                                    <img src="assets/img/icons/wagon-red.svg" alt="crossover" class="img-fluid icon-red">
+                                    <img src="{{ $config->base_url }}assets/img/icons/wagon.svg" alt="crossover" class="img-fluid icon-black">
+                                    <img src="{{ $config->base_url }}assets/img/icons/wagon-red.svg" alt="crossover" class="img-fluid icon-red">
                                     <h5 class="mt-3 mb-0">Wagon</h5>
                                     <a href="inventory-listing.html" class="explore-btn position-absolute text-white"><i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
                             <div class="ct-col">
                                 <div class="brand-card text-center bg-white position-relative rounded">
-                                    <img src="assets/img/icons/coup.svg" alt="crossover" class="img-fluid icon-black">
-                                    <img src="assets/img/icons/coup-red.svg" alt="crossover" class="img-fluid icon-red">
+                                    <img src="{{ $config->base_url }}assets/img/icons/coup.svg" alt="crossover" class="img-fluid icon-black">
+                                    <img src="{{ $config->base_url }}assets/img/icons/coup-red.svg" alt="crossover" class="img-fluid icon-red">
                                     <h5 class="mt-3 mb-0">Coup</h5>
                                     <a href="inventory-listing.html" class="explore-btn position-absolute text-white"><i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
                             <div class="ct-col">
                                 <div class="brand-card text-center bg-white position-relative rounded">
-                                    <img src="assets/img/icons/pickup.svg" alt="crossover" class="img-fluid icon-black">
-                                    <img src="assets/img/icons/pickup-red.svg" alt="crossover" class="img-fluid icon-red">
+                                    <img src="{{ $config->base_url }}assets/img/icons/pickup.svg" alt="crossover" class="img-fluid icon-black">
+                                    <img src="{{ $config->base_url }}assets/img/icons/pickup-red.svg" alt="crossover" class="img-fluid icon-red">
                                     <h5 class="mt-3 mb-0">Pickup</h5>
                                     <a href="inventory-listing.html" class="explore-btn position-absolute text-white"><i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
                             <div class="ct-col">
                                 <div class="brand-card text-center bg-white position-relative rounded">
-                                    <img src="assets/img/icons/mpv.svg" alt="crossover" class="img-fluid icon-black">
-                                    <img src="assets/img/icons/mpv-red.svg" alt="crossover" class="img-fluid icon-red">
+                                    <img src="{{ $config->base_url }}assets/img/icons/mpv.svg" alt="crossover" class="img-fluid icon-black">
+                                    <img src="{{ $config->base_url }}assets/img/icons/mpv-red.svg" alt="crossover" class="img-fluid icon-red">
                                     <h5 class="mt-3 mb-0">Family MPV</h5>
                                     <a href="inventory-listing.html" class="explore-btn position-absolute text-white"><i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
@@ -573,80 +573,80 @@
                         <div class="ct-row d-flex align-items-center justify-content-center flex-wrap">
                             <div class="ct-col">
                                 <div class="brand-card text-center bg-white position-relative rounded">
-                                    <img src="assets/img/icons/wagon.svg" alt="crossover" class="img-fluid icon-black">
-                                    <img src="assets/img/icons/wagon-red.svg" alt="crossover" class="img-fluid icon-red">
+                                    <img src="{{ $config->base_url }}assets/img/icons/wagon.svg" alt="crossover" class="img-fluid icon-black">
+                                    <img src="{{ $config->base_url }}assets/img/icons/wagon-red.svg" alt="crossover" class="img-fluid icon-red">
                                     <h5 class="mt-3 mb-0">Wagon</h5>
                                     <a href="inventory-listing.html" class="explore-btn position-absolute text-white"><i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
                             <div class="ct-col">
                                 <div class="brand-card text-center bg-white position-relative rounded">
-                                    <img src="assets/img/icons/coup.svg" alt="crossover" class="img-fluid icon-black">
-                                    <img src="assets/img/icons/coup-red.svg" alt="crossover" class="img-fluid icon-red">
+                                    <img src="{{ $config->base_url }}assets/img/icons/coup.svg" alt="crossover" class="img-fluid icon-black">
+                                    <img src="{{ $config->base_url }}assets/img/icons/coup-red.svg" alt="crossover" class="img-fluid icon-red">
                                     <h5 class="mt-3 mb-0">Coup</h5>
                                     <a href="inventory-listing.html" class="explore-btn position-absolute text-white"><i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
                             <div class="ct-col">
                                 <div class="brand-card text-center bg-white position-relative rounded">
-                                    <img src="assets/img/icons/convertible.svg" alt="crossover" class="img-fluid icon-black">
-                                    <img src="assets/img/icons/convertible-red.svg" alt="crossover" class="img-fluid icon-red">
+                                    <img src="{{ $config->base_url }}assets/img/icons/convertible.svg" alt="crossover" class="img-fluid icon-black">
+                                    <img src="{{ $config->base_url }}assets/img/icons/convertible-red.svg" alt="crossover" class="img-fluid icon-red">
                                     <h5 class="mt-3 mb-0">Convertible</h5>
                                     <a href="inventory-listing.html" class="explore-btn position-absolute text-white"><i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
                             <div class="ct-col">
                                 <div class="brand-card text-center bg-white position-relative rounded">
-                                    <img src="assets/img/icons/crossover.svg" alt="crossover" class="img-fluid icon-black">
-                                    <img src="assets/img/icons/crossover-red.svg" alt="crossover" class="img-fluid icon-red">
+                                    <img src="{{ $config->base_url }}assets/img/icons/crossover.svg" alt="crossover" class="img-fluid icon-black">
+                                    <img src="{{ $config->base_url }}assets/img/icons/crossover-red.svg" alt="crossover" class="img-fluid icon-red">
                                     <h5 class="mt-3 mb-0">Crossover</h5>
                                     <a href="inventory-listing.html" class="explore-btn position-absolute text-white"><i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
                             <div class="ct-col">
                                 <div class="brand-card text-center bg-white position-relative rounded">
-                                    <img src="assets/img/icons/suv.svg" alt="crossover" class="img-fluid icon-black">
-                                    <img src="assets/img/icons/suv-red.svg" alt="crossover" class="img-fluid icon-red">
+                                    <img src="{{ $config->base_url }}assets/img/icons/suv.svg" alt="crossover" class="img-fluid icon-black">
+                                    <img src="{{ $config->base_url }}assets/img/icons/suv-red.svg" alt="crossover" class="img-fluid icon-red">
                                     <h5 class="mt-3 mb-0">Suv</h5>
                                     <a href="inventory-listing.html" class="explore-btn position-absolute text-white"><i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
                             <div class="ct-col">
                                 <div class="brand-card text-center bg-white position-relative rounded">
-                                    <img src="assets/img/icons/sedan.svg" alt="crossover" class="img-fluid icon-black">
-                                    <img src="assets/img/icons/sedan-red.svg" alt="crossover" class="img-fluid icon-red">
+                                    <img src="{{ $config->base_url }}assets/img/icons/sedan.svg" alt="crossover" class="img-fluid icon-black">
+                                    <img src="{{ $config->base_url }}assets/img/icons/sedan-red.svg" alt="crossover" class="img-fluid icon-red">
                                     <h5 class="mt-3 mb-0">Sedan</h5>
                                     <a href="inventory-listing.html" class="explore-btn position-absolute text-white"><i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
                             <div class="ct-col">
                                 <div class="brand-card text-center bg-white position-relative rounded">
-                                    <img src="assets/img/icons/sport-coupe.svg" alt="crossover" class="img-fluid icon-black">
-                                    <img src="assets/img/icons/sport-coupe-red.svg" alt="crossover" class="img-fluid icon-red">
+                                    <img src="{{ $config->base_url }}assets/img/icons/sport-coupe.svg" alt="crossover" class="img-fluid icon-black">
+                                    <img src="{{ $config->base_url }}assets/img/icons/sport-coupe-red.svg" alt="crossover" class="img-fluid icon-red">
                                     <h5 class="mt-3 mb-0">Sport Coupe</h5>
                                     <a href="inventory-listing.html" class="explore-btn position-absolute text-white"><i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
                             <div class="ct-col">
                                 <div class="brand-card text-center bg-white position-relative rounded">
-                                    <img src="assets/img/icons/pickup.svg" alt="crossover" class="img-fluid icon-black">
-                                    <img src="assets/img/icons/pickup-red.svg" alt="crossover" class="img-fluid icon-red">
+                                    <img src="{{ $config->base_url }}assets/img/icons/pickup.svg" alt="crossover" class="img-fluid icon-black">
+                                    <img src="{{ $config->base_url }}assets/img/icons/pickup-red.svg" alt="crossover" class="img-fluid icon-red">
                                     <h5 class="mt-3 mb-0">Pickup</h5>
                                     <a href="inventory-listing.html" class="explore-btn position-absolute text-white"><i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
                             <div class="ct-col">
                                 <div class="brand-card text-center bg-white position-relative rounded">
-                                    <img src="assets/img/icons/mpv.svg" alt="crossover" class="img-fluid icon-black">
-                                    <img src="assets/img/icons/mpv-red.svg" alt="crossover" class="img-fluid icon-red">
+                                    <img src="{{ $config->base_url }}assets/img/icons/mpv.svg" alt="crossover" class="img-fluid icon-black">
+                                    <img src="{{ $config->base_url }}assets/img/icons/mpv-red.svg" alt="crossover" class="img-fluid icon-red">
                                     <h5 class="mt-3 mb-0">Family MPV</h5>
                                     <a href="inventory-listing.html" class="explore-btn position-absolute text-white"><i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
                             <div class="ct-col">
                                 <div class="brand-card text-center bg-white position-relative rounded">
-                                    <img src="assets/img/icons/compact.svg" alt="crossover" class="img-fluid icon-black">
-                                    <img src="assets/img/icons/compact-red.svg" alt="crossover" class="img-fluid icon-red">
+                                    <img src="{{ $config->base_url }}assets/img/icons/compact.svg" alt="crossover" class="img-fluid icon-black">
+                                    <img src="{{ $config->base_url }}assets/img/icons/compact-red.svg" alt="crossover" class="img-fluid icon-red">
                                     <h5 class="mt-3 mb-0">Compact</h5>
                                     <a href="inventory-listing.html" class="explore-btn position-absolute text-white"><i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
@@ -657,80 +657,80 @@
                         <div class="ct-row d-flex align-items-center justify-content-center flex-wrap">
                             <div class="ct-col">
                                 <div class="brand-card text-center bg-white position-relative rounded">
-                                    <img src="assets/img/icons/crossover.svg" alt="crossover" class="img-fluid icon-black">
-                                    <img src="assets/img/icons/crossover-red.svg" alt="crossover" class="img-fluid icon-red">
+                                    <img src="{{ $config->base_url }}assets/img/icons/crossover.svg" alt="crossover" class="img-fluid icon-black">
+                                    <img src="{{ $config->base_url }}assets/img/icons/crossover-red.svg" alt="crossover" class="img-fluid icon-red">
                                     <h5 class="mt-3 mb-0">Crossover</h5>
                                     <a href="inventory-listing.html" class="explore-btn position-absolute text-white"><i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
                             <div class="ct-col">
                                 <div class="brand-card text-center bg-white position-relative rounded">
-                                    <img src="assets/img/icons/suv.svg" alt="crossover" class="img-fluid icon-black">
-                                    <img src="assets/img/icons/suv-red.svg" alt="crossover" class="img-fluid icon-red">
+                                    <img src="{{ $config->base_url }}assets/img/icons/suv.svg" alt="crossover" class="img-fluid icon-black">
+                                    <img src="{{ $config->base_url }}assets/img/icons/suv-red.svg" alt="crossover" class="img-fluid icon-red">
                                     <h5 class="mt-3 mb-0">Suv</h5>
                                     <a href="inventory-listing.html" class="explore-btn position-absolute text-white"><i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
                             <div class="ct-col">
                                 <div class="brand-card text-center bg-white position-relative rounded">
-                                    <img src="assets/img/icons/sedan.svg" alt="crossover" class="img-fluid icon-black">
-                                    <img src="assets/img/icons/sedan-red.svg" alt="crossover" class="img-fluid icon-red">
+                                    <img src="{{ $config->base_url }}assets/img/icons/sedan.svg" alt="crossover" class="img-fluid icon-black">
+                                    <img src="{{ $config->base_url }}assets/img/icons/sedan-red.svg" alt="crossover" class="img-fluid icon-red">
                                     <h5 class="mt-3 mb-0">Sedan</h5>
                                     <a href="inventory-listing.html" class="explore-btn position-absolute text-white"><i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
                             <div class="ct-col">
                                 <div class="brand-card text-center bg-white position-relative rounded">
-                                    <img src="assets/img/icons/wagon.svg" alt="crossover" class="img-fluid icon-black">
-                                    <img src="assets/img/icons/wagon-red.svg" alt="crossover" class="img-fluid icon-red">
+                                    <img src="{{ $config->base_url }}assets/img/icons/wagon.svg" alt="crossover" class="img-fluid icon-black">
+                                    <img src="{{ $config->base_url }}assets/img/icons/wagon-red.svg" alt="crossover" class="img-fluid icon-red">
                                     <h5 class="mt-3 mb-0">Wagon</h5>
                                     <a href="inventory-listing.html" class="explore-btn position-absolute text-white"><i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
                             <div class="ct-col">
                                 <div class="brand-card text-center bg-white position-relative rounded">
-                                    <img src="assets/img/icons/coup.svg" alt="crossover" class="img-fluid icon-black">
-                                    <img src="assets/img/icons/coup-red.svg" alt="crossover" class="img-fluid icon-red">
+                                    <img src="{{ $config->base_url }}assets/img/icons/coup.svg" alt="crossover" class="img-fluid icon-black">
+                                    <img src="{{ $config->base_url }}assets/img/icons/coup-red.svg" alt="crossover" class="img-fluid icon-red">
                                     <h5 class="mt-3 mb-0">Coup</h5>
                                     <a href="inventory-listing.html" class="explore-btn position-absolute text-white"><i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
                             <div class="ct-col">
                                 <div class="brand-card text-center bg-white position-relative rounded">
-                                    <img src="assets/img/icons/convertible.svg" alt="crossover" class="img-fluid icon-black">
-                                    <img src="assets/img/icons/convertible-red.svg" alt="crossover" class="img-fluid icon-red">
+                                    <img src="{{ $config->base_url }}assets/img/icons/convertible.svg" alt="crossover" class="img-fluid icon-black">
+                                    <img src="{{ $config->base_url }}assets/img/icons/convertible-red.svg" alt="crossover" class="img-fluid icon-red">
                                     <h5 class="mt-3 mb-0">Convertible</h5>
                                     <a href="inventory-listing.html" class="explore-btn position-absolute text-white"><i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
                             <div class="ct-col">
                                 <div class="brand-card text-center bg-white position-relative rounded">
-                                    <img src="assets/img/icons/compact.svg" alt="crossover" class="img-fluid icon-black">
-                                    <img src="assets/img/icons/compact-red.svg" alt="crossover" class="img-fluid icon-red">
+                                    <img src="{{ $config->base_url }}assets/img/icons/compact.svg" alt="crossover" class="img-fluid icon-black">
+                                    <img src="{{ $config->base_url }}assets/img/icons/compact-red.svg" alt="crossover" class="img-fluid icon-red">
                                     <h5 class="mt-3 mb-0">Compact</h5>
                                     <a href="inventory-listing.html" class="explore-btn position-absolute text-white"><i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
                             <div class="ct-col">
                                 <div class="brand-card text-center bg-white position-relative rounded">
-                                    <img src="assets/img/icons/sport-coupe.svg" alt="crossover" class="img-fluid icon-black">
-                                    <img src="assets/img/icons/sport-coupe-red.svg" alt="crossover" class="img-fluid icon-red">
+                                    <img src="{{ $config->base_url }}assets/img/icons/sport-coupe.svg" alt="crossover" class="img-fluid icon-black">
+                                    <img src="{{ $config->base_url }}assets/img/icons/sport-coupe-red.svg" alt="crossover" class="img-fluid icon-red">
                                     <h5 class="mt-3 mb-0">Sport Coupe</h5>
                                     <a href="inventory-listing.html" class="explore-btn position-absolute text-white"><i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
                             <div class="ct-col">
                                 <div class="brand-card text-center bg-white position-relative rounded">
-                                    <img src="assets/img/icons/pickup.svg" alt="crossover" class="img-fluid icon-black">
-                                    <img src="assets/img/icons/pickup-red.svg" alt="crossover" class="img-fluid icon-red">
+                                    <img src="{{ $config->base_url }}assets/img/icons/pickup.svg" alt="crossover" class="img-fluid icon-black">
+                                    <img src="{{ $config->base_url }}assets/img/icons/pickup-red.svg" alt="crossover" class="img-fluid icon-red">
                                     <h5 class="mt-3 mb-0">Pickup</h5>
                                     <a href="inventory-listing.html" class="explore-btn position-absolute text-white"><i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
                             <div class="ct-col">
                                 <div class="brand-card text-center bg-white position-relative rounded">
-                                    <img src="assets/img/icons/mpv.svg" alt="crossover" class="img-fluid icon-black">
-                                    <img src="assets/img/icons/mpv-red.svg" alt="crossover" class="img-fluid icon-red">
+                                    <img src="{{ $config->base_url }}assets/img/icons/mpv.svg" alt="crossover" class="img-fluid icon-black">
+                                    <img src="{{ $config->base_url }}assets/img/icons/mpv-red.svg" alt="crossover" class="img-fluid icon-red">
                                     <h5 class="mt-3 mb-0">Family MPV</h5>
                                     <a href="inventory-listing.html" class="explore-btn position-absolute text-white"><i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
@@ -741,7 +741,7 @@
             </div>
             <div class="brands-explore-btn text-center mt-5">
                 <a href="inventory-listing.html" class="link-btn fw-bold d-inline-flex align-items-center">
-                    <span class="me-2"><img src="assets/img/icons/arrow-black.png" alt="arrow"></span>
+                    <span class="me-2"><img src="{{ $config->base_url }}assets/img/icons/arrow-black.png" alt="arrow"></span>
                     Zobacz wszystko
                     <span class="ms-2"><i class="fa-solid fa-arrow-right"></i></span>
                 </a>
@@ -751,7 +751,7 @@
     <!--brands section end-->
 
     <!--latest collection start-->
-    <section class="latest-collection pb-120" data-background="assets/img/shapes/about-bg.jpg">
+    <section class="latest-collection pb-120" data-background="{{ $config->base_url }}assets/img/shapes/about-bg.jpg">
         <div class="container">
             <div class="row align-items-center justify-content-between">
                 <div class="col-lg-12">
@@ -769,7 +769,7 @@
                             <a href="#" class="icon-btn wish-btn position-absolute"><i class="fa-solid fa-heart"></i></a>
                             <span class="date position-absolute">2017</span>
                             <div class="feature-thumb position-relative overflow-hidden">
-                                <a href="index.html"><img src="assets/img/home/car-1.jpg" alt="car" class="img-fluid"></a>
+                                <a href="index.html"><img src="{{ $config->base_url }}assets/img/home/car-1.jpg" alt="car" class="img-fluid"></a>
                             </div>
                             <div class="filter-card-content">
                                 <div class="price-btn text-end position-relative">
@@ -803,7 +803,7 @@
                             <a href="#" class="icon-btn wish-btn position-absolute"><i class="fa-solid fa-heart"></i></a>
                             <span class="date position-absolute">2016</span>
                             <div class="feature-thumb position-relative overflow-hidden">
-                                <a href="index.html"><img src="assets/img/home/car-2.jpg" alt="car" class="img-fluid"></a>
+                                <a href="index.html"><img src="{{ $config->base_url }}assets/img/home/car-2.jpg" alt="car" class="img-fluid"></a>
                             </div>
                             <div class="filter-card-content">
                                 <div class="price-btn text-end position-relative">
@@ -837,7 +837,7 @@
                             <a href="#" class="icon-btn wish-btn position-absolute"><i class="fa-solid fa-heart"></i></a>
                             <span class="date position-absolute">2018</span>
                             <div class="feature-thumb position-relative overflow-hidden">
-                                <a href="index.html"><img src="assets/img/home/car-3.jpg" alt="car" class="img-fluid"></a>
+                                <a href="index.html"><img src="{{ $config->base_url }}assets/img/home/car-3.jpg" alt="car" class="img-fluid"></a>
                             </div>
                             <div class="filter-card-content">
                                 <div class="price-btn text-end position-relative">
@@ -871,7 +871,7 @@
                             <a href="#" class="icon-btn wish-btn position-absolute"><i class="fa-solid fa-heart"></i></a>
                             <span class="date position-absolute">2012</span>
                             <div class="feature-thumb position-relative overflow-hidden">
-                                <a href="index.html"><img src="assets/img/home/car-4.jpg" alt="car" class="img-fluid"></a>
+                                <a href="index.html"><img src="{{ $config->base_url }}assets/img/home/car-4.jpg" alt="car" class="img-fluid"></a>
                             </div>
                             <div class="filter-card-content">
                                 <div class="price-btn text-end position-relative">
@@ -905,7 +905,7 @@
                             <a href="#" class="icon-btn wish-btn position-absolute"><i class="fa-solid fa-heart"></i></a>
                             <span class="date position-absolute">2013</span>
                             <div class="feature-thumb position-relative overflow-hidden">
-                                <a href="index.html"><img src="assets/img/home/car-5.jpg" alt="car" class="img-fluid"></a>
+                                <a href="index.html"><img src="{{ $config->base_url }}assets/img/home/car-5.jpg" alt="car" class="img-fluid"></a>
                             </div>
                             <div class="filter-card-content">
                                 <div class="price-btn text-end position-relative">
@@ -939,7 +939,7 @@
                             <a href="#" class="icon-btn wish-btn position-absolute"><i class="fa-solid fa-heart"></i></a>
                             <span class="date position-absolute">2016</span>
                             <div class="feature-thumb position-relative overflow-hidden">
-                                <a href="index.html"><img src="assets/img/home/car-6.jpg" alt="car" class="img-fluid"></a>
+                                <a href="index.html"><img src="{{ $config->base_url }}assets/img/home/car-6.jpg" alt="car" class="img-fluid"></a>
                             </div>
                             <div class="filter-card-content">
                                 <div class="price-btn text-end position-relative">
@@ -973,7 +973,7 @@
                             <a href="#" class="icon-btn wish-btn position-absolute"><i class="fa-solid fa-heart"></i></a>
                             <span class="date position-absolute">2019</span>
                             <div class="feature-thumb position-relative overflow-hidden">
-                                <a href="index.html"><img src="assets/img/home/car-7.jpg" alt="car" class="img-fluid"></a>
+                                <a href="index.html"><img src="{{ $config->base_url }}assets/img/home/car-7.jpg" alt="car" class="img-fluid"></a>
                             </div>
                             <div class="filter-card-content">
                                 <div class="price-btn text-end position-relative">
@@ -1007,7 +1007,7 @@
                             <a href="#" class="icon-btn wish-btn position-absolute"><i class="fa-solid fa-heart"></i></a>
                             <span class="date position-absolute">2012</span>
                             <div class="feature-thumb position-relative overflow-hidden">
-                                <a href="index.html"><img src="assets/img/home/car-8.jpg" alt="car" class="img-fluid"></a>
+                                <a href="index.html"><img src="{{ $config->base_url }}assets/img/home/car-8.jpg" alt="car" class="img-fluid"></a>
                             </div>
                             <div class="filter-card-content">
                                 <div class="price-btn text-end position-relative">
@@ -1052,8 +1052,8 @@
 
     <!--faq section start-->
     <section class="merge-section position-relative z-1 overflow-hidden">
-        <img src="assets/img/shapes/net-shape.png" alt="net shape" class="position-absolute end-0 top-0 z--1">
-        <img src="assets/img/shapes/net-left.png" alt="net shape" class="position-absolute start-0 bottom-0 z--1">
+        <img src="{{ $config->base_url }}assets/img/shapes/net-shape.png" alt="net shape" class="position-absolute end-0 top-0 z--1">
+        <img src="{{ $config->base_url }}assets/img/shapes/net-left.png" alt="net shape" class="position-absolute start-0 bottom-0 z--1">
         <div class="faq-section pt-120 pb-120">
             <div class="container">
                 <div class="row justify-content-center">
