@@ -1,0 +1,35 @@
+{
+  "name": "michustop/wypo-samochodowa",
+  "description": "Car rental system based on custom PHP framework",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Michał Marciniak",
+      "email": "michussstop@gmail.com",
+      "homepage": "https://michus.studio",
+      "role": "Frontend, Backend"
+    },
+    {
+      "name": "Igor Pietrasz",
+      "email": "igor.pietrasz.official@gmail.com",
+      "role": "Frontend"
+    }
+  ],
+  "require": {
+    "php": "^8.1",
+    "ext-json": "*",
+    "eftec/bladeone": "^4.6",
+    "filp/whoops": "^2.14",
+    "guzzlehttp/guzzle": "^7.5",
+    "nesbot/carbon": "^2.62"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    },
+    "files": [
+      "app/Helpers/MainHelper.php"
+    ]
+  }
+}
