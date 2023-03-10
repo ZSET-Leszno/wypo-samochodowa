@@ -16,6 +16,7 @@ class HomeController extends BaseController
     public function index()
     {
         $lastCars = $this->pdo->query('SELECT * FROM Samochody LIMIT 8')->fetchAll();
-        return view('home', compact('lastCars'));
+        $types = $this->pdo->query('SELECT * FROM Typy')->fetchAll();
+        return view('home', compact('lastCars', 'types'));
     }
 }
