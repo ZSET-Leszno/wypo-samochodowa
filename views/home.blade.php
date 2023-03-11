@@ -143,10 +143,9 @@
                                     <div class="input-field">
                                         <label>Wybierz marke</label>
                                         <select class="form-select">
-                                            <option>Marcediz Benz</option>
-                                            <option>Volkswagen</option>
-                                            <option>Hyundai</option>
-                                            <option>Ferrari</option>
+                                            @foreach($brands as $car)
+                                                <option>{{ $car->brand }}</option>
+                                            @endforeach
                                         </select>
                                     </div>
                                     <div class="input-field">
