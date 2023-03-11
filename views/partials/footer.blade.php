@@ -31,6 +31,7 @@
 <!--scrolltop button end-->
 
 <!--build:js-->
+<script>const baseUrl = '{{ $config->base_url }}';</script>
 <script src="{{ $config->base_url }}assets/js/vendors/jquery.min.js"></script>
 <script src="{{ $config->base_url }}assets/js/vendors/jquery-ui.min.js"></script>
 <script src="{{ $config->base_url }}assets/js/vendors/appear.js"></script>
