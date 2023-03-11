@@ -29,7 +29,7 @@ switch (ENV) {
 
 require_once __DIR__ . '/vendor/autoload.php';
 require_once __DIR__ . '/app/WhoopsHandler.php';
-require_once __DIR__ . '/app/Routing/routes.php';
+require_once __DIR__ . '/app/Routing/Routes.php';
 $blade = new \eftec\bladeone\BladeOne(__DIR__ . '/views', __DIR__ . '/views_cache', \eftec\bladeone\BladeOne::MODE_AUTO);
 $config = new App\Config\AppConfig();
 function view(string $view, array $variables = [])

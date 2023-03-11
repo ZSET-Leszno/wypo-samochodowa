@@ -4,7 +4,7 @@ $(document).ready(function () {
         if (selected) {
             $("#form-select-type").empty();
             $.ajax({
-                url: baseUrl + 'api/car/getTypes' + selected,
+                url: baseUrl + 'api/car/getTypes/' + selected,
                 type: 'GET',
                 dataType: 'json',
                 success: function (response) {
