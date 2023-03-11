@@ -144,7 +144,7 @@
                                         <label>Wybierz marke</label>
                                         <select class="form-select">
                                             @foreach($brands as $car)
-                                                <option>{{ $car->brand }}</option>
+                                                <option>{{ $car['brand'] }}</option>
                                             @endforeach
                                         </select>
                                     </div>
