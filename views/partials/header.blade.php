@@ -19,7 +19,7 @@
     <!--favicon icon-->
     <link rel="icon" href="{{ $config->base_url }}assets/img/favicon.png" type="image/png" sizes="16x16" />
     <!--title-->
-    <title>CarShare - </title>
+    <title>CarShare - {{ $title or 'undefined'}}</title>
     <!--style:css-->
     <link rel="stylesheet" href="{{ $config->base_url }}assets/css/main.css" />
 </head>
@@ -70,19 +70,19 @@
                 <div class="row align-items-center">
                     <div class="col-6 col-lg-3">
                         <div class="logo-wrapper">
-                            <a href="index.html"><img src="{{ $config->base_url }}assets/img/logo.webp" alt="logo"></a>
+                            <a href="{{ $config->base_url }}strona-glowna"><img src="{{ $config->base_url }}assets/img/logo.webp" alt="logo"></a>
                         </div>
                     </div>
                     <div class="col-6 col-lg-9">
                         <div class="at_header_right d-flex align-items-center justify-content-end">
                             <nav class="at_nav_menu d-none d-lg-block">
                                 <ul>
-                                    <li><a href="index.html">Strona Główna</a></li>
-                                    <li><a href="index.html">Nasza Flota</a></li>
-                                    <li><a href="index.html">Kontakt</a></li>
+                                    <li><a href="{{ $config->base_url }}strona-glowna">Strona Główna</a></li>
+                                    <li><a href="{{ $config->base_url }}home">Nasza Flota</a></li>
+                                    <li><a href="{{ $config->base_url }}kontakt">Kontakt</a></li>
                                 </ul>
                             </nav>
-                            <a href="login.html" class="listing-btn text-white ms-4 d-none d-sm-block"><span class="icon-wrapper d-inline-flex align-items-center justify-content-center rounded-circle text-white me-2"><i class="fa-solid fa-plus"></i></span>Zaloguj się</a>
+                            <a href="{{ $config->base_url }}auth/login" class="listing-btn text-white ms-4 d-none d-sm-block"><span class="icon-wrapper d-inline-flex align-items-center justify-content-center rounded-circle text-white me-2"><i class="fa-solid fa-plus"></i></span>Zaloguj się</a>
                             <button class="ofcanvus-toggle header-toggle-btn ms-4 d-none d-lg-block">
                                 <span></span>
                                 <span></span>

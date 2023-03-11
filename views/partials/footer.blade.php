@@ -53,5 +53,7 @@
 <script src="{{ $config->base_url }}assets/js/vendors/price-range.js"></script>
 <script src="{{ $config->base_url }}assets/js/vendors/image-rotate.min.js"></script>
 <script src="{{ $config->base_url }}assets/js/app.js"></script>
+<script src="{{ $config->base_url }}assets/js/home.js"></script>
+<!--endbuild-->
 </body>
 </html>

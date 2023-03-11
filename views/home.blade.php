@@ -1,4 +1,4 @@
-@include('partials.header')
+@include('partials.header', ['title' => 'Strona Główna'])
 
     <!--hero section start-->
     <section class="dealership-hero position-relative overflow-hidden">
