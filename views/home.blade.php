@@ -195,7 +195,7 @@
             </div>
             <div class="filter-items-wrapper mt-5">
                 <div class="row g-4 justify-content-center filter-grid">
-                    @foreach($feautred as $item)
+                    @foreach($featured as $item)
                         <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-12 latest">
                             <div class="filter-card-item position-relative overflow-hidden rounded bg-white">
                                 <a href="#" class="icon-btn compare-btn position-absolute"><i class="fa-solid fa-compress"></i></a>
