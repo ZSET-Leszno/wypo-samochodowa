@@ -142,7 +142,8 @@
                                 <form id="serach-car-form" action="{{ $config->base_url }}api/car/search" method="POST" class="at-search-filter d-flex align-items-center">
                                     <div class="input-field">
                                         <label>Wybierz markę</label>
-                                        <select class="form-select">
+                                        <select class="form-select" id="form-select-brand">
+                                            <option></option>
                                             @foreach($brands as $car)
                                                 <option value="{{ $car['marka'] }}">{{ $car['marka'] }}</option>
                                             @endforeach
@@ -158,10 +159,8 @@
                                     </div>
                                     <div class="input-field">
                                         <label>Wybierz model</label>
-                                        <select class="form-select">
-                                            @foreach($models as $model)
-                                                <option value="{{ $model['model'] }}">{{ $model['model'] }}</option>
-                                            @endforeach
+                                        <select class="form-select" disabled id="form-select-model">
+                                            <option></option>
                                         </select>
                                     </div>
                                     <div class="input-field">
