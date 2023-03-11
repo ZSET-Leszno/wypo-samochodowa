@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b52d023e-96a4-4d47-ac34-3998f40c2257" name="Changes" comment="feat: empfohlene Artikel hinzufügen">
+    <list default="true" id="b52d023e-96a4-4d47-ac34-3998f40c2257" name="Changes" comment="fix: empfohlene Lösung">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/home.blade.php" afterDir="false" />
     </list>
@@ -113,7 +113,7 @@
       <workItem from="1678454360471" duration="899000" />
       <workItem from="1678455288761" duration="374000" />
       <workItem from="1678483265121" duration="338000" />
-      <workItem from="1678566348518" duration="6651000" />
+      <workItem from="1678566348518" duration="6749000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add backendfiles instead of frontend, create custom core file for web">
       <created>1678454633386</created>
@@ -248,7 +248,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678573671037</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="fix: empfohlene Lösung">
+      <created>1678573726863</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1678573726863</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,6 +289,7 @@
     <MESSAGE value="feat: API-Struktur hinzugefügt" />
     <MESSAGE value="feat: allgemeine Änderungen" />
     <MESSAGE value="feat: empfohlene Artikel hinzufügen" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: empfohlene Artikel hinzufügen" />
+    <MESSAGE value="fix: empfohlene Lösung" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: empfohlene Lösung" />
   </component>
 </project>

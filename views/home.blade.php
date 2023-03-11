@@ -210,7 +210,7 @@
                                     </div>
                                     <a href="{{ $config->base_url }}" class="h5 mb-0">{{ $item['marka'] }} {{ $item['model'] }}</a>
                                     <ul class="list-unstyled mb-0">
-                                        <li><span class="text-muted">Moc:</span> {{ $item['moc'] }} KM</li>
+                                        <li><span class="text-muted">Moc:</span> {{ $item['Moc'] }} KM</li>
                                         <li><span class="text-muted">Skrzynia biegów:</span> {{ $item['skrzynia_biegow'] }}</li>
                                         <li><span class="text-muted">Rodzaj paliwa:</span> {{ $item['rodzaj_paliwa'] }}</li>
                                     </ul>
