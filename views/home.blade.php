@@ -183,7 +183,7 @@
     <!--search box end-->
 
     <!--latest collection start-->
-    <section class="latest-collection pb-120" data-background="{{ $config->base_url }}assets/img/shapes/about-bg.jpg">
+    <section class="latest-collection pb-120">
         <div class="container">
             <div class="row align-items-center justify-content-between">
                 <div class="col-lg-12">
@@ -483,7 +483,7 @@
     <!--latest collection end-->
 
     <!--faq section start-->
-    <section class="merge-section position-relative z-1 overflow-hidden">
+    <section class="merge-section position-relative z-1 overflow-hidden" data-background="{{ $config->base_url }}assets/img/shapes/about-bg.jpg">
         <img src="{{ $config->base_url }}assets/img/shapes/net-shape.png" alt="net shape" class="position-absolute end-0 top-0 z--1">
         <img src="{{ $config->base_url }}assets/img/shapes/net-left.png" alt="net shape" class="position-absolute start-0 bottom-0 z--1">
         <div class="faq-section pt-120 pb-120">
