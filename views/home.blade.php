@@ -195,282 +195,33 @@
             </div>
             <div class="filter-items-wrapper mt-5">
                 <div class="row g-4 justify-content-center filter-grid">
-                    <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-12 latest">
-                        <div class="filter-card-item position-relative overflow-hidden rounded bg-white">
-                            <a href="#" class="icon-btn compare-btn position-absolute"><i class="fa-solid fa-compress"></i></a>
-                            <a href="#" class="icon-btn wish-btn position-absolute"><i class="fa-solid fa-heart"></i></a>
-                            <span class="date position-absolute">2017</span>
-                            <div class="feature-thumb position-relative overflow-hidden">
-                                <a href="index.html"><img src="{{ $config->base_url }}assets/img/home/car-1.jpg" alt="car" class="img-fluid"></a>
-                            </div>
-                            <div class="filter-card-content">
-                                <div class="price-btn text-end position-relative">
-                                    <span class="small-btn-meta">174,900 zł</span>
+                    @foreach($feautred as $item)
+                        <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-12 latest">
+                            <div class="filter-card-item position-relative overflow-hidden rounded bg-white">
+                                <a href="#" class="icon-btn compare-btn position-absolute"><i class="fa-solid fa-compress"></i></a>
+                                <a href="#" class="icon-btn wish-btn position-absolute"><i class="fa-solid fa-heart"></i></a>
+                                <span class="date position-absolute">2017</span>
+                                <div class="feature-thumb position-relative overflow-hidden">
+                                    <a href="index.html"><img src="{{ $config->base_url }}assets/img/home/car-1.jpg" alt="car" class="img-fluid"></a>
                                 </div>
-                                <a href="index.html" class="mt-4 d-block">
-                                    <h5>Ford Explorer XLT</h5>
-                                </a>
-                                <hr class="spacer mt-3 mb-3">
-                                <div class="card-feature-box d-flex align-items-center mb-4">
-                                    <div class="icon-box d-flex align-items-center">
-                                        <span class="me-2"><i class="flaticon-speedometer"></i></span>
-                                        120km
+                                <div class="filter-card-content">
+                                    <div class="price-btn text-end position-relative">
+                                        <span class="small-btn-meta">{{ $item['cena_za_dzien'] }} zł</span>
                                     </div>
-                                    <div class="icon-box d-flex align-items-center">
-                                        <span class="me-2"><i class="flaticon-steering-wheel"></i></span>
-                                        Manual
-                                    </div>
-                                    <div class="icon-box d-flex align-items-center">
-                                        <span class="me-2"><i class="flaticon-petrol"></i></span>
-                                        Benzyna
-                                    </div>
+                                    <a href="{{ $config->base_url }}" class="h5 mb-0">{{ $item['marka'] }} {{ $item['model'] }}</a>
+                                    <ul class="list-unstyled mb-0">
+                                        <li><span class="text-muted">Moc:</span> {{ $item['moc'] }} KM</li>
+                                        <li><span class="text-muted">Skrzynia biegów:</span> {{ $item['skrzynia_biegow'] }}</li>
+                                        <li><span class="text-muted">Rodzaj paliwa:</span> {{ $item['rodzaj_paliwa'] }}</li>
+                                    </ul>
                                 </div>
-                                <a href="index.html" class="btn outline-btn btn-sm d-block">Zobacz Szczegóły</a>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-12 popular latest">
-                        <div class="filter-card-item position-relative overflow-hidden rounded bg-white">
-                            <a href="#" class="icon-btn compare-btn position-absolute"><i class="fa-solid fa-compress"></i></a>
-                            <a href="#" class="icon-btn wish-btn position-absolute"><i class="fa-solid fa-heart"></i></a>
-                            <span class="date position-absolute">2016</span>
-                            <div class="feature-thumb position-relative overflow-hidden">
-                                <a href="index.html"><img src="{{ $config->base_url }}assets/img/home/car-2.jpg" alt="car" class="img-fluid"></a>
-                            </div>
-                            <div class="filter-card-content">
-                                <div class="price-btn text-end position-relative">
-                                    <span class="small-btn-meta">174,900 zł</span>
-                                </div>
-                                <a href="index.html" class="mt-4 d-block">
-                                    <h5>Mercedes-Benz</h5>
-                                </a>
-                                <hr class="spacer mt-3 mb-3">
-                                <div class="card-feature-box d-flex align-items-center mb-4">
-                                    <div class="icon-box d-flex align-items-center">
-                                        <span class="me-2"><i class="flaticon-speedometer"></i></span>
-                                        120km
-                                    </div>
-                                    <div class="icon-box d-flex align-items-center">
-                                        <span class="me-2"><i class="flaticon-steering-wheel"></i></span>
-                                        Manual
-                                    </div>
-                                    <div class="icon-box d-flex align-items-center">
-                                        <span class="me-2"><i class="flaticon-petrol"></i></span>
-                                        Benzyna
-                                    </div>
-                                </div>
-                                <a href="index.html" class="btn outline-btn btn-sm d-block">Zobacz Szczegóły</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-12 featured popular">
-                        <div class="filter-card-item position-relative overflow-hidden rounded bg-white">
-                            <a href="#" class="icon-btn compare-btn position-absolute"><i class="fa-solid fa-compress"></i></a>
-                            <a href="#" class="icon-btn wish-btn position-absolute"><i class="fa-solid fa-heart"></i></a>
-                            <span class="date position-absolute">2018</span>
-                            <div class="feature-thumb position-relative overflow-hidden">
-                                <a href="index.html"><img src="{{ $config->base_url }}assets/img/home/car-3.jpg" alt="car" class="img-fluid"></a>
-                            </div>
-                            <div class="filter-card-content">
-                                <div class="price-btn text-end position-relative">
-                                    <span class="small-btn-meta">174,900 zł</span>
-                                </div>
-                                <a href="index.html" class="mt-4 d-block">
-                                    <h5>Mazda MX Miata</h5>
-                                </a>
-                                <hr class="spacer mt-3 mb-3">
-                                <div class="card-feature-box d-flex align-items-center mb-4">
-                                    <div class="icon-box d-flex align-items-center">
-                                        <span class="me-2"><i class="flaticon-speedometer"></i></span>
-                                        120km
-                                    </div>
-                                    <div class="icon-box d-flex align-items-center">
-                                        <span class="me-2"><i class="flaticon-steering-wheel"></i></span>
-                                        Manual
-                                    </div>
-                                    <div class="icon-box d-flex align-items-center">
-                                        <span class="me-2"><i class="flaticon-petrol"></i></span>
-                                        Benzyna
-                                    </div>
-                                </div>
-                                <a href="index.html" class="btn outline-btn btn-sm d-block">Zobacz Szczegóły</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-12 latest featured popular">
-                        <div class="filter-card-item position-relative overflow-hidden rounded bg-white">
-                            <a href="#" class="icon-btn compare-btn position-absolute"><i class="fa-solid fa-compress"></i></a>
-                            <a href="#" class="icon-btn wish-btn position-absolute"><i class="fa-solid fa-heart"></i></a>
-                            <span class="date position-absolute">2012</span>
-                            <div class="feature-thumb position-relative overflow-hidden">
-                                <a href="index.html"><img src="{{ $config->base_url }}assets/img/home/car-4.jpg" alt="car" class="img-fluid"></a>
-                            </div>
-                            <div class="filter-card-content">
-                                <div class="price-btn text-end position-relative">
-                                    <span class="small-btn-meta">174,900 zł</span>
-                                </div>
-                                <a href="index.html" class="mt-4 d-block">
-                                    <h5>Camz Ferrari Portofino M</h5>
-                                </a>
-                                <hr class="spacer mt-3 mb-3">
-                                <div class="card-feature-box d-flex align-items-center mb-4">
-                                    <div class="icon-box d-flex align-items-center">
-                                        <span class="me-2"><i class="flaticon-speedometer"></i></span>
-                                        120km
-                                    </div>
-                                    <div class="icon-box d-flex align-items-center">
-                                        <span class="me-2"><i class="flaticon-steering-wheel"></i></span>
-                                        Manual
-                                    </div>
-                                    <div class="icon-box d-flex align-items-center">
-                                        <span class="me-2"><i class="flaticon-petrol"></i></span>
-                                        Benzyna
-                                    </div>
-                                </div>
-                                <a href="index.html" class="btn outline-btn btn-sm d-block">Zobacz Szczegóły</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-12 featured">
-                        <div class="filter-card-item position-relative overflow-hidden rounded bg-white">
-                            <a href="#" class="icon-btn compare-btn position-absolute"><i class="fa-solid fa-compress"></i></a>
-                            <a href="#" class="icon-btn wish-btn position-absolute"><i class="fa-solid fa-heart"></i></a>
-                            <span class="date position-absolute">2013</span>
-                            <div class="feature-thumb position-relative overflow-hidden">
-                                <a href="index.html"><img src="{{ $config->base_url }}assets/img/home/car-5.jpg" alt="car" class="img-fluid"></a>
-                            </div>
-                            <div class="filter-card-content">
-                                <div class="price-btn text-end position-relative">
-                                    <span class="small-btn-meta">174,900 zł</span>
-                                </div>
-                                <a href="index.html" class="mt-4 d-block">
-                                    <h5>Mercedes-Benz E 400</h5>
-                                </a>
-                                <hr class="spacer mt-3 mb-3">
-                                <div class="card-feature-box d-flex align-items-center mb-4">
-                                    <div class="icon-box d-flex align-items-center">
-                                        <span class="me-2"><i class="flaticon-speedometer"></i></span>
-                                        120km
-                                    </div>
-                                    <div class="icon-box d-flex align-items-center">
-                                        <span class="me-2"><i class="flaticon-steering-wheel"></i></span>
-                                        Manual
-                                    </div>
-                                    <div class="icon-box d-flex align-items-center">
-                                        <span class="me-2"><i class="flaticon-petrol"></i></span>
-                                        Benzyna
-                                    </div>
-                                </div>
-                                <a href="index.html" class="btn outline-btn btn-sm d-block">Zobacz Szczegóły</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-12 popular latest">
-                        <div class="filter-card-item position-relative overflow-hidden rounded bg-white">
-                            <a href="#" class="icon-btn compare-btn position-absolute"><i class="fa-solid fa-compress"></i></a>
-                            <a href="#" class="icon-btn wish-btn position-absolute"><i class="fa-solid fa-heart"></i></a>
-                            <span class="date position-absolute">2016</span>
-                            <div class="feature-thumb position-relative overflow-hidden">
-                                <a href="index.html"><img src="{{ $config->base_url }}assets/img/home/car-6.jpg" alt="car" class="img-fluid"></a>
-                            </div>
-                            <div class="filter-card-content">
-                                <div class="price-btn text-end position-relative">
-                                    <span class="small-btn-meta">174,900 zł</span>
-                                </div>
-                                <a href="index.html" class="mt-4 d-block">
-                                    <h5>BMW 640 XI Gran Turismo</h5>
-                                </a>
-                                <hr class="spacer mt-3 mb-3">
-                                <div class="card-feature-box d-flex align-items-center mb-4">
-                                    <div class="icon-box d-flex align-items-center">
-                                        <span class="me-2"><i class="flaticon-speedometer"></i></span>
-                                        120km
-                                    </div>
-                                    <div class="icon-box d-flex align-items-center">
-                                        <span class="me-2"><i class="flaticon-steering-wheel"></i></span>
-                                        Manual
-                                    </div>
-                                    <div class="icon-box d-flex align-items-center">
-                                        <span class="me-2"><i class="flaticon-petrol"></i></span>
-                                        Benzyna
-                                    </div>
-                                </div>
-                                <a href="index.html" class="btn outline-btn btn-sm d-block">Zobacz Szczegóły</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-12 featured latest">
-                        <div class="filter-card-item position-relative overflow-hidden rounded bg-white">
-                            <a href="#" class="icon-btn compare-btn position-absolute"><i class="fa-solid fa-compress"></i></a>
-                            <a href="#" class="icon-btn wish-btn position-absolute"><i class="fa-solid fa-heart"></i></a>
-                            <span class="date position-absolute">2019</span>
-                            <div class="feature-thumb position-relative overflow-hidden">
-                                <a href="index.html"><img src="{{ $config->base_url }}assets/img/home/car-7.jpg" alt="car" class="img-fluid"></a>
-                            </div>
-                            <div class="filter-card-content">
-                                <div class="price-btn text-end position-relative">
-                                    <span class="small-btn-meta">174,900 zł</span>
-                                </div>
-                                <a href="index.html" class="mt-4 d-block">
-                                    <h5>Ferrari 458 MM Speciale</h5>
-                                </a>
-                                <hr class="spacer mt-3 mb-3">
-                                <div class="card-feature-box d-flex align-items-center mb-4">
-                                    <div class="icon-box d-flex align-items-center">
-                                        <span class="me-2"><i class="flaticon-speedometer"></i></span>
-                                        120km
-                                    </div>
-                                    <div class="icon-box d-flex align-items-center">
-                                        <span class="me-2"><i class="flaticon-steering-wheel"></i></span>
-                                        Manual
-                                    </div>
-                                    <div class="icon-box d-flex align-items-center">
-                                        <span class="me-2"><i class="flaticon-petrol"></i></span>
-                                        Benzyna
-                                    </div>
-                                </div>
-                                <a href="index.html" class="btn outline-btn btn-sm d-block">Zobacz Szczegóły</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-12 popular featured">
-                        <div class="filter-card-item position-relative overflow-hidden rounded bg-white">
-                            <a href="#" class="icon-btn compare-btn position-absolute"><i class="fa-solid fa-compress"></i></a>
-                            <a href="#" class="icon-btn wish-btn position-absolute"><i class="fa-solid fa-heart"></i></a>
-                            <span class="date position-absolute">2012</span>
-                            <div class="feature-thumb position-relative overflow-hidden">
-                                <a href="index.html"><img src="{{ $config->base_url }}assets/img/home/car-8.jpg" alt="car" class="img-fluid"></a>
-                            </div>
-                            <div class="filter-card-content">
-                                <div class="price-btn text-end position-relative">
-                                    <span class="small-btn-meta">174,900 zł</span>
-                                </div>
-                                <a href="index.html" class="mt-4 d-block">
-                                    <h5>Ferrari F12 TRS</h5>
-                                </a>
-                                <hr class="spacer mt-3 mb-3">
-                                <div class="card-feature-box d-flex align-items-center mb-4">
-                                    <div class="icon-box d-flex align-items-center">
-                                        <span class="me-2"><i class="flaticon-speedometer"></i></span>
-                                        120km
-                                    </div>
-                                    <div class="icon-box d-flex align-items-center">
-                                        <span class="me-2"><i class="flaticon-steering-wheel"></i></span>
-                                        Manual
-                                    </div>
-                                    <div class="icon-box d-flex align-items-center">
-                                        <span class="me-2"><i class="flaticon-petrol"></i></span>
-                                        Benzyna
-                                    </div>
-                                </div>
-                                <a href="index.html" class="btn outline-btn btn-sm d-block">Zobacz Szczegóły</a>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
             <div class="text-center mt-5">
-                <a href="inventory-listing.html" class="at-explore-btn color-secondary"><span class="me-2">
+                <a href="{{ $config->base_url }}samochody" class="at-explore-btn color-secondary"><span class="me-2">
                       <svg width="39" height="26" viewBox="0 0 39 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M32.7143 7.85706L37.5142 12.9999M37.5142 12.9999L32.7143 18.1428M37.5142 12.9999H18.1428" stroke="#FC0012" stroke-width="1.71429" stroke-linecap="round" stroke-linejoin="round"/>
                           <circle cx="13" cy="13" r="12" stroke="#FC0012" stroke-width="1.71429"/>
