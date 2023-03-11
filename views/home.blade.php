@@ -151,10 +151,8 @@
                                     </div>
                                     <div class="input-field">
                                         <label>Wybierz typ</label>
-                                        <select class="form-select">
-                                            @foreach($types as $type)
-                                                <option value="{{ $type['id_typu'] }}">{{ $type['nazwa_typu'] }}</option>
-                                            @endforeach
+                                        <select class="form-select" disabled id="form-select-type">
+                                            <option></option>
                                         </select>
                                     </div>
                                     <div class="input-field">
