@@ -139,39 +139,37 @@
                         </ul>
                         <div class="tab-content">
                             <div class="tab-pane fade show active" id="all_status">
-                                <form action="#" class="at-search-filter d-flex align-items-center">
+                                <form id="serach-car-form" action="{{ $config->base_url }}api/car/search" method="POST" class="at-search-filter d-flex align-items-center">
                                     <div class="input-field">
-                                        <label>Wybierz marke</label>
+                                        <label>Wybierz markę</label>
                                         <select class="form-select">
                                             @foreach($brands as $car)
-                                                <option>{{ $car['brand'] }}</option>
+                                                <option value="{{ $car['marka'] }}">{{ $car['marka'] }}</option>
                                             @endforeach
                                         </select>
                                     </div>
                                     <div class="input-field">
                                         <label>Wybierz typ</label>
                                         <select class="form-select">
-                                            <option>SUV</option>
-                                            <option>Sedan</option>
-                                            <option>Wagon</option>
-                                            <option>Coup</option>
+                                            @foreach($types as $type)
+                                                <option value="{{ $type['id_typu'] }}">{{ $type['nazwa_typu'] }}</option>
+                                            @endforeach
                                         </select>
                                     </div>
                                     <div class="input-field">
                                         <label>Wybierz model</label>
                                         <select class="form-select">
-                                            <option>Brooklands</option>
-                                            <option>Mazda MX Miata</option>
-                                            <option>Ferrari F12 TRS</option>
-                                            <option>Mercedes-Benz E 400</option>
+                                            @foreach($models as $model)
+                                                <option value="{{ $model['model'] }}">{{ $model['model'] }}</option>
+                                            @endforeach
                                         </select>
                                     </div>
                                     <div class="input-field">
                                         <label>Skrzynia biegów</label>
                                         <select class="form-select">
-                                            <option>Pół automatyczna</option>
-                                            <option>Automatyczna</option>
-                                            <option>Manualna</option>
+                                            @foreach($gears as $gear)
+                                                <option value="{{ $gear['skrzynia_biegow'] }}">{{ $gear['skrzynia_biegow'] }}</option>
+                                            @endforeach
                                         </select>
                                     </div>
                                     <div class="submit-btn align-self-end">
