@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <!--required meta tags-->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--facebook og-->
     <meta property="og:url" content="#" />
-    <meta name="twitter:title" content="CarShare - " />
+    <meta name="twitter:title" content="CarShare -  {{ $title or 'undefined'}}" />
     <meta property="og:description" content="CarShare - " />
     <meta property="og:image" content="#" />
     <meta property="og:image:secure_url" content="#" />
@@ -78,7 +78,7 @@
                             <nav class="at_nav_menu d-none d-lg-block">
                                 <ul>
                                     <li><a href="{{ $config->base_url }}strona-glowna">Strona Główna</a></li>
-                                    <li><a href="{{ $config->base_url }}home">Nasza Flota</a></li>
+                                    <li><a href="{{ $config->base_url }}samochody">Nasza Flota</a></li>
                                     <li><a href="{{ $config->base_url }}kontakt">Kontakt</a></li>
                                 </ul>
                             </nav>
@@ -104,12 +104,12 @@
     <!--mobile menu start-->
     <div class="mobile-menu position-fixed bg-white deep-shadow">
         <button class="close-menu position-absolute"><i class="fa-solid fa-xmark"></i></button>
-        <a href="index.html" class="logo-wrapper bg-secondary d-block mt-4 p-3 rounded-1 text-center"><img src="{{ $config->base_url }}assets/img/logo.webp" alt="logo" class="img-fluid"></a>
+        <a href="{{ $config->base_url }}strona-glowna" class="logo-wrapper bg-secondary d-block mt-4 p-3 rounded-1 text-center"><img src="{{ $config->base_url }}assets/img/logo.webp" alt="logo" class="img-fluid"></a>
         <nav class="mobile-menu-wrapper mt-40">
             <ul>
-                <li><a href="index.html">Strona Główna</a></li>
-                <li><a href="index.html">Nasza Flota</a></li>
-                <li><a href="index.html">Kontakt</a></li>
+                <li><a href="{{ $config->base_url }}strona-glowna">Strona Główna</a></li>
+                <li><a href="{{ $config->base_url }}samochody">Nasza Flota</a></li>
+                <li><a href="{{ $config->base_url }}kontakt">Kontakt</a></li>
             </ul>
         </nav>
         <div class="contact-info mt-60">
