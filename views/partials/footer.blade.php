@@ -11,8 +11,8 @@
                     </div>
                     <div class="col-sm-5">
                         <div class="copyright-links text-start text-sm-end mt-1 mt-sm-0">
-                            <a href="regulamin.pdf">Regulamin</a>
-                            <a href="polityka-prywatnosci.pdf">Polityka prywatności</a>
+                            <a href="regulamin.pdf" target="_blank">Regulamin</a>
+                            <a href="polityka-prywatnosci.pdf" target="_blank">Polityka prywatności</a>
                         </div>
                     </div>
                 </div>
