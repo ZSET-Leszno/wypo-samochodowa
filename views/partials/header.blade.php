@@ -134,7 +134,6 @@
             <h4 class="mb-4">O nas</h4>
             <p>Firma CarShare to profesjonalna wypożyczalnia samochodów oferująca swoje usługi klientom indywidualnym oraz biznesowym. Nasza flota samochodów jest zawsze w doskonałym stanie technicznym, a nasza oferta obejmuje zarówno krótkoterminowy jak i długoterminowy wynajem.</p>
             <p>Jesteśmy zawsze gotowi sprostać potrzebom naszych klientów i zapewnić im wygodny i bezpieczny sposób podróżowania. Dzięki naszemu doświadczeniu i wysokim standardom obsługi możesz być pewny, że wynajem samochodu w naszej wypożyczalni to gwarancja satysfakcji. Zachęcamy do skorzystania z naszych usług!</p>
-            <a href="#" class="btn btn-primary mt-4">O nas</a>
         </div>
         <div class="offcanvus-contact">
             <h4 class="mb-4 mt-5">Dane kontaktowe</h4>
