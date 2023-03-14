@@ -35887,7 +35887,7 @@ a.social-btn:hover {
 /*********** map section start ***********/
 .map-area {
   width: 100%;
-  min-height: 480px;
+  height: 480px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

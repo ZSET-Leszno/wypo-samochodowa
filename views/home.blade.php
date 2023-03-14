@@ -534,7 +534,7 @@
                                 </div>
                             </div>
                             <div class="text-center mt-5">
-                                <a href="contact.html" class="btn btn-secondary"><span class="me-2"><i class="flaticon-chat"></i></span>Zadaj pytanie</a>
+                                <a href="{{ $config->base_url }}kontakt" class="btn btn-secondary"><span class="me-2"><i class="flaticon-chat"></i></span>Zadaj pytanie</a>
                             </div>
                         </div>
                     </div>
