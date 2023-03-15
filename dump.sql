@@ -2,10 +2,10 @@
 -- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Generation Time: Mar 14, 2023 at 10:16 PM
--- Server version: 10.4.21-MariaDB
--- PHP Version: 7.4.29
+-- Host: 127.0.0.1
+-- Czas generowania: 15 Mar 2023, 15:27
+-- Wersja serwera: 10.4.24-MariaDB
+-- Wersja PHP: 8.1.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,16 +18,16 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `projekt`
+-- Baza danych: `dump`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `FAQ`
+-- Struktura tabeli dla tabeli `faq`
 --
 
-CREATE TABLE `FAQ` (
+CREATE TABLE `faq` (
   `id` int(255) NOT NULL,
   `typ` text NOT NULL,
   `pytanie` text NOT NULL,
@@ -35,10 +35,10 @@ CREATE TABLE `FAQ` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `FAQ`
+-- Zrzut danych tabeli `faq`
 --
 
-INSERT INTO `FAQ` (`id`, `typ`, `pytanie`, `odpowiedz`) VALUES
+INSERT INTO `faq` (`id`, `typ`, `pytanie`, `odpowiedz`) VALUES
 (1, 'ogolne', 'Jak mogę zarezerwować samochód?', 'Możesz zarezerwować samochód online poprzez naszą stronę internetową lub zadzwonić do naszego biura obsługi klienta.'),
 (2, 'ogolne', 'Jakie są wymagania wiekowe, aby wynająć samochód?', 'Wymagamy, aby kierowcy mieli co najmniej 21 lat i posiadali ważne prawo jazdy.'),
 (3, 'ogolne', 'Czy muszę płacić kaucję?', 'Tak, wymagamy kaucji jako zabezpieczenie na wypadek ewentualnych szkód.'),
@@ -67,38 +67,10 @@ INSERT INTO `FAQ` (`id`, `typ`, `pytanie`, `odpowiedz`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `Klienci`
+-- Struktura tabeli dla tabeli `platnosci`
 --
 
-CREATE TABLE `Klienci` (
-  `id_klienta` int(255) NOT NULL,
-  `imie` text NOT NULL,
-  `nazwisko` text NOT NULL,
-  `adres` text NOT NULL,
-  `telefon` int(255) NOT NULL,
-  `email` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `Klienci`
---
-
-INSERT INTO `Klienci` (`id_klienta`, `imie`, `nazwisko`, `adres`, `telefon`, `email`) VALUES
-(1, 'Igor', 'Pietrasz', 'Kościan Szybka 3', 509968595, 'Igor.pietrasz.official@gmail.com'),
-(2, 'Bartosz', 'Runowicz', 'Kąkolewo Świerkowa 13', 746374823, 'runoleśne@wp.pl'),
-(3, 'Michał', 'Marciniak', 'Kobylin Kręta 54', 543543654, 'michussstop@gmail.com'),
-(4, 'Erwin', 'Gertych', 'Błotnica Jeziorna 10', 876654678, 'sexitygrys@o2.pl'),
-(5, 'Kajetan', 'Młodziutki', 'Śmigieł Hałwia 5', 983356846, 'karzel420@wp.pl'),
-(6, 'Piotr', 'Kowal', 'Częstochowa Daleka 65', 374659944, 'kowalwmc@interia.pl'),
-(7, 'Wiktor', 'KłujeDupé', 'Marsylia Lepina 97', 988463334, 'sterydy@gmail.com');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `Platnosci`
---
-
-CREATE TABLE `Platnosci` (
+CREATE TABLE `platnosci` (
   `id_platnosci` int(255) NOT NULL,
   `id_wypozyczenia` int(255) NOT NULL,
   `data_platnosci` date NOT NULL,
@@ -106,20 +78,20 @@ CREATE TABLE `Platnosci` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `Platnosci`
+-- Zrzut danych tabeli `platnosci`
 --
 
-INSERT INTO `Platnosci` (`id_platnosci`, `id_wypozyczenia`, `data_platnosci`, `kwota`) VALUES
+INSERT INTO `platnosci` (`id_platnosci`, `id_wypozyczenia`, `data_platnosci`, `kwota`) VALUES
 (1, 1, '2023-02-28', 40000),
 (2, 2, '2023-02-02', 1200);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `Pracownicy`
+-- Struktura tabeli dla tabeli `pracownicy`
 --
 
-CREATE TABLE `Pracownicy` (
+CREATE TABLE `pracownicy` (
   `id_pracownika` int(255) NOT NULL,
   `imie` text NOT NULL,
   `nazwisko` text NOT NULL,
@@ -130,10 +102,10 @@ CREATE TABLE `Pracownicy` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `Pracownicy`
+-- Zrzut danych tabeli `pracownicy`
 --
 
-INSERT INTO `Pracownicy` (`id_pracownika`, `imie`, `nazwisko`, `stanowisko`, `adres`, `telefon`, `email`) VALUES
+INSERT INTO `pracownicy` (`id_pracownika`, `imie`, `nazwisko`, `stanowisko`, `adres`, `telefon`, `email`) VALUES
 (1, 'Cezary', 'Baraka', 'Kierownik', 'Leszno Polna 4', 123123123, 'barykanietyka@interia.pl'),
 (2, 'Juliusz', 'Słowicki', 'Sprzedawca', 'Racot Szybka 9', 321321321, 'słowickieloelo@gmail.com'),
 (3, 'Barack', 'Obłuda', 'Wice-prezes', 'Waszyngton Polna 3', 123321333, 'prezydentess@gmail.com'),
@@ -142,14 +114,14 @@ INSERT INTO `Pracownicy` (`id_pracownika`, `imie`, `nazwisko`, `stanowisko`, `ad
 -- --------------------------------------------------------
 
 --
--- Table structure for table `Samochody`
+-- Struktura tabeli dla tabeli `samochody`
 --
 
-CREATE TABLE `Samochody` (
+CREATE TABLE `samochody` (
   `id_samochodu` int(255) NOT NULL,
-  `image_path` text NOT NULL,
   `marka` text NOT NULL,
   `model` text NOT NULL,
+  `image_path` text NOT NULL,
   `rok_produkcji` int(255) NOT NULL,
   `Moc` int(255) NOT NULL,
   `kolor` text NOT NULL,
@@ -168,36 +140,36 @@ CREATE TABLE `Samochody` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `Samochody`
+-- Zrzut danych tabeli `samochody`
 --
 
-INSERT INTO `Samochody` (`id_samochodu`, `image_path`, `marka`, `model`, `rok_produkcji`, `Moc`, `kolor`, `pojemnosc_silnika`, `przebieg`, `liczba_cylindrow`, `napęd`, `VIN`, `stan_pojazdu`, `rodzaj_paliwa`, `liczba_drzwi`, `skrzynia_biegow`, `id_typu`, `cena_za_dzien`, `isFeautred`) VALUES
-(1, 'paganizonda.jpeg', 'Pagani', 'Zonda', 2015, 1000, 'Czarny', 8, 3500, 16, 'Tylni', 'IDB7H4VJ9TD', 'Używany', 'Benzyna', 3, 'Manualna', 8, 8000, 0),
-(2, 'toyotacumry.jpeg', 'Toyota', 'Camry', 2016, 220, 'Srebrny', 2, 85000, 4, '4x4', 'P9D78BH5DF1', 'Używany', 'Hybryda', 5, 'Automatyczna', 3, 600, 0),
-(3, 'fordexplorer.jpg', 'Ford', 'Explorer', 2017, 350, 'Niebieski', 8, 5, 12, '4x4', '1B6MF36C6SS164013', 'Nowy', 'Benzyna', 5, 'Automatyczna', 1, 550, 0),
-(4, 'mazdamiata.jpg', 'Mazda', 'Miata', 2010, 160, 'Biały', 2, 130000, 4, 'Tylni', '1B3ES66S63D169269', 'Używany', 'Diesel', 3, 'Manualna', 6, 400, 0),
-(5, 'ferrariportofino.jpg', 'Ferrari', 'Portofino', 2013, 550, 'Czerwony', 5, 18000, 12, 'Tylni', 'JH4KA7650MC002609', 'Używany', 'Benzyna', 3, 'Automatyczna', 6, 800, 0),
-(6, 'mercedesbenze400.jpg', 'Mercedes-Benz', 'E400', 2019, 420, 'Szary', 4, 156000, 8, 'Przedni', 'SAJWA0HEXDMS56024', 'Używany', 'Benzyna', 5, 'Automatyczna', 5, 650, 0),
-(7, 'bmwgranturismo.jpg', 'BMW', '640 XI Gran Turismo', 2009, 435, 'Biały', 5, 64000, 6, 'Tylni', 'JH4DB7540SS801338', 'Używany', 'Diesel', 5, 'Manualna', 8, 720, 0),
-(8, 'ferrari458mm.jpg', 'Ferrari', '458 MM', 2022, 650, 'Czerwony', 6, 60, 12, 'Tylni', 'JYAVP24E39A007465', 'Nowy', 'Benzyna', 3, 'Automatyczna', 3, 1200, 0),
-(9, 'ferrarif12.jpg', 'Ferrari', 'F12', 2020, 580, 'Niebieski', 5, 1500, 12, 'Tylni', '2G1WL54T4R9165225', 'Nowy', 'Benzyna', 3, 'Manualna', 6, 1100, 0);
+INSERT INTO `samochody` (`id_samochodu`, `marka`, `model`, `image_path`, `rok_produkcji`, `Moc`, `kolor`, `pojemnosc_silnika`, `przebieg`, `liczba_cylindrow`, `napęd`, `VIN`, `stan_pojazdu`, `rodzaj_paliwa`, `liczba_drzwi`, `skrzynia_biegow`, `id_typu`, `cena_za_dzien`, `isFeautred`) VALUES
+(1, 'Pagani', 'Zonda', 'paganizonda.jpeg', 2015, 1000, 'Czarny', 8, 3500, 16, 'Tylni', 'IDB7H4VJ9TD', 'Używany', 'Benzyna', 3, 'Manualna', 8, 8000, 0),
+(2, 'Toyota', 'Camry', 'toyotacumry.jpeg', 2016, 220, 'Srebrny', 2, 85000, 4, '4x4', 'P9D78BH5DF1', 'Używany', 'Hybryda', 5, 'Automatyczna', 3, 600, 0),
+(3, 'Ford', 'Explorer', 'fordexplorer.jpg', 2017, 350, 'Niebieski', 8, 5, 12, '4x4', '1B6MF36C6SS164013', 'Nowy', 'Benzyna', 5, 'Automatyczna', 1, 550, 0),
+(4, 'Mazda', 'Miata', 'mazdamiata.jpg', 2010, 160, 'Biały', 2, 130000, 4, 'Tylni', '1B3ES66S63D169269', 'Używany', 'Diesel', 3, 'Manualna', 6, 400, 0),
+(5, 'Ferrari', 'Portofino', 'ferrariportofino.jpg', 2013, 550, 'Czerwony', 5, 18000, 12, 'Tylni', 'JH4KA7650MC002609', 'Używany', 'Benzyna', 3, 'Automatyczna', 6, 800, 0),
+(6, 'Mercedes-Benz', 'E400', 'mercedesbenze400.jpg', 2019, 420, 'Szary', 4, 156000, 8, 'Przedni', 'SAJWA0HEXDMS56024', 'Używany', 'Benzyna', 5, 'Automatyczna', 5, 650, 0),
+(7, 'BMW', '640 XI Gran Turismo', 'bmwgranturismo.jpg', 2009, 435, 'Biały', 5, 64000, 6, 'Tylni', 'JH4DB7540SS801338', 'Używany', 'Diesel', 5, 'Manualna', 8, 720, 0),
+(8, 'Ferrari', '458 MM', 'ferrari458mm.jpg', 2022, 650, 'Czerwony', 6, 60, 12, 'Tylni', 'JYAVP24E39A007465', 'Nowy', 'Benzyna', 3, 'Automatyczna', 3, 1200, 0),
+(9, 'Ferrari', 'F12', 'ferrarif12.jpg', 2020, 580, 'Niebieski', 5, 1500, 12, 'Tylni', '2G1WL54T4R9165225', 'Nowy', 'Benzyna', 3, 'Manualna', 6, 1100, 0);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `Typy_samochodow`
+-- Struktura tabeli dla tabeli `typy_samochodow`
 --
 
-CREATE TABLE `Typy_samochodow` (
+CREATE TABLE `typy_samochodow` (
   `id_typu` int(255) NOT NULL,
   `nazwa_typu` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `Typy_samochodow`
+-- Zrzut danych tabeli `typy_samochodow`
 --
 
-INSERT INTO `Typy_samochodow` (`id_typu`, `nazwa_typu`) VALUES
+INSERT INTO `typy_samochodow` (`id_typu`, `nazwa_typu`) VALUES
 (1, 'Terenowy'),
 (2, 'SUV'),
 (3, 'Sedan'),
@@ -212,10 +184,39 @@ INSERT INTO `Typy_samochodow` (`id_typu`, `nazwa_typu`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `Wypozyczenia`
+-- Struktura tabeli dla tabeli `uzytkownicy`
 --
 
-CREATE TABLE `Wypozyczenia` (
+CREATE TABLE `uzytkownicy` (
+  `id_klienta` int(255) NOT NULL,
+  `imie` text NOT NULL,
+  `nazwisko` text NOT NULL,
+  `adres` text NOT NULL,
+  `telefon` int(255) NOT NULL,
+  `email` text NOT NULL,
+  `haslo` longtext NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Zrzut danych tabeli `uzytkownicy`
+--
+
+INSERT INTO `uzytkownicy` (`id_klienta`, `imie`, `nazwisko`, `adres`, `telefon`, `email`, `haslo`) VALUES
+(1, 'Igor', 'Pietrasz', 'Kościan Szybka 3', 509968595, 'Igor.pietrasz.official@gmail.com', ''),
+(2, 'Bartosz', 'Runowicz', 'Kąkolewo Świerkowa 13', 746374823, 'runoleśne@wp.pl', ''),
+(3, 'Michał', 'Marciniak', 'Kobylin Kręta 54', 543543654, 'michussstop@gmail.com', ''),
+(4, 'Erwin', 'Gertych', 'Błotnica Jeziorna 10', 876654678, 'sexitygrys@o2.pl', ''),
+(5, 'Kajetan', 'Młodziutki', 'Śmigieł Hałwia 5', 983356846, 'karzel420@wp.pl', ''),
+(6, 'Piotr', 'Kowal', 'Częstochowa Daleka 65', 374659944, 'kowalwmc@interia.pl', ''),
+(7, 'Wiktor', 'KłujeDupé', 'Marsylia Lepina 97', 988463334, 'sterydy@gmail.com', '');
+
+-- --------------------------------------------------------
+
+--
+-- Struktura tabeli dla tabeli `wypozyczenia`
+--
+
+CREATE TABLE `wypozyczenia` (
   `id_wypozyczenia` int(255) NOT NULL,
   `id_klienta` int(11) NOT NULL,
   `id_samochodu` int(11) NOT NULL,
@@ -225,132 +226,132 @@ CREATE TABLE `Wypozyczenia` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `Wypozyczenia`
+-- Zrzut danych tabeli `wypozyczenia`
 --
 
-INSERT INTO `Wypozyczenia` (`id_wypozyczenia`, `id_klienta`, `id_samochodu`, `data_wypozyczenia`, `data_zwrotu`, `koszt_wypozyczenia`) VALUES
+INSERT INTO `wypozyczenia` (`id_wypozyczenia`, `id_klienta`, `id_samochodu`, `data_wypozyczenia`, `data_zwrotu`, `koszt_wypozyczenia`) VALUES
 (1, 1, 1, '2023-02-28', '2023-03-04', 40000),
 (2, 2, 2, '2023-02-01', '2023-02-02', 1200);
 
 --
--- Indexes for dumped tables
+-- Indeksy dla zrzutów tabel
 --
 
 --
--- Indexes for table `FAQ`
+-- Indeksy dla tabeli `faq`
 --
-ALTER TABLE `FAQ`
+ALTER TABLE `faq`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `Klienci`
+-- Indeksy dla tabeli `platnosci`
 --
-ALTER TABLE `Klienci`
-  ADD PRIMARY KEY (`id_klienta`);
-
---
--- Indexes for table `Platnosci`
---
-ALTER TABLE `Platnosci`
+ALTER TABLE `platnosci`
   ADD PRIMARY KEY (`id_platnosci`),
   ADD KEY `id_wypozyczenia` (`id_wypozyczenia`);
 
 --
--- Indexes for table `Pracownicy`
+-- Indeksy dla tabeli `pracownicy`
 --
-ALTER TABLE `Pracownicy`
+ALTER TABLE `pracownicy`
   ADD PRIMARY KEY (`id_pracownika`);
 
 --
--- Indexes for table `Samochody`
+-- Indeksy dla tabeli `samochody`
 --
-ALTER TABLE `Samochody`
+ALTER TABLE `samochody`
   ADD PRIMARY KEY (`id_samochodu`),
   ADD KEY `id_typu` (`id_typu`);
-ALTER TABLE `Samochody` ADD FULLTEXT KEY `marka` (`marka`);
+ALTER TABLE `samochody` ADD FULLTEXT KEY `marka` (`marka`);
 
 --
--- Indexes for table `Typy_samochodow`
+-- Indeksy dla tabeli `typy_samochodow`
 --
-ALTER TABLE `Typy_samochodow`
+ALTER TABLE `typy_samochodow`
   ADD PRIMARY KEY (`id_typu`);
 
 --
--- Indexes for table `Wypozyczenia`
+-- Indeksy dla tabeli `uzytkownicy`
 --
-ALTER TABLE `Wypozyczenia`
+ALTER TABLE `uzytkownicy`
+  ADD PRIMARY KEY (`id_klienta`);
+
+--
+-- Indeksy dla tabeli `wypozyczenia`
+--
+ALTER TABLE `wypozyczenia`
   ADD PRIMARY KEY (`id_wypozyczenia`),
   ADD KEY `id_klienta` (`id_klienta`),
   ADD KEY `id_samochodu` (`id_samochodu`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT dla zrzuconych tabel
 --
 
 --
--- AUTO_INCREMENT for table `FAQ`
+-- AUTO_INCREMENT dla tabeli `faq`
 --
-ALTER TABLE `FAQ`
+ALTER TABLE `faq`
   MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
--- AUTO_INCREMENT for table `Klienci`
+-- AUTO_INCREMENT dla tabeli `platnosci`
 --
-ALTER TABLE `Klienci`
-  MODIFY `id_klienta` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
-
---
--- AUTO_INCREMENT for table `Platnosci`
---
-ALTER TABLE `Platnosci`
+ALTER TABLE `platnosci`
   MODIFY `id_platnosci` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `Pracownicy`
+-- AUTO_INCREMENT dla tabeli `pracownicy`
 --
-ALTER TABLE `Pracownicy`
+ALTER TABLE `pracownicy`
   MODIFY `id_pracownika` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `Samochody`
+-- AUTO_INCREMENT dla tabeli `samochody`
 --
-ALTER TABLE `Samochody`
+ALTER TABLE `samochody`
   MODIFY `id_samochodu` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
--- AUTO_INCREMENT for table `Typy_samochodow`
+-- AUTO_INCREMENT dla tabeli `typy_samochodow`
 --
-ALTER TABLE `Typy_samochodow`
+ALTER TABLE `typy_samochodow`
   MODIFY `id_typu` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
--- AUTO_INCREMENT for table `Wypozyczenia`
+-- AUTO_INCREMENT dla tabeli `uzytkownicy`
 --
-ALTER TABLE `Wypozyczenia`
+ALTER TABLE `uzytkownicy`
+  MODIFY `id_klienta` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
+-- AUTO_INCREMENT dla tabeli `wypozyczenia`
+--
+ALTER TABLE `wypozyczenia`
   MODIFY `id_wypozyczenia` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- Constraints for dumped tables
+-- Ograniczenia dla zrzutów tabel
 --
 
 --
--- Constraints for table `Platnosci`
+-- Ograniczenia dla tabeli `platnosci`
 --
-ALTER TABLE `Platnosci`
-  ADD CONSTRAINT `platnosci_ibfk_1` FOREIGN KEY (`id_wypozyczenia`) REFERENCES `Wypozyczenia` (`id_wypozyczenia`);
+ALTER TABLE `platnosci`
+  ADD CONSTRAINT `platnosci_ibfk_1` FOREIGN KEY (`id_wypozyczenia`) REFERENCES `wypozyczenia` (`id_wypozyczenia`);
 
 --
--- Constraints for table `Samochody`
+-- Ograniczenia dla tabeli `samochody`
 --
-ALTER TABLE `Samochody`
-  ADD CONSTRAINT `samochody_ibfk_1` FOREIGN KEY (`id_typu`) REFERENCES `Typy_samochodow` (`id_typu`);
+ALTER TABLE `samochody`
+  ADD CONSTRAINT `samochody_ibfk_1` FOREIGN KEY (`id_typu`) REFERENCES `typy_samochodow` (`id_typu`);
 
 --
--- Constraints for table `Wypozyczenia`
+-- Ograniczenia dla tabeli `wypozyczenia`
 --
-ALTER TABLE `Wypozyczenia`
-  ADD CONSTRAINT `wypozyczenia_ibfk_1` FOREIGN KEY (`id_klienta`) REFERENCES `Klienci` (`id_klienta`),
-  ADD CONSTRAINT `wypozyczenia_ibfk_2` FOREIGN KEY (`id_samochodu`) REFERENCES `Samochody` (`id_samochodu`);
+ALTER TABLE `wypozyczenia`
+  ADD CONSTRAINT `wypozyczenia_ibfk_1` FOREIGN KEY (`id_klienta`) REFERENCES `uzytkownicy` (`id_klienta`),
+  ADD CONSTRAINT `wypozyczenia_ibfk_2` FOREIGN KEY (`id_samochodu`) REFERENCES `samochody` (`id_samochodu`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
