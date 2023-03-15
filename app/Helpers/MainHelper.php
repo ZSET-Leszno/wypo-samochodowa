@@ -72,16 +72,6 @@ class MainHelper
     }
 
     /**
-     * Get result
-     * @param bool $success
-     * @param string $message
-     * @return string
-     */
-    public function result(bool $success, string $message): string {
-        return json_encode(['success' => $success, 'message' => $message]);
-    }
-
-    /**
      * Check if email is disposable
      * @param string $email
      * @return bool
