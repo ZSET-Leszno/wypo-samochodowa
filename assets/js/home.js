@@ -30,4 +30,24 @@ $(document).ready(function () {
             $(this).val('');
         }
     });
+    $('#contact-form').submit(function (e) {
+        e.preventDefault();
+        $.ajax({
+            url: $(this).attr('action'),
+            type: $(this).attr('method'),
+            data: $(this).serialize(),
+            dataType: 'json',
+            success: function (response) {
+                if (response['success']) {
+                    $('#contact-form').trigger("reset");
+                    $('#contact-form').hide();
+                    $('#contact-success').show();
+                } else {
+                    $('#contact-form').trigger("reset");
+                    $('#contact-form').hide();
+                    $('#contact-error').show();
+                }
+            }
+        });
+    }
 });
