@@ -202,7 +202,7 @@
                                 <a href="#" class="icon-btn wish-btn position-absolute"><i class="fa-solid fa-heart"></i></a>
                                 <span class="date position-absolute">{{ $item['rok_produkcji'] }}</span>
                                 <div class="feature-thumb position-relative overflow-hidden">
-                                    <a href="index.html"><img src="{{ $config->base_url }}assets/img/home/car-1.jpg" alt="car" class="img-fluid"></a>
+                                    <a href="index.html"><img src="{{ $config->base_url }}assets/img/cars/{{ $item['image_path'] }}" alt="{{ $item['model'] }}" class="img-fluid"></a>
                                 </div>
                                 <div class="filter-card-content">
                                     <div class="price-btn text-end position-relative">
@@ -256,282 +256,31 @@
                                 <li><a href="#technical" data-bs-toggle="tab"><span class="me-2"><i class="fa-solid fa-screwdriver-wrench"></i></span>Wsparcie techniczne</a></li>
                             </ul>
                             <div class="tab-content mt-60">
-                                <div class="tab-pane fade show active" id="general">
-                                    <div class="row g-4">
-                                        <div class="col-xl-6">
-                                            <div class="accordion theme-accordion" id="accordion_1">
-                                                <div class="accordion-item">
-                                                    <div class="accordion-header">
-                                                        <a href="#ac_1" class="accordion-button" data-bs-toggle="collapse">01 Jak długo trwa przegląd samochodu?</a>
-                                                    </div>
-                                                    <div class="accordion-collapse collapse show" id="ac_1" data-bs-parent="#accordion_1">
-                                                        <div class="accordion-body">
-                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consectetur rhoncus nisl eget scelerisque. Phasellus non dignissim diam. </p>
+
+                                @php($sectionId = 1)
+                                @foreach($faqs as $id => $section)
+                                    <div class="tab-pane fade {{ ($id == 'general') ?  'show active' : ''}}" id="{{$id}}">
+                                        <div class="col-12">
+                                            <div class="accordion theme-accordion" id="accordion_{{ $sectionId }}">
+
+                                                @foreach($section as $index => $item)
+                                                    <div class="accordion-item">
+                                                        <div class="accordion-header">
+                                                            <a href="#ac_{{ $sectionId }}_{{$index}}" class="accordion-button" data-bs-toggle="collapse">0{{$index+1}} {{$item['pytanie']}}</a>
+                                                        </div>
+                                                        <div class="accordion-collapse collapse {{ ($index == 0) ? 'show' : '' }}" id="ac_{{ $sectionId }}_{{$index}}" data-bs-parent="#accordion_{{ $sectionId }}">
+                                                            <div class="accordion-body">
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consectetur rhoncus nisl eget scelerisque. Phasellus non dignissim diam. </p>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="accordion-item">
-                                                    <div class="accordion-header">
-                                                        <a href="#ac_2" class="accordion-button collapsed" data-bs-toggle="collapse">02 Czy dealerzy pozwolą Ci wziąć mechanika samochodowego?</a>
-                                                    </div>
-                                                    <div class="accordion-collapse collapse" id="ac_2" data-bs-parent="#accordion_1">
-                                                        <div class="accordion-body">
-                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consectetur rhoncus nisl eget scelerisque. Phasellus non dignissim diam. </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="accordion-item">
-                                                    <div class="accordion-header">
-                                                        <a href="#ac_3" class="accordion-button collapsed" data-bs-toggle="collapse">03 Jak długo trwa przegląd samochodu używanego przez mechanika?</a>
-                                                    </div>
-                                                    <div class="accordion-collapse collapse" id="ac_3" data-bs-parent="#accordion_1">
-                                                        <div class="accordion-body">
-                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consectetur rhoncus nisl eget scelerisque. Phasellus non dignissim diam. </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="accordion-item">
-                                                    <div class="accordion-header">
-                                                        <a href="#ac_4" class="accordion-button collapsed" data-bs-toggle="collapse">04 Jak długo trwa przegląd samochodu używanego przez mechanika?</a>
-                                                    </div>
-                                                    <div class="accordion-collapse collapse" id="ac_4" data-bs-parent="#accordion_1">
-                                                        <div class="accordion-body">
-                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consectetur rhoncus nisl eget scelerisque. Phasellus non dignissim diam. </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-6">
-                                            <div class="accordion theme-accordion" id="accordion_2">
-                                                <div class="accordion-item">
-                                                    <div class="accordion-header">
-                                                        <a href="#acc_1" class="accordion-button" data-bs-toggle="collapse">01 Jak długo trwa przegląd samochodu?</a>
-                                                    </div>
-                                                    <div class="accordion-collapse collapse show" id="acc_1" data-bs-parent="#accordion_2">
-                                                        <div class="accordion-body">
-                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consectetur rhoncus nisl eget scelerisque. Phasellus non dignissim diam. </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="accordion-item">
-                                                    <div class="accordion-header">
-                                                        <a href="#acc_2" class="accordion-button collapsed" data-bs-toggle="collapse">02 Czy dealerzy pozwolą Ci wziąć mechanika samochodowego?</a>
-                                                    </div>
-                                                    <div class="accordion-collapse collapse" id="acc_2" data-bs-parent="#accordion_2">
-                                                        <div class="accordion-body">
-                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consectetur rhoncus nisl eget scelerisque. Phasellus non dignissim diam. </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="accordion-item">
-                                                    <div class="accordion-header">
-                                                        <a href="#acc_3" class="accordion-button collapsed" data-bs-toggle="collapse">03 Jak długo trwa przegląd samochodu używanego przez mechanika?</a>
-                                                    </div>
-                                                    <div class="accordion-collapse collapse" id="acc_3" data-bs-parent="#accordion_2">
-                                                        <div class="accordion-body">
-                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consectetur rhoncus nisl eget scelerisque. Phasellus non dignissim diam. </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="accordion-item">
-                                                    <div class="accordion-header">
-                                                        <a href="#acc_4" class="accordion-button collapsed" data-bs-toggle="collapse">04 Jak długo trwa przegląd samochodu używanego przez mechanika?</a>
-                                                    </div>
-                                                    <div class="accordion-collapse collapse" id="acc_4" data-bs-parent="#accordion_2">
-                                                        <div class="accordion-body">
-                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consectetur rhoncus nisl eget scelerisque. Phasellus non dignissim diam. </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                                @endforeach
+
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="tab-pane fade" id="features">
-                                    <div class="row g-4">
-                                        <div class="col-xl-6">
-                                            <div class="accordion theme-accordion" id="accordion_3">
-                                                <div class="accordion-item">
-                                                    <div class="accordion-header">
-                                                        <a href="#accc_1" class="accordion-button" data-bs-toggle="collapse">01 Jak długo trwa przegląd samochodu?</a>
-                                                    </div>
-                                                    <div class="accordion-collapse collapse show" id="accc_1" data-bs-parent="#accordion_3">
-                                                        <div class="accordion-body">
-                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consectetur rhoncus nisl eget scelerisque. Phasellus non dignissim diam. </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="accordion-item">
-                                                    <div class="accordion-header">
-                                                        <a href="#accc_2" class="accordion-button collapsed" data-bs-toggle="collapse">02 Czy dealerzy pozwolą Ci wziąć mechanika samochodowego?</a>
-                                                    </div>
-                                                    <div class="accordion-collapse collapse" id="accc_2" data-bs-parent="#accordion_3">
-                                                        <div class="accordion-body">
-                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consectetur rhoncus nisl eget scelerisque. Phasellus non dignissim diam. </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="accordion-item">
-                                                    <div class="accordion-header">
-                                                        <a href="#accc_3" class="accordion-button collapsed" data-bs-toggle="collapse">03 Jak długo trwa przegląd samochodu używanego przez mechanika?</a>
-                                                    </div>
-                                                    <div class="accordion-collapse collapse" id="accc_3" data-bs-parent="#accordion_3">
-                                                        <div class="accordion-body">
-                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consectetur rhoncus nisl eget scelerisque. Phasellus non dignissim diam. </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="accordion-item">
-                                                    <div class="accordion-header">
-                                                        <a href="#accc_4" class="accordion-button collapsed" data-bs-toggle="collapse">04 Jak długo trwa przegląd samochodu używanego przez mechanika?</a>
-                                                    </div>
-                                                    <div class="accordion-collapse collapse" id="accc_4" data-bs-parent="#accordion_3">
-                                                        <div class="accordion-body">
-                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consectetur rhoncus nisl eget scelerisque. Phasellus non dignissim diam. </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-6">
-                                            <div class="accordion theme-accordion" id="accordion_4">
-                                                <div class="accordion-item">
-                                                    <div class="accordion-header">
-                                                        <a href="#a4_1" class="accordion-button" data-bs-toggle="collapse">01 Jak długo trwa przegląd samochodu?</a>
-                                                    </div>
-                                                    <div class="accordion-collapse collapse show" id="a4_1" data-bs-parent="#accordion_4">
-                                                        <div class="accordion-body">
-                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consectetur rhoncus nisl eget scelerisque. Phasellus non dignissim diam. </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="accordion-item">
-                                                    <div class="accordion-header">
-                                                        <a href="#a4_2" class="accordion-button collapsed" data-bs-toggle="collapse">02 Czy dealerzy pozwolą Ci wziąć mechanika samochodowego?</a>
-                                                    </div>
-                                                    <div class="accordion-collapse collapse" id="a4_2" data-bs-parent="#accordion_4">
-                                                        <div class="accordion-body">
-                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consectetur rhoncus nisl eget scelerisque. Phasellus non dignissim diam. </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="accordion-item">
-                                                    <div class="accordion-header">
-                                                        <a href="#a4_3" class="accordion-button collapsed" data-bs-toggle="collapse">03 Jak długo trwa przegląd samochodu używanego przez mechanika?</a>
-                                                    </div>
-                                                    <div class="accordion-collapse collapse" id="a4_3" data-bs-parent="#accordion_4">
-                                                        <div class="accordion-body">
-                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consectetur rhoncus nisl eget scelerisque. Phasellus non dignissim diam. </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="accordion-item">
-                                                    <div class="accordion-header">
-                                                        <a href="#a4_4" class="accordion-button collapsed" data-bs-toggle="collapse">04 Jak długo trwa przegląd samochodu używanego przez mechanika?</a>
-                                                    </div>
-                                                    <div class="accordion-collapse collapse" id="a4_4" data-bs-parent="#accordion_4">
-                                                        <div class="accordion-body">
-                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consectetur rhoncus nisl eget scelerisque. Phasellus non dignissim diam. </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="technical">
-                                    <div class="row g-4">
-                                        <div class="col-xl-6">
-                                            <div class="accordion theme-accordion" id="accordion_5">
-                                                <div class="accordion-item">
-                                                    <div class="accordion-header">
-                                                        <a href="#a5_1" class="accordion-button" data-bs-toggle="collapse">01 Jak długo trwa przegląd samochodu?</a>
-                                                    </div>
-                                                    <div class="accordion-collapse collapse show" id="a5_1" data-bs-parent="#accordion_5">
-                                                        <div class="accordion-body">
-                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consectetur rhoncus nisl eget scelerisque. Phasellus non dignissim diam. </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="accordion-item">
-                                                    <div class="accordion-header">
-                                                        <a href="#a5_2" class="accordion-button collapsed" data-bs-toggle="collapse">02 Czy dealerzy pozwolą Ci wziąć mechanika samochodowego?</a>
-                                                    </div>
-                                                    <div class="accordion-collapse collapse" id="a5_2" data-bs-parent="#accordion_5">
-                                                        <div class="accordion-body">
-                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consectetur rhoncus nisl eget scelerisque. Phasellus non dignissim diam. </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="accordion-item">
-                                                    <div class="accordion-header">
-                                                        <a href="#a5_3" class="accordion-button collapsed" data-bs-toggle="collapse">03 Jak długo trwa przegląd samochodu używanego przez mechanika?</a>
-                                                    </div>
-                                                    <div class="accordion-collapse collapse" id="a5_3" data-bs-parent="#accordion_5">
-                                                        <div class="accordion-body">
-                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consectetur rhoncus nisl eget scelerisque. Phasellus non dignissim diam. </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="accordion-item">
-                                                    <div class="accordion-header">
-                                                        <a href="#a5_4" class="accordion-button collapsed" data-bs-toggle="collapse">04 Jak długo trwa przegląd samochodu używanego przez mechanika?</a>
-                                                    </div>
-                                                    <div class="accordion-collapse collapse" id="a5_4" data-bs-parent="#accordion_5">
-                                                        <div class="accordion-body">
-                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consectetur rhoncus nisl eget scelerisque. Phasellus non dignissim diam. </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-6">
-                                            <div class="accordion theme-accordion" id="accordion_6">
-                                                <div class="accordion-item">
-                                                    <div class="accordion-header">
-                                                        <a href="#a6_1" class="accordion-button" data-bs-toggle="collapse">01 Jak długo trwa przegląd samochodu?</a>
-                                                    </div>
-                                                    <div class="accordion-collapse collapse show" id="a6_1" data-bs-parent="#accordion_6">
-                                                        <div class="accordion-body">
-                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consectetur rhoncus nisl eget scelerisque. Phasellus non dignissim diam. </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="accordion-item">
-                                                    <div class="accordion-header">
-                                                        <a href="#a6_2" class="accordion-button collapsed" data-bs-toggle="collapse">02 Czy dealerzy pozwolą Ci wziąć mechanika samochodowego?</a>
-                                                    </div>
-                                                    <div class="accordion-collapse collapse" id="a6_2" data-bs-parent="#accordion_6">
-                                                        <div class="accordion-body">
-                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consectetur rhoncus nisl eget scelerisque. Phasellus non dignissim diam. </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="accordion-item">
-                                                    <div class="accordion-header">
-                                                        <a href="#a6_3" class="accordion-button collapsed" data-bs-toggle="collapse">03 Jak długo trwa przegląd samochodu używanego przez mechanika?</a>
-                                                    </div>
-                                                    <div class="accordion-collapse collapse" id="a6_3" data-bs-parent="#accordion_6">
-                                                        <div class="accordion-body">
-                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consectetur rhoncus nisl eget scelerisque. Phasellus non dignissim diam. </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="accordion-item">
-                                                    <div class="accordion-header">
-                                                        <a href="#a6_4" class="accordion-button collapsed" data-bs-toggle="collapse">04 Jak długo trwa przegląd samochodu używanego przez mechanika?</a>
-                                                    </div>
-                                                    <div class="accordion-collapse collapse" id="a6_4" data-bs-parent="#accordion_6">
-                                                        <div class="accordion-body">
-                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consectetur rhoncus nisl eget scelerisque. Phasellus non dignissim diam. </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                    @php($sectionId++)
+                                @endforeach
                             </div>
                             <div class="text-center mt-5">
                                 <a href="{{ $config->base_url }}kontakt" class="btn btn-secondary"><span class="me-2"><i class="flaticon-chat"></i></span>Zadaj pytanie</a>
