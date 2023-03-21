@@ -9,12 +9,36 @@ $(document).ready(function () {
                 dataType: 'json',
                 success: function (response) {
                     let len = 0;
-                    $('#location').empty();
                     if (response['data'] != null) {
                         len = response['data'].length;
                     }
+                    if (len == 1) {
+                        $("#form-select-type").append("<option value='" + response['data'][0].id + "'>" + response['data'][0].name + "</option>");
+                        $('#form-select-model').empty();
+                        $.ajax({
+                            url: baseUrl + 'api/car/getModels/' + selected + '/' + response['data'][0].id,
+                            type: 'GET',
+                            dataType: 'json',
+                            success: function (data) {
+                                let le = 0;
+                                if (data['data'] != null) {
+                                    le = data['data'].length;
+                                }
+                                if (le == 1) {
+                                    $("#form-select-model").append("<option value='" + data['data'][0].model + "'>" + data['data'][0].model + "</option>");
+                                } else if (le > 1) {
+                                    for (let i = 0; i < le; i++) {
+                                        let name = data['data'][i].model;
 
-                    if (len > 0) {
+                                        let option = "<option value='" + id + "'>" + name + "</option>";
+
+                                        $("#form-select-model").append(option);
+                                    }
+                                }
+                                $('#form-select-model').prop('disabled', false);
+                            }
+                        });
+                    } else if (len > 1) {
                         for (let i = 0; i < len; i++) {
                             let id = response['data'][i].id;
                             let name = response['data'][i].name;

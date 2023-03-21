@@ -30,12 +30,12 @@ class CarController extends BaseController
 
     public function getModels(string $brand, string $type): string
     {
-        $models = $this->pdo->query("SELECT DISTINCT model FROM samochody WHERE marka = '$brand' AND typ = '$type'")->fetchAll();
+        $models = $this->pdo->query("SELECT DISTINCT model FROM samochody WHERE marka = '$brand' AND id_typu = '$type'")->fetchAll();
         if (!$models) {
             return $this->helper->result(false, 'Nie znaleziono modeli dla tej marki i typu');
         }
         $models = array_map(function ($model) {
-            return $model->model;
+            return $model['model'];
         }, $models);
         return $this->helper->result(true, 'Znaleziono modele dla tej marki i typu', $models);
     }

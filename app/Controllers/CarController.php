@@ -17,7 +17,6 @@ class CarController extends BaseController
     {
         if(empty($_GET)) {
             $cars = $this->pdo->query('SELECT * FROM samochody ');
-            return view('cars', compact('cars'));
         } else{
             $filter = [];
             foreach($_GET as $key => $value) {
@@ -25,7 +24,7 @@ class CarController extends BaseController
             }
             $filter = implode(' AND ', $filter);
             $cars = $this->pdo->query('SELECT * FROM samochody WHERE ' . $filter);
-            return view('cars', compact('cars'));
         }
+        return view('cars', compact('cars'));
     }
 }
