@@ -52,7 +52,7 @@ $(document).ready(function () {
             $(this).val('');
         }
     });
-    $('#form-select-brand').on('select', function () {
+    $('#form-select-brand').change(function () {
         let brand = $('#form-select-brand').val();
         let selected = $(this).val();
         $('#form-select-model').empty();
