@@ -202,7 +202,7 @@
                                 <a href="#" class="icon-btn wish-btn position-absolute"><i class="fa-solid fa-heart"></i></a>
                                 <span class="date position-absolute">{{ $item['rok_produkcji'] }}</span>
                                 <div class="feature-thumb position-relative overflow-hidden">
-                                    <a href="index.html"><img src="{{ $config->base_url }}assets/img/cars/{{ $item['image_path'] }}" alt="{{ $item['model'] }}" class="img-fluid"></a>
+                                    <a href="index.html"><img src="{{ $config->base_url }}assets/img/cars/{{ $item['image_path'] }}" alt="{{ $item['model'] }}" class="img-fluid" style="height:235px"></a>
                                 </div>
                                 <div class="filter-card-content">
                                     <div class="price-btn text-end position-relative">
