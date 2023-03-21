@@ -67,6 +67,18 @@
                             </div>
                             <button class="btn btn-primary btn-md mt-4" type="submit">Wyślij wiadomość</button>
                         </form>
+                        <div id="contact-success" class="alert alert-success" role="alert" style="display: none;">
+                            <h4 class="alert-heading">Dobra Robota!</h4>
+                            <p>Twoja wiadomość została poprawnie wysłana przez nasz formularz kontaktowy!</p>
+                            <hr>
+                            <p class="mb-0">Nasz zespół odpowie w możliwie jak najszybszym terminie.</p>
+                        </div>
+                        <div id="contact-error" class="alert alert-danger" role="alert" style="display: none;">
+                            <h4 class="alert-heading">Upssss...</h4>
+                            <p>Coś poszło nie tak. Odśwież stronę i spróbuj ponownie. Nie poddawaj się!</p>
+                            <hr>
+                            <p class="mb-0">Możesz użyć także tradycyjnej metody wysłania swojego pytania.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="col-xl-4">

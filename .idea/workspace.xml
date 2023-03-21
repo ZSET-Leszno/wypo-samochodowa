@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b52d023e-96a4-4d47-ac34-3998f40c2257" name="Changes" comment="fix: composer.json">
+    <list default="true" id="b52d023e-96a4-4d47-ac34-3998f40c2257" name="Changes" comment="fix: mail sender">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Helpers/MainHelper.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Helpers/MainHelper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Controllers/API/ContactController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/API/ContactController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/contact.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,21 +122,7 @@
       <workItem from="1678826912414" duration="818000" />
       <workItem from="1678890153248" duration="530000" />
       <workItem from="1678890723034" duration="930000" />
-      <workItem from="1679412529201" duration="5067000" />
-    </task>
-    <task id="LOCAL-00002" summary="feat: add base_url to blade files">
-      <created>1678454964340</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1678454964340</updated>
-    </task>
-    <task id="LOCAL-00003" summary="fix: instead clients with lastCars from HomeController.php">
-      <created>1678455329415</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1678455329415</updated>
+      <workItem from="1679412529201" duration="5720000" />
     </task>
     <task id="LOCAL-00004" summary="fix: add types to controller">
       <created>1678483291487</created>
@@ -466,7 +453,21 @@
       <option name="project" value="LOCAL" />
       <updated>1679417478272</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="fix: helper">
+      <created>1679417673555</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1679417673555</updated>
+    </task>
+    <task id="LOCAL-00052" summary="fix: mail sender">
+      <created>1679417883354</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1679417883354</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -484,8 +485,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix: empfohlene Lösung" />
-    <MESSAGE value="fix: add contact blade and controller" />
     <MESSAGE value="fix: contact view" />
     <MESSAGE value="fix: header.blade.php problem fix" />
     <MESSAGE value="fix: header breadcrumb item" />
@@ -509,6 +508,8 @@
     <MESSAGE value="feat: ContactController.php form api" />
     <MESSAGE value="fix: composer.lock" />
     <MESSAGE value="fix: composer.json" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: composer.json" />
+    <MESSAGE value="fix: helper" />
+    <MESSAGE value="fix: mail sender" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: mail sender" />
   </component>
 </project>
