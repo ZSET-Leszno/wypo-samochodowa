@@ -51,11 +51,7 @@
                                 <div class="col-sm-6">
                                     <div class="input-field">
                                         <label class="fw-semibold text-secondary mb-1" for="subject">Temat</label>
-                                        <select class="form-select" id="subject" name="subject" required>
-                                            <option></option>
-                                            <option>Temat 1</option>
-                                            <option>Temat 2</option>
-                                        </select>
+                                        <input type="text" id="subject" name="subject" placeholder="Twój temat wiadomości" class="border w-100 rounded" required>
                                     </div>
                                 </div>
                                 <div class="col-sm-12">
