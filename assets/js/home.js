@@ -24,6 +24,7 @@ $(document).ready(function () {
                             $("#form-select-type").append(option);
                         }
                     }
+                    $("#form-select-type").enable();
                 }
             });
         } else {
