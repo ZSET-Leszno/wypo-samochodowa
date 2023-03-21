@@ -28,6 +28,7 @@
                         <h4 class="mb-3">Potrzebujesz Pomocy? Wyślij wiadomość!</h4>
                         <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         <form id="contact-form" action="{{ $config->base_url }}api/contact" method="post" class="ct-form-wrapper">
+                            <input type="hidden" name="_token" value="{{getCsrf()}}">
                             <div class="row g-4">
                                 <div class="col-sm-6">
                                     <div class="input-field">
