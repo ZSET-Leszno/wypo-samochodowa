@@ -14,14 +14,17 @@ namespace App\Routing;
 use App\Controllers\BaseController;
 use App\Exceptions\InvalidRouteControllerParameters;
 use App\Exceptions\RouteNotFoundException;
+use App\Helpers\MainHelper;
 
 class Router
 {
     private RouteManager $routeManager;
+    private MainHelper $helper;
 
     public function __construct()
     {
         $this->routeManager = new RouteManager();
+        $this->helper = new MainHelper();
     }
 
     public function get(string $route, array $controller)
@@ -46,10 +49,10 @@ class Router
         $route = str_replace('index.php/', '', parse_url($server['REQUEST_URI'])['path']);
 
         if ($httpMethod == 'POST' && $route != '/transaction_back') {
-            if(empty($_POST['_token']) || $_POST['_token'] != getCsrf()) {
+            if(empty($_POST['_token']) || $_POST['_token'] != $this->helper->getCsrf()) {
                 $_SESSION['error'] = 'Błędny token CSRF';
 
-                return redirect($route);
+                return $this->helper->redirect($route);
             }
         }
 
