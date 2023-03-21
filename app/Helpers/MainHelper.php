@@ -39,7 +39,7 @@ class MainHelper
      * @param string $message
      * @return string
      */
-    public function result(bool $success, string $message, array $data): string {
+    public function result(bool $success, string $message, array $data = []): string {
         header('Content-Type: application/json; charset=utf-8');
         $result = [
             'success' => $success,
