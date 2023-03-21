@@ -23,14 +23,14 @@ class AppConfig {
     ];
 
     public array $mail = [
-        'host' => '',
+        'host' => 'smtp.gmail.com',
         'port' => 465,
         'encryption' => 'ssl',
-        'username' => '',
-        'password' => '',
+        'username' => 'mscodexyz@gmail.com',
+        'password' => 'osihwrhuahivotrn',
         'from' => [
-            'address' => '',
-            'name' => ''
+            'address' => 'mscodexyz@gmail.com',
+            'name' => 'michus-studio-mailer'
         ]
     ];
 
