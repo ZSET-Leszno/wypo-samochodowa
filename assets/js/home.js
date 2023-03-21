@@ -24,11 +24,9 @@ $(document).ready(function () {
                                 if (data['data'] != null) {
                                     le = data['data'].length;
                                 }
-                                if (le == 1) {
-                                    $("#form-select-model").append("<option value='" + data['data'][0].model + "'>" + data['data'][0].model + "</option>");
-                                } else if (le > 1) {
+                                if (le > 0) {
                                     for (let i = 0; i < le; i++) {
-                                        let name = data['data'][i].model;
+                                        let name = data['data'][i];
 
                                         let option = "<option value='" + id + "'>" + name + "</option>";
 
