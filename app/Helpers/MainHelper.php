@@ -113,4 +113,36 @@ class MainHelper
             return '?';
         }
     }
+
+    /**
+     * Redirect to path
+     * @param string $path
+     */
+    public function redirect(string $path) {
+        header('Location: ' . $path);
+        die();
+    }
+
+    /**
+     * Check if session item exists
+     * @param string $key
+     * @return bool
+     */
+    function sessionHas(string $key)
+    {
+        return isset($_SESSION[$key]);
+    }
+
+    /**
+     * Get CSRF token
+     * @param string $key
+     * @return mixed
+     */
+    public function getCsrf()
+    {
+        if (!sessionHas('csrf')) {
+            $_SESSION['csrf'] = md5(uniqid(base64_encode(rand(100, 40000))));
+        }
+        return $_SESSION['csrf'];
+    }
 }
