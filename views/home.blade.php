@@ -161,14 +161,6 @@
                                             <option></option>
                                         </select>
                                     </div>
-                                    <div class="input-field">
-                                        <label>Skrzynia biegów</label>
-                                        <select class="form-select">
-                                            @foreach($gears as $gear)
-                                                <option value="{{ $gear['skrzynia_biegow'] }}">{{ $gear['skrzynia_biegow'] }}</option>
-                                            @endforeach
-                                        </select>
-                                    </div>
                                     <div class="submit-btn align-self-end">
                                         <button class="btn btn-secondary btn-md" type="submit">Wyszukaj</button>
                                     </div>
