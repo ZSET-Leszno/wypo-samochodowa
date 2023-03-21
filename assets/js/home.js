@@ -52,6 +52,31 @@ $(document).ready(function () {
             $(this).val('');
         }
     });
+    $('#form-select-brand').on('select', function () {
+        let brand = $('#form-select-brand').val();
+        let selected = $(this).val();
+        $('#form-select-model').empty();
+        $.ajax({
+            url: baseUrl + 'api/car/getModels/' + brand + '/' + selected,
+            type: 'GET',
+            dataType: 'json',
+            success: function (data) {
+                let le = 0;
+                if (data['data'] != null) {
+                    le = data['data'].length;
+                }
+                if (le > 0) {
+                    for (let i = 0; i < le; i++) {
+
+                        let option = "<option value='" + data['data'][i] + "'>" + data['data'][i] + "</option>";
+
+                        $("#form-select-model").append(option);
+                    }
+                }
+                $('#form-select-model').prop('disabled', false);
+            }
+        });
+    });
     $('#contact-form').submit(function (e) {
         e.preventDefault();
         $.ajax({
