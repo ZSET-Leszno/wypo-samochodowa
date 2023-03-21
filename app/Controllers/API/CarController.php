@@ -19,13 +19,14 @@ class CarController extends BaseController
         if (!$types) {
             return $this->helper->result(false, 'Nie znaleziono typów dla tej marki');
         }
-        $types = array_map(function ($type) {
-            return [
+        $output = [];
+        foreach ($types as $type) {
+            $output[] = [
                 'id' => $this->helper->getCarType($type->id_typu)['id_typu'],
                 'name' => $this->helper->getCarType($type->id_typu)['nazwa_typu']
             ];
-        }, $types);
-        return $this->helper->result(true, 'Znaleziono typy dla tej marki', $types);
+        }
+        return $this->helper->result(true, 'Znaleziono typy dla tej marki', $output);
     }
 
     public function getModels(string $brand, string $type): string
