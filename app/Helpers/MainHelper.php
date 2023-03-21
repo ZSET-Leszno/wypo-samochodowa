@@ -34,6 +34,16 @@ class MainHelper
     }
 
     /**
+     * Return JSON result
+     * @param bool $success
+     * @param string $message
+     * @return string
+     */
+    public function result(bool $success, string $message): string {
+        return json_encode(['success' => $success, 'message' => $message]);
+    }
+
+    /**
      * Generate random string
      * @param int $length
      * @param string $characters
