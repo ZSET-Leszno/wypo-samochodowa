@@ -146,9 +146,6 @@
                     </div>
                     <a href="#" class="btn btn-secondary btn-md mt-40 w-100">Filtruj</a>
                 </div>
-                <div class="iv_banner_widget mt-4 rounded overflow-hidden">
-                    <a href="#"><img src="{{ $config->base_url }}assets/img/inventory/banner.jpg" alt="not found" class="img-fluid"></a>
-                </div>
             </div>
             <div class="col-xl-9">
                 <div class="iv_listing mt-5 mt-xl-0">
