@@ -11,10 +11,7 @@
 
 namespace App\Controllers\API;
 
-use App\Controllers\API\BaseController;
-use \PHPMailer\PHPMailer\PHPMailer;
-
-class ContactController extends BaseController
+class ContactController extends \App\Controllers\API\BaseController
 {
     public function send()
     {
