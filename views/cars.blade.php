@@ -150,26 +150,18 @@
             <div class="col-xl-9">
                 <div class="iv_listing mt-5 mt-xl-0">
                     <div class="iv_listing_top d-flex flex-wrap align-items-center bg-white justify-content-center justify-content-sm-between rounded mb-4">
-                        <p class="mb-0 fw-500 d-inline-block">Liczba rezultatów </p>
-                        <div class="iv_listing_filter_menu d-flex flex-wrap align-items-center justify-content-center">
-                            <p class="mb-0 flex-shrink-0 fw-semibold">Sort by:</p>
-                            <select class="form-select fw-500">
-                                <option>Newest First</option>
-                                <option>Most Popular</option>
-                                <option>Most Rated</option>
-                            </select>
-                        </div>
+                        <p class="mb-0 fw-500 d-inline-block">Liczba rezultatów {{ $cars->num_rows() }}</p>
                     </div>
                     <div class="row g-4 justify-content-center">
                         @foreach($cars->fetchAll() as $index => $item)
                             <div class="col-12">
                                 <div class="listing_card_item bg-white rounded p-4 d-lg-flex align-items-center position-relative">
                                     <div class="thumb-wrapper overflow-hidden rounded flex-shrink-0">
-                                        <a href="{{ $config->base_url }}"><img src="{{ $config->base_url }}assets/img/cars/{{ $item['image_path'] }}" alt="{{ $item['model'] }}" class="img-fluid"></a>
+                                        <a href="{{ $config->base_url }}wypozycz/{{ $item['id'] }}"><img src="{{ $config->base_url }}assets/img/cars/{{ $item['image_path'] }}" alt="{{ $item['model'] }}" class="img-fluid"></a>
                                     </div>
                                     <div class="listing_card_content ms-lg-4 mt-4 mt-lg-0">
-                                        <span class="small-btn-meta">{{ $item['cena_za_dzien'] }}</span>
-                                        <a href="{{ $config->base_url }}">
+                                        <span class="small-btn-meta">{{ $item['cena_za_dzien'] }} PLN</span>
+                                        <a href="{{ $config->base_url }}wypozycz/{{ $item['id'] }}">
                                             <h5 class="mb-1">{{ $item['marka'] }} {{ $item['model'] }}</h5>
                                         </a>
                                         <p class="mt-3 mb-4 pera-text-2">{{ $item['description'] }}</p>
