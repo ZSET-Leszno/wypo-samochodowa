@@ -15,6 +15,7 @@ class ContactController extends BaseController
 {
     public function index()
     {
-        return view('contact');
+        $csrf_token = $this->helper->getCsrf();
+        return view('contact', compact('csrf_token'));
     }
 }
