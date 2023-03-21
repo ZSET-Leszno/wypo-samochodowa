@@ -19,7 +19,7 @@ class CarController extends BaseController
         if (!$types) {
             return $this->helper->result(false, 'Nie znaleziono typów dla tej marki');
         }
-//        return $this->response->setJSON(['status' => 'success', 'types' => json_encode($types)]);
+        return $this->helper->result(true, 'Znaleziono typy dla tej marki', $types);
     }
 
     public function getModels(string $brand, string $type): string
@@ -28,7 +28,7 @@ class CarController extends BaseController
         if (!$models) {
             return $this->helper->result(false, 'Nie znaleziono modeli dla tej marki i typu');
         }
-//        return $this->response->setJSON(['status' => 'success', 'models' => json_encode($models)]);
+        return $this->helper->result(true, 'Znaleziono modele dla tej marki i typu', $models);
     }
 
 }

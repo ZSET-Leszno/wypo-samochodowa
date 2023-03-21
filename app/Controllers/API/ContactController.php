@@ -17,7 +17,7 @@ class ContactController extends BaseController
     {
         $data = $this->request->getPost();
         if (empty($data['name']) || empty($data['email']) || empty($data['subject']) || empty($data['message'])) {
-            return $this->response->setJSON(['status' => 'error', 'message' => 'Wypełnij wszystkie pola']);
+            return $this->helper->result(false, 'Wypełnij wszystkie pola');
         }
         $mail = new \PHPMailer\PHPMailer\PHPMailer();
         $mail->isSMTP();
@@ -33,9 +33,9 @@ class ContactController extends BaseController
         $mail->Subject = 'Wiadomość z formularza kontaktowego';
         $mail->Body = '<h1>Wiadomość z formularza kontaktowego</h1><p><b>Imię i nazwisko:</b> ' . $data['name'] . '</p><p><b>Adres e-mail:</b> ' . $data['email'] . '</p><p><b>Temat:</b> ' . $data['subject'] . '</p><p><b>Treść wiadomości:</b> ' . $data['message'] . '</p>';
         if ($mail->send()) {
-            return $this->response->setJSON(['status' => 'success', 'message' => 'Wiadomość została wysłana']);
+            return $this->helper->result(false, 'Wiadomość została wysłana');
         } else {
-            return $this->response->setJSON(['status' => 'error', 'message' => 'Wystąpił błąd podczas wysyłania wiadomości']);
+            return $this->helper->result(false, 'Wystąpił błąd podczas wysyłania wiadomości');
         }
     }
 

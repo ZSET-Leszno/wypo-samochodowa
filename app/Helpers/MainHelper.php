@@ -39,8 +39,15 @@ class MainHelper
      * @param string $message
      * @return string
      */
-    public function result(bool $success, string $message): string {
-        return json_encode(['success' => $success, 'message' => $message]);
+    public function result(bool $success, string $message, ...$data): string {
+        $result = [
+            'success' => $success,
+            'message' => $message
+        ];
+        if(!empty($data)) {
+            $result['data'] = $data;
+        }
+        return json_encode($result);
     }
 
     /**

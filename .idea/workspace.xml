@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b52d023e-96a4-4d47-ac34-3998f40c2257" name="Changes" comment="fix: Router.php">
+    <list default="true" id="b52d023e-96a4-4d47-ac34-3998f40c2257" name="Changes" comment="fix: change api CarController.php">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Controllers/API/CarController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/API/CarController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Controllers/API/ContactController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/API/ContactController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Helpers/MainHelper.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Helpers/MainHelper.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -121,7 +122,7 @@
       <workItem from="1678826912414" duration="818000" />
       <workItem from="1678890153248" duration="530000" />
       <workItem from="1678890723034" duration="930000" />
-      <workItem from="1679412529201" duration="3365000" />
+      <workItem from="1679412529201" duration="3569000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add backendfiles instead of frontend, create custom core file for web">
       <created>1678454633386</created>
@@ -417,7 +418,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679415544828</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="fix: change api CarController.php">
+      <created>1679415937675</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1679415937675</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -435,7 +443,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: add more advanced serach form" />
     <MESSAGE value="feat: new features to app" />
     <MESSAGE value="fix: HomeController.php fix problem" />
     <MESSAGE value="feat: copilot hat die Funktionen gemacht" />
@@ -460,6 +467,7 @@
     <MESSAGE value="feat: basic 404 template" />
     <MESSAGE value="fix: contact.blade.php action url" />
     <MESSAGE value="fix: Router.php" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: Router.php" />
+    <MESSAGE value="fix: change api CarController.php" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: change api CarController.php" />
   </component>
 </project>
