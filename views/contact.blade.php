@@ -83,7 +83,7 @@
                 </div>
                 <div class="col-xl-4">
                     <div class="contact-sidebar-widget py-5 px-4 bg-white rounded mt-5 mt-xl-0">
-                        <h4 class="mb-4">Contact Details</h4>
+                        <h4 class="mb-4">Dane kontaktowe</h4>
                         <ul class="fs-md">
                             <li class="fw-500"><strong class="fw-bold text-secondary">Siedziba: </strong>Leszno, Polska</li>
                         </ul>

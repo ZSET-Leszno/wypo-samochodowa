@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b52d023e-96a4-4d47-ac34-3998f40c2257" name="Changes" comment="fix: mail sender">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Controllers/API/ContactController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/API/ContactController.php" afterDir="false" />
+    <list default="true" id="b52d023e-96a4-4d47-ac34-3998f40c2257" name="Changes" comment="fix: contact form">
       <change beforePath="$PROJECT_DIR$/views/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/contact.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -122,14 +120,7 @@
       <workItem from="1678826912414" duration="818000" />
       <workItem from="1678890153248" duration="530000" />
       <workItem from="1678890723034" duration="930000" />
-      <workItem from="1679412529201" duration="5720000" />
-    </task>
-    <task id="LOCAL-00004" summary="fix: add types to controller">
-      <created>1678483291487</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1678483291487</updated>
+      <workItem from="1679412529201" duration="5783000" />
     </task>
     <task id="LOCAL-00005" summary="feat: types cars change">
       <created>1678566399431</created>
@@ -467,7 +458,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679417883354</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="fix: contact form">
+      <created>1679418340144</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1679418340144</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -490,7 +488,6 @@
     <MESSAGE value="fix: header breadcrumb item" />
     <MESSAGE value="fix: config smtp to gmail" />
     <MESSAGE value="feat: contact form" />
-    <MESSAGE value="fix: contact form" />
     <MESSAGE value="feat: add CSRF token" />
     <MESSAGE value="feat: update method to main helper" />
     <MESSAGE value="fix: Router.php update" />
@@ -510,6 +507,7 @@
     <MESSAGE value="fix: composer.json" />
     <MESSAGE value="fix: helper" />
     <MESSAGE value="fix: mail sender" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: mail sender" />
+    <MESSAGE value="fix: contact form" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: contact form" />
   </component>
 </project>
