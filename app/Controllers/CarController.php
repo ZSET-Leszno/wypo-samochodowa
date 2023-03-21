@@ -15,7 +15,7 @@ class CarController extends BaseController
 {
     public function index()
     {
-        $cars = $this->pdo->query('SELECT * FROM samochody ')->fetchAll();
+        $cars = $this->pdo->query('SELECT * FROM samochody ');
         return view('cars', compact('cars'));
     }
 }

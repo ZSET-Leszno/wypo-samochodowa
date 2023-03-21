@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b52d023e-96a4-4d47-ac34-3998f40c2257" name="Changes" comment="fix: contact.blade.php final update">
-      <change afterPath="$PROJECT_DIR$/app/Controllers/CarController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/cars.blade.php" afterDir="false" />
+    <list default="true" id="b52d023e-96a4-4d47-ac34-3998f40c2257" name="Changes" comment="feat: remove promo car featured">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Controllers/CarController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/CarController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/cars.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/cars.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,21 +122,7 @@
       <workItem from="1678826912414" duration="818000" />
       <workItem from="1678890153248" duration="530000" />
       <workItem from="1678890723034" duration="930000" />
-      <workItem from="1679412529201" duration="6859000" />
-    </task>
-    <task id="LOCAL-00006" summary="feat: add brands to blade">
-      <created>1678566644057</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1678566644057</updated>
-    </task>
-    <task id="LOCAL-00007" summary="feat: add brands to blade">
-      <created>1678566674918</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1678566674918</updated>
+      <workItem from="1679412529201" duration="7831000" />
     </task>
     <task id="LOCAL-00008" summary="feat: add basic form to search car">
       <created>1678567087672</created>
@@ -467,7 +453,21 @@
       <option name="project" value="LOCAL" />
       <updated>1679418402615</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="feat: add cars listing">
+      <created>1679419636686</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1679419636686</updated>
+    </task>
+    <task id="LOCAL-00056" summary="feat: remove promo car featured">
+      <created>1679419677066</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1679419677066</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -485,8 +485,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix: header.blade.php problem fix" />
-    <MESSAGE value="fix: header breadcrumb item" />
     <MESSAGE value="fix: config smtp to gmail" />
     <MESSAGE value="feat: contact form" />
     <MESSAGE value="feat: add CSRF token" />
@@ -510,6 +508,8 @@
     <MESSAGE value="fix: mail sender" />
     <MESSAGE value="fix: contact form" />
     <MESSAGE value="fix: contact.blade.php final update" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: contact.blade.php final update" />
+    <MESSAGE value="feat: add cars listing" />
+    <MESSAGE value="feat: remove promo car featured" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: remove promo car featured" />
   </component>
 </project>

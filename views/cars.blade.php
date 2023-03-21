@@ -150,7 +150,7 @@
             <div class="col-xl-9">
                 <div class="iv_listing mt-5 mt-xl-0">
                     <div class="iv_listing_top d-flex flex-wrap align-items-center bg-white justify-content-center justify-content-sm-between rounded mb-4">
-                        <p class="mb-0 fw-500 d-inline-block">Showing 1-12 of 120 Results</p>
+                        <p class="mb-0 fw-500 d-inline-block">Liczba rezultatów </p>
                         <div class="iv_listing_filter_menu d-flex flex-wrap align-items-center justify-content-center">
                             <p class="mb-0 flex-shrink-0 fw-semibold">Sort by:</p>
                             <select class="form-select fw-500">
@@ -161,31 +161,30 @@
                         </div>
                     </div>
                     <div class="row g-4 justify-content-center">
-                        @foreach($cars as $index => $item)
+                        @foreach($cars->fetchAll() as $index => $item)
                             <div class="col-12">
                                 <div class="listing_card_item bg-white rounded p-4 d-lg-flex align-items-center position-relative">
                                     <div class="thumb-wrapper overflow-hidden rounded flex-shrink-0">
-                                        <a href="{{ $config->base_url }}"><img src="{{ $config->base_url }}assets/img/inventory/list-1.jpg" alt="car" class="img-fluid"></a>
+                                        <a href="{{ $config->base_url }}"><img src="{{ $config->base_url }}assets/img/cars/{{ $item['image_path'] }}" alt="{{ $item['model'] }}" class="img-fluid"></a>
                                     </div>
                                     <div class="listing_card_content ms-lg-4 mt-4 mt-lg-0">
-                                        <span class="small-btn-meta">$174,900</span>
+                                        <span class="small-btn-meta">{{ $item['cena_za_dzien'] }}</span>
                                         <a href="{{ $config->base_url }}">
-                                            <h5 class="mb-1">Ford Explorer XLT-2018</h5>
+                                            <h5 class="mb-1">{{ $item['marka'] }} {{ $item['model'] }}</h5>
                                         </a>
-                                        <span class="meta-text"><strong class="fw-semibold">Listed by : </strong> Mickey Dominguez</span>
-                                        <p class="mt-3 mb-4 pera-text-2">Proactively harness intermandated manufactured products and one-to-one communities. Efficiently whiteboard interoperable markets before.</p>
+                                        <p class="mt-3 mb-4 pera-text-2">{{ $item['description'] }}</p>
                                         <div class="card-feature-box d-flex flex-wrap align-items-center">
                                             <div class="icon-box d-flex align-items-center border">
                                                 <span class="me-2"><i class="flaticon-speedometer"></i></span>
-                                                120cc
+                                                {{ $item['Moc'] }} KM
                                             </div>
                                             <div class="icon-box d-flex align-items-center border">
                                                 <span class="me-2"><i class="flaticon-steering-wheel-1"></i></span>
-                                                Manual
+                                                {{ $item['skrzynia_biegow'] }}
                                             </div>
                                             <div class="icon-box d-flex align-items-center border">
                                                 <span class="me-2"><i class="flaticon-petrol"></i></span>
-                                                Petrol
+                                                {{ $item['rodzaj_paliwa'] }}
                                             </div>
                                         </div>
                                     </div>
