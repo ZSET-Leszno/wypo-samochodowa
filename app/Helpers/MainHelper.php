@@ -177,4 +177,13 @@ class MainHelper
         }
         return $data;
     }
+
+    public function getCarType(int $id): array {
+        $carType = $this->pdo->query("SELECT * FROM `typy_samochodow` WHERE `id_typu` = ?", [$id]);
+        if ($carType->rowCount() == 0) {
+            return [];
+        } else {
+            return $carType->fetch();
+        }
+    }
 }
