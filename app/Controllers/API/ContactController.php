@@ -15,7 +15,7 @@ class ContactController extends BaseController
 {
     public function send()
     {
-        $data = $this->request->getPost();
+        $data = $this->helper->getPostData();
         if (empty($data['name']) || empty($data['email']) || empty($data['subject']) || empty($data['message'])) {
             return $this->helper->result(false, 'Wypełnij wszystkie pola');
         }

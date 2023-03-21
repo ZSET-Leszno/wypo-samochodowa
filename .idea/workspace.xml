@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b52d023e-96a4-4d47-ac34-3998f40c2257" name="Changes" comment="fix: change api CarController.php">
+    <list default="true" id="b52d023e-96a4-4d47-ac34-3998f40c2257" name="Changes" comment="fix: application/json content-type">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Controllers/API/CarController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/API/CarController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Controllers/API/ContactController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/API/ContactController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Helpers/MainHelper.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Helpers/MainHelper.php" afterDir="false" />
     </list>
@@ -122,7 +121,7 @@
       <workItem from="1678826912414" duration="818000" />
       <workItem from="1678890153248" duration="530000" />
       <workItem from="1678890723034" duration="930000" />
-      <workItem from="1679412529201" duration="3569000" />
+      <workItem from="1679412529201" duration="4024000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add backendfiles instead of frontend, create custom core file for web">
       <created>1678454633386</created>
@@ -425,7 +424,35 @@
       <option name="project" value="LOCAL" />
       <updated>1679415937675</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="fix: change api files">
+      <created>1679416148383</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1679416148383</updated>
+    </task>
+    <task id="LOCAL-00045" summary="fix: change MainHelper.php">
+      <created>1679416203210</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1679416203210</updated>
+    </task>
+    <task id="LOCAL-00046" summary="fix: Home page fix">
+      <created>1679416313221</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1679416313221</updated>
+    </task>
+    <task id="LOCAL-00047" summary="fix: application/json content-type">
+      <created>1679416433503</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1679416433503</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -443,10 +470,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: new features to app" />
-    <MESSAGE value="fix: HomeController.php fix problem" />
-    <MESSAGE value="feat: copilot hat die Funktionen gemacht" />
-    <MESSAGE value="chore README.md Ändern der Ordnerstruktur" />
     <MESSAGE value="feat: API-Struktur hinzugefügt" />
     <MESSAGE value="feat: allgemeine Änderungen" />
     <MESSAGE value="feat: empfohlene Artikel hinzufügen" />
@@ -468,6 +491,10 @@
     <MESSAGE value="fix: contact.blade.php action url" />
     <MESSAGE value="fix: Router.php" />
     <MESSAGE value="fix: change api CarController.php" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: change api CarController.php" />
+    <MESSAGE value="fix: change api files" />
+    <MESSAGE value="fix: change MainHelper.php" />
+    <MESSAGE value="fix: Home page fix" />
+    <MESSAGE value="fix: application/json content-type" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: application/json content-type" />
   </component>
 </project>

@@ -136,7 +136,7 @@ class MainHelper
      * Redirect to path
      * @param string $path
      */
-    public function redirect(string $path) {
+    public function redirect(string $path): void {
         header('Location: ' . $path);
         die();
     }
@@ -146,7 +146,7 @@ class MainHelper
      * @param string $key
      * @return bool
      */
-    function sessionHas(string $key)
+    function sessionHas(string $key): bool
     {
         return isset($_SESSION[$key]);
     }
@@ -156,11 +156,25 @@ class MainHelper
      * @param string $key
      * @return mixed
      */
-    public function getCsrf()
+    public function getCsrf(): string
     {
         if (!$this->sessionHas('csrf')) {
             $_SESSION['csrf'] = md5(uniqid(base64_encode(rand(100, 40000))));
         }
         return $_SESSION['csrf'];
+    }
+
+    /**
+     * Get POST data
+     * @param string $key
+     * @return mixed
+     */
+    public function getPostData(): array
+    {
+        $data = [];
+        foreach ($_POST as $key => $value) {
+            $data[$key] = $this->checkString($value);
+        }
+        return $data;
     }
 }
