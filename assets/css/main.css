@@ -38333,6 +38333,7 @@ a.social-btn:hover {
 }
 .iv2_sidebar_list li input[type=checkbox] {
   opacity: 0;
+  margin-left: 3px !important;
 }
 .iv2_sidebar_list li input[type=checkbox]:checked ~ .ct-checkbox {
   background: #FC0012;
