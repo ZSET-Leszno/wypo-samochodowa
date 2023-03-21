@@ -202,13 +202,13 @@
                                 <a href="#" class="icon-btn wish-btn position-absolute"><i class="fa-solid fa-heart"></i></a>
                                 <span class="date position-absolute">{{ $item['rok_produkcji'] }}</span>
                                 <div class="feature-thumb position-relative overflow-hidden">
-                                    <a href="index.html"><img src="{{ $config->base_url }}assets/img/cars/{{ $item['image_path'] }}" alt="{{ $item['model'] }}" class="img-fluid" style="height:235px"></a>
+                                    <a href="{{ $config->base_url }}wypozycz/{{ $item['id_samochodu'] }}"><img src="{{ $config->base_url }}assets/img/cars/{{ $item['image_path'] }}" alt="{{ $item['model'] }}" class="img-fluid" style="height:235px"></a>
                                 </div>
                                 <div class="filter-card-content">
                                     <div class="price-btn text-end position-relative">
                                         <span class="small-btn-meta">{{ $item['cena_za_dzien'] }} zł</span>
                                     </div>
-                                    <a href="{{ $config->base_url }}" class="h5 mb-0">{{ $item['marka'] }} {{ $item['model'] }}</a>
+                                    <a href="{{ $config->base_url }}wypozycz/{{ $item['id_samochodu'] }}" class="h5 mb-0">{{ $item['marka'] }} {{ $item['model'] }}</a>
                                     <ul class="list-unstyled mb-0">
                                         <li><span class="text-muted">Moc:</span> {{ $item['Moc'] }} KM</li>
                                         <li><span class="text-muted">Skrzynia biegów:</span> {{ $item['skrzynia_biegow'] }}</li>
