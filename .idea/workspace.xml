@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b52d023e-96a4-4d47-ac34-3998f40c2257" name="Changes" comment="fix: fix ContactController.php">
+      <change afterPath="$PROJECT_DIR$/views/404.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Controllers/API/ContactController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/API/ContactController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +120,7 @@
       <workItem from="1678826912414" duration="818000" />
       <workItem from="1678890153248" duration="530000" />
       <workItem from="1678890723034" duration="930000" />
-      <workItem from="1679412529201" duration="2286000" />
+      <workItem from="1679412529201" duration="2627000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add backendfiles instead of frontend, create custom core file for web">
       <created>1678454633386</created>
@@ -388,7 +388,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679414787816</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="fix: fix ContactController.php">
+      <created>1679414847755</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1679414847755</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
