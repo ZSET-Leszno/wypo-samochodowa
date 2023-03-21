@@ -12,7 +12,6 @@
 namespace App\Controllers\API;
 
 use App\Database\DatabaseHandler;
-use Illuminate\Support\Facades\Http;
 use App\Helpers\MainHelper;
 use App\Config\AppConfig;
 

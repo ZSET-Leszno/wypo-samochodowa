@@ -48,7 +48,7 @@ class Router
         $httpMethod = $server['REQUEST_METHOD'];
         $route = str_replace('index.php/', '', parse_url($server['REQUEST_URI'])['path']);
 
-        if ($httpMethod == 'POST' && $route != '/transaction_back') {
+        if ($httpMethod == 'POST') {
             if(empty($_POST['_token']) || $_POST['_token'] != $this->helper->getCsrf()) {
                 $_SESSION['error'] = 'Błędny token CSRF';
 
@@ -62,9 +62,9 @@ class Router
             [$controllerName, $function] = $controller;
 
             $controller = new $controllerName;
-            if (!$controller instanceof BaseController) {
-                throw new \LogicException(sprintf('%s must be an instance of BaseController', $controllerName));
-            }
+//            if (!$controller instanceof BaseController) {
+//                throw new \LogicException(sprintf('%s must be an instance of BaseController', $controllerName));
+//            }
 
             return $controller->$function(...$args);
         } catch (RouteNotFoundException) {
