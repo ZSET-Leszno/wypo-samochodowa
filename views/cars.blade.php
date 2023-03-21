@@ -150,7 +150,7 @@
             <div class="col-xl-9">
                 <div class="iv_listing mt-5 mt-xl-0">
                     <div class="iv_listing_top d-flex flex-wrap align-items-center bg-white justify-content-center justify-content-sm-between rounded mb-4">
-                        <p class="mb-0 fw-500 d-inline-block">Liczba rezultatów {{ $cars->num_rows() }}</p>
+                        <p class="mb-0 fw-500 d-inline-block">Liczba rezultatów {{ $cars->rowCount() }}</p>
                     </div>
                     <div class="row g-4 justify-content-center">
                         @foreach($cars->fetchAll() as $index => $item)
