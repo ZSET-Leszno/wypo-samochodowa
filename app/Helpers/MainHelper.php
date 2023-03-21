@@ -39,7 +39,7 @@ class MainHelper
      * @param string $message
      * @return string
      */
-    public function result(bool $success, string $message, ...$data): string {
+    public function result(bool $success, string $message, array $data): string {
         $result = [
             'success' => $success,
             'message' => $message
