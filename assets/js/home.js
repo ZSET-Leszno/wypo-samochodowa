@@ -11,10 +11,10 @@ $(document).ready(function () {
                     let len = 0;
                     if (response['data'] != null) {
                         len = response['data'].length;
+                        $('#form-select-model').empty();
                     }
                     if (len == 1) {
                         $("#form-select-type").append("<option value='" + response['data'][0].id + "'>" + response['data'][0].name + "</option>");
-                        $('#form-select-model').empty();
                         $.ajax({
                             url: baseUrl + 'api/car/getModels/' + selected + '/' + response['data'][0].id,
                             type: 'GET',
