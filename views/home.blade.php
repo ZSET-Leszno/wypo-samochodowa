@@ -139,10 +139,10 @@
                         </ul>
                         <div class="tab-content">
                             <div class="tab-pane fade show active" id="all_status">
-                                <form id="serach-car-form" action="{{ $config->base_url }}api/car/search" method="POST" class="at-search-filter d-flex align-items-center">
+                                <form id="search-car-form" action="{{ $config->base_url }}car/search" method="POST" class="at-search-filter d-flex align-items-center">
                                     <div class="input-field">
                                         <label>Wybierz markę</label>
-                                        <select class="form-select" id="form-select-brand">
+                                        <select class="form-select" name="brand" id="form-select-brand">
                                             <option></option>
                                             @foreach($brands as $car)
                                                 <option value="{{ $car['marka'] }}">{{ $car['marka'] }}</option>
@@ -151,13 +151,13 @@
                                     </div>
                                     <div class="input-field">
                                         <label>Wybierz typ</label>
-                                        <select class="form-select" disabled id="form-select-type">
+                                        <select class="form-select" disabled name="type" id="form-select-type">
                                             <option></option>
                                         </select>
                                     </div>
                                     <div class="input-field">
                                         <label>Wybierz model</label>
-                                        <select class="form-select" disabled id="form-select-model">
+                                        <select class="form-select" disabled name="model" id="form-select-model">
                                             <option></option>
                                         </select>
                                     </div>
