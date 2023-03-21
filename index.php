@@ -7,7 +7,7 @@
  * Version: 0.1.8
  */
 
-const VERSION = '0.1.8';
+const VERSION = '0.3.3';
 const APP_NAME = 'wypo-samochodowa';
 const APP_AUTHOR = '@michus.studio';
 const ENV = 'dev';
@@ -46,4 +46,5 @@ header('X-App-Env: ' . ENV);
 session_name(APP_NAME . '-session');
 session_start();
 
+/** @var TYPE_NAME $router */
 echo $router->handle($_SERVER, $config);

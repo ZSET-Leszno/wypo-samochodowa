@@ -46,7 +46,7 @@ class MainHelper
             'message' => $message
         ];
         if(!empty($data)) {
-            $result['data'] = $data;
+            $result['data'] = json_encode($data);
         }
         return json_encode($result);
     }
