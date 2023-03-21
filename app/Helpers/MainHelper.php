@@ -140,7 +140,7 @@ class MainHelper
      */
     public function getCsrf()
     {
-        if (!sessionHas('csrf')) {
+        if (!$this->sessionHas('csrf')) {
             $_SESSION['csrf'] = md5(uniqid(base64_encode(rand(100, 40000))));
         }
         return $_SESSION['csrf'];
