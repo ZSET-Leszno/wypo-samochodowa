@@ -29,7 +29,7 @@ class ContactController extends BaseController
         $mail->SMTPSecure = $this->config->mail['encryption'];
         $mail->Port = $this->config->mail['port'];
         $mail->setFrom($data['email'], $data['name']);
-        $mail->addAddress($this->config->mail['from']['address'], $this->config->mail['from']['name']);
+        $mail->addAddress($this->config->mail['to']['address'], $this->config->mail['to']['name']);
         $mail->isHTML(true);
         $mail->Subject = 'Wiadomość z formularza kontaktowego';
         $mail->Body = '<h1>Wiadomość z formularza kontaktowego</h1><p><b>Imię i nazwisko:</b> ' . $data['name'] . '</p><p><b>Adres e-mail:</b> ' . $data['email'] . '</p><p><b>Temat:</b> ' . $data['subject'] . '</p><p><b>Treść wiadomości:</b> ' . $data['message'] . '</p>';

@@ -28,9 +28,9 @@ class AppConfig {
         'encryption' => 'ssl',
         'username' => 'mscodexyz@gmail.com',
         'password' => 'osihwrhuahivotrn',
-        'from' => [
-            'address' => 'mscodexyz@gmail.com',
-            'name' => 'michus-studio-mailer'
+        'to' => [
+            'address' => 'igor.pietrasz.official@gmail.com',
+            'name' => 'Formularz kontaktowy'
         ]
     ];
 

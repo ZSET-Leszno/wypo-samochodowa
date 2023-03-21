@@ -15,7 +15,17 @@ class CarController extends BaseController
 {
     public function index()
     {
-        $cars = $this->pdo->query('SELECT * FROM samochody ');
-        return view('cars', compact('cars'));
+        if(empty($_GET)) {
+            $cars = $this->pdo->query('SELECT * FROM samochody ');
+            return view('cars', compact('cars'));
+        } else{
+            $filter = [];
+            foreach($_GET as $key => $value) {
+                $filter[] = $key . ' = ' . $value;
+            }
+            $filter = implode(' AND ', $filter);
+            $cars = $this->pdo->query('SELECT * FROM samochody WHERE ' . $filter);
+            return view('cars', compact('cars'));
+        }
     }
 }

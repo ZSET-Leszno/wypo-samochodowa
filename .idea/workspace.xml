@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b52d023e-96a4-4d47-ac34-3998f40c2257" name="Changes" comment="feat: remove promo car featured">
+    <list default="true" id="b52d023e-96a4-4d47-ac34-3998f40c2257" name="Changes" comment="fix: update cars.blade.php">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Config/AppConfig.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Config/AppConfig.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Controllers/API/ContactController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/API/ContactController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Controllers/CarController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/CarController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/cars.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/cars.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,35 +123,7 @@
       <workItem from="1678826912414" duration="818000" />
       <workItem from="1678890153248" duration="530000" />
       <workItem from="1678890723034" duration="930000" />
-      <workItem from="1679412529201" duration="7831000" />
-    </task>
-    <task id="LOCAL-00008" summary="feat: add basic form to search car">
-      <created>1678567087672</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1678567087672</updated>
-    </task>
-    <task id="LOCAL-00009" summary="feat: add more advanced serach form">
-      <created>1678567215026</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1678567215026</updated>
-    </task>
-    <task id="LOCAL-00010" summary="feat: add more advanced serach form">
-      <created>1678567283062</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1678567283062</updated>
-    </task>
-    <task id="LOCAL-00011" summary="feat: new features to app">
-      <created>1678567679478</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1678567679478</updated>
+      <workItem from="1679412529201" duration="8549000" />
     </task>
     <task id="LOCAL-00012" summary="feat: new features to app">
       <created>1678567691603</created>
@@ -467,7 +440,35 @@
       <option name="project" value="LOCAL" />
       <updated>1679419677066</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="feat: add cars foreach">
+      <created>1679423201258</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1679423201258</updated>
+    </task>
+    <task id="LOCAL-00058" summary="fix: update cars.blade.php">
+      <created>1679423381402</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1679423381402</updated>
+    </task>
+    <task id="LOCAL-00059" summary="fix: update cars.blade.php">
+      <created>1679423417035</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1679423417035</updated>
+    </task>
+    <task id="LOCAL-00060" summary="fix: update cars.blade.php">
+      <created>1679423491442</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1679423491442</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -485,8 +486,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix: config smtp to gmail" />
-    <MESSAGE value="feat: contact form" />
     <MESSAGE value="feat: add CSRF token" />
     <MESSAGE value="feat: update method to main helper" />
     <MESSAGE value="fix: Router.php update" />
@@ -510,6 +509,8 @@
     <MESSAGE value="fix: contact.blade.php final update" />
     <MESSAGE value="feat: add cars listing" />
     <MESSAGE value="feat: remove promo car featured" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: remove promo car featured" />
+    <MESSAGE value="feat: add cars foreach" />
+    <MESSAGE value="fix: update cars.blade.php" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: update cars.blade.php" />
   </component>
 </project>
