@@ -40,6 +40,7 @@ class MainHelper
      * @return string
      */
     public function result(bool $success, string $message, array $data): string {
+
         $result = [
             'success' => $success,
             'message' => $message
