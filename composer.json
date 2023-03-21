@@ -21,7 +21,6 @@
     "ext-json": "*",
     "eftec/bladeone": "^4.6",
     "filp/whoops": "^2.14",
-    "guzzlehttp/guzzle": "^7.5",
     "nesbot/carbon": "^2.62",
     "phpmailer/phpmailer": "^6.5"
   },
