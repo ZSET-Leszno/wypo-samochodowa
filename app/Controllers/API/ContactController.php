@@ -11,7 +11,7 @@
 
 namespace App\Controllers\API;
 
-class ContactController extends \App\Controllers\API\BaseController
+class ContactController extends BaseController
 {
     public function send()
     {
