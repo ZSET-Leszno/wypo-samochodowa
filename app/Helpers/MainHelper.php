@@ -178,6 +178,11 @@ class MainHelper
         return $data;
     }
 
+    /**
+     * Get CarType data
+     * @param string $key
+     * @return mixed
+     */
     public function getCarType(int $id): array {
         $carType = $this->pdo->query("SELECT * FROM `typy_samochodow` WHERE `id_typu` = ?", [$id]);
         if ($carType->rowCount() == 0) {
