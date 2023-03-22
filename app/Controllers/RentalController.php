@@ -15,7 +15,7 @@ class RentalController extends BaseController
 {
     public function index(int $id)
     {
-        $car = $this->pdo->query('SELECT * FROM samochody WHERE id = ' . $id);
+        $car = $this->pdo->query('SELECT * FROM samochody WHERE id_samochodu = ' . $id);
         if ($car->rowCount() === 0) {
             return $this->helper->redirect('home');
         }
