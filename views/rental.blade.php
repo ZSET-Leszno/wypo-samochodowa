@@ -46,7 +46,7 @@
                                 </span>
                                 <div class="info_content">
                                     <span class="meta">Typ nadwozia</span>
-                                    <span class="title">{{ $car['typ'];}}</span>
+                                    <span class="title">{{ $car['typ']}}</span>
                                 </div>
                             </div>
                         </div>
@@ -57,7 +57,7 @@
                                     </span>
                                 <div class="info_content">
                                     <span class="meta">Przebieg</span>
-                                    <span class="title">{{ $car['przebieg'];}} (km)</span>
+                                    <span class="title">{{ $car['przebieg']}} (km)</span>
                                 </div>
                             </div>
                         </div>
