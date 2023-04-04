@@ -9,7 +9,7 @@
                 <div class="breadcrumb-content-wrapper text-center position-relative z-3">
                     <h1 class="text-white">Logowanie</h1>
                     <ol class="breadcrumb justify-content-center">
-                        <li class="breadcrumb-item text-white fw-500"><a href="{{ $config->base_url }}logowanie">Strona Główna</a></li>
+                        <li class="breadcrumb-item text-white fw-500"><a href="{{ $config->base_url }}strona-glowna">Strona Główna</a></li>
                         <li class="breadcrumb-item text-white fw-500">Logowanie</li>
                     </ol>
                 </div>
