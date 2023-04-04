@@ -14,7 +14,7 @@
                 <div class="car-info-box bg-white rounded d-flex flex-wrap align-items-center justify-content-between">
                     <div class="info-left">
                         <h3>{{ $car['marka'].' '.$car['model']}}</h3>
-                        <span class="pricing text-primary d-block fw-bold mt-4">{{ $car['cena_za_dzien'];}} zł/<span>za dzień</span></span>
+                        <span class="pricing text-primary d-block fw-bold mt-4">{{ $car['cena_za_dzien']}} zł/<span>za dzień</span></span>
                     </div>
                     <div class="right-btns d-flex flex-wrap align-items-center mt-30 mt-md-0">
                         <a href="javascript:;" class="save-url"><i class="fa-solid fa-share-nodes"></i></a>
