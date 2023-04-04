@@ -83,7 +83,7 @@
                                     <li><a href="{{ $config->base_url }}kontakt">Kontakt</a></li>
                                 </ul>
                             </nav>
-                            <a href="{{ $config->base_url }}auth/login" class="listing-btn text-white ms-4 d-none d-sm-block"><span class="icon-wrapper d-inline-flex align-items-center justify-content-center rounded-circle text-white me-2"><i class="fa-solid fa-plus"></i></span>Zaloguj się</a>
+                            <a href="{{ $config->base_url }}logowanie" class="listing-btn text-white ms-4 d-none d-sm-block"><span class="icon-wrapper d-inline-flex align-items-center justify-content-center rounded-circle text-white me-2"><i class="fa-solid fa-plus"></i></span>Zaloguj się</a>
                             <button class="ofcanvus-toggle header-toggle-btn ms-4 d-none d-lg-block">
                                 <span></span>
                                 <span></span>

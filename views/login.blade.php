@@ -36,7 +36,7 @@
                         <div class="login-btns col-12 mt-40">
                             <button type="submit" class="btn btn-primary">Zaloguj się</button>
                         </div>
-                        <p class="text-xl-center mt-4">Nie posiadasz konta? <a href="{{$config->base_url}}auth/register">Zarejestruj się</a></p>
+                        <p class="text-xl-center mt-4">Nie posiadasz konta? <a href="{{$config->base_url}}rejestracja">Zarejestruj się</a></p>
                     </form>
                 </div>
             </div>

@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b52d023e-96a4-4d47-ac34-3998f40c2257" name="Changes" comment="feat: add rental view">
+    <list default="true" id="b52d023e-96a4-4d47-ac34-3998f40c2257" name="Changes" comment="feat: add login.blade.php">
+      <change afterPath="$PROJECT_DIR$/app/Controllers/LoginController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/login.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/partials/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/rental.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/rental.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +68,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/m.marciniak2/Desktop/wypo-samochodowa",
+    "last_opened_file_path": "C:/Users/Admin/Desktop/wypo-samochodowa/views",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -81,6 +80,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\Desktop\wypo-samochodowa\views" />
       <recent name="C:\Users\Admin\Desktop\wypo\app\Helpers" />
       <recent name="C:\Users\Admin\Desktop\wypo\app\Database" />
       <recent name="C:\Users\Admin\Desktop\app\app\Database" />
@@ -132,84 +132,7 @@
       <workItem from="1679412529201" duration="15487000" />
       <workItem from="1679490029171" duration="1315000" />
       <workItem from="1680631995301" duration="1046000" />
-      <workItem from="1680646860583" duration="2501000" />
-    </task>
-    <task id="LOCAL-00044" summary="fix: change api files">
-      <created>1679416148383</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1679416148383</updated>
-    </task>
-    <task id="LOCAL-00045" summary="fix: change MainHelper.php">
-      <created>1679416203210</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1679416203210</updated>
-    </task>
-    <task id="LOCAL-00046" summary="fix: Home page fix">
-      <created>1679416313221</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1679416313221</updated>
-    </task>
-    <task id="LOCAL-00047" summary="fix: application/json content-type">
-      <created>1679416433503</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1679416433503</updated>
-    </task>
-    <task id="LOCAL-00048" summary="feat: ContactController.php form api">
-      <created>1679416624819</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1679416624819</updated>
-    </task>
-    <task id="LOCAL-00049" summary="fix: composer.lock">
-      <created>1679417001766</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1679417001766</updated>
-    </task>
-    <task id="LOCAL-00050" summary="fix: composer.json">
-      <created>1679417478271</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1679417478272</updated>
-    </task>
-    <task id="LOCAL-00051" summary="fix: helper">
-      <created>1679417673555</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1679417673555</updated>
-    </task>
-    <task id="LOCAL-00052" summary="fix: mail sender">
-      <created>1679417883354</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1679417883354</updated>
-    </task>
-    <task id="LOCAL-00053" summary="fix: contact form">
-      <created>1679418340144</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1679418340144</updated>
-    </task>
-    <task id="LOCAL-00054" summary="fix: contact.blade.php final update">
-      <created>1679418402615</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1679418402615</updated>
+      <workItem from="1680646860583" duration="3781000" />
     </task>
     <task id="LOCAL-00055" summary="feat: add cars listing">
       <created>1679419636686</created>
@@ -477,7 +400,84 @@
       <option name="project" value="LOCAL" />
       <updated>1680649048754</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="feat: add rental view">
+      <created>1680649401669</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1680649401669</updated>
+    </task>
+    <task id="LOCAL-00094" summary="fix: rental view">
+      <created>1680649438664</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1680649438664</updated>
+    </task>
+    <task id="LOCAL-00095" summary="fix: rental view">
+      <created>1680649472456</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1680649472456</updated>
+    </task>
+    <task id="LOCAL-00096" summary="fix: rental view">
+      <created>1680649554300</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1680649554300</updated>
+    </task>
+    <task id="LOCAL-00097" summary="fix: rental view">
+      <created>1680649661484</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1680649661484</updated>
+    </task>
+    <task id="LOCAL-00098" summary="fix: rental view">
+      <created>1680649738303</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1680649738303</updated>
+    </task>
+    <task id="LOCAL-00099" summary="fix: rental view">
+      <created>1680650004716</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1680650004716</updated>
+    </task>
+    <task id="LOCAL-00100" summary="fix: rental view">
+      <created>1680650080427</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1680650080427</updated>
+    </task>
+    <task id="LOCAL-00101" summary="fix: rental view">
+      <created>1680650262325</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1680650262325</updated>
+    </task>
+    <task id="LOCAL-00102" summary="fix: footer view">
+      <created>1680650323065</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1680650323065</updated>
+    </task>
+    <task id="LOCAL-00103" summary="feat: add login.blade.php">
+      <created>1680650579822</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1680650579822</updated>
+    </task>
+    <option name="localTasksCounter" value="104" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -496,9 +496,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fix: change api files" />
-    <MESSAGE value="fix: change MainHelper.php" />
-    <MESSAGE value="fix: Home page fix" />
     <MESSAGE value="fix: application/json content-type" />
     <MESSAGE value="feat: ContactController.php form api" />
     <MESSAGE value="fix: composer.lock" />
@@ -521,7 +518,10 @@
     <MESSAGE value="feat: add Routes" />
     <MESSAGE value="feat: add RentalController.php" />
     <MESSAGE value="feat: add rental view" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add rental view" />
+    <MESSAGE value="fix: rental view" />
+    <MESSAGE value="fix: footer view" />
+    <MESSAGE value="feat: add login.blade.php" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add login.blade.php" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
