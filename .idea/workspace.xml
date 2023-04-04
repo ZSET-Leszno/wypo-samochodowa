@@ -5,7 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b52d023e-96a4-4d47-ac34-3998f40c2257" name="Changes" comment="feat: add rental view">
+      <change afterPath="$PROJECT_DIR$/assets/img/cars/bmwgranturismo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/cars/ferrari458mm.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/cars/ferrarif12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/cars/ferrariportofino.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/cars/fordexplorer.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/cars/mazdamiata.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/cars/mercedesbenze400.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/cars/paganizonda.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/cars/toyotacumry.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/notiflix-aio-3.2.5.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/partials/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/footer.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/rental.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/rental.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,21 +72,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/m.marciniak2/Desktop/wypo-samochodowa&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;consents&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/m.marciniak2/Desktop/wypo-samochodowa",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "consents",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Admin\Desktop\wypo\app\Helpers" />
@@ -128,49 +141,7 @@
       <workItem from="1679412529201" duration="15487000" />
       <workItem from="1679490029171" duration="1315000" />
       <workItem from="1680631995301" duration="1046000" />
-      <workItem from="1680646860583" duration="467000" />
-    </task>
-    <task id="LOCAL-00037" summary="fix: fix MainHelper.php">
-      <created>1679414670717</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1679414670717</updated>
-    </task>
-    <task id="LOCAL-00038" summary="fix: fix ContactController.php">
-      <created>1679414787816</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1679414787816</updated>
-    </task>
-    <task id="LOCAL-00039" summary="fix: fix ContactController.php">
-      <created>1679414847755</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1679414847755</updated>
-    </task>
-    <task id="LOCAL-00040" summary="feat: basic 404 template">
-      <created>1679415199526</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1679415199526</updated>
-    </task>
-    <task id="LOCAL-00041" summary="fix: contact.blade.php action url">
-      <created>1679415252558</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1679415252558</updated>
-    </task>
-    <task id="LOCAL-00042" summary="fix: Router.php">
-      <created>1679415544828</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1679415544828</updated>
+      <workItem from="1680646860583" duration="2154000" />
     </task>
     <task id="LOCAL-00043" summary="fix: change api CarController.php">
       <created>1679415937675</created>
@@ -473,7 +444,49 @@
       <option name="project" value="LOCAL" />
       <updated>1680647217015</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="feat: add rental view">
+      <created>1680647347514</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1680647347514</updated>
+    </task>
+    <task id="LOCAL-00087" summary="feat: add rental view">
+      <created>1680647551670</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1680647551670</updated>
+    </task>
+    <task id="LOCAL-00088" summary="feat: add rental view">
+      <created>1680647594358</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1680647594358</updated>
+    </task>
+    <task id="LOCAL-00089" summary="feat: add rental view">
+      <created>1680648128868</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1680648128868</updated>
+    </task>
+    <task id="LOCAL-00090" summary="feat: add rental view">
+      <created>1680648670679</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1680648670679</updated>
+    </task>
+    <task id="LOCAL-00091" summary="feat: add rental view">
+      <created>1680648708829</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1680648708829</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -491,6 +504,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="fix: change api files" />
     <MESSAGE value="fix: change MainHelper.php" />
     <MESSAGE value="fix: Home page fix" />

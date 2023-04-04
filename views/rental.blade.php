@@ -17,10 +17,9 @@
                         <span class="pricing text-primary d-block fw-bold mt-4"><?= $car['cena_za_dzien'];?> zł/<span>za dzień</span></span>
                     </div>
                     <div class="right-btns d-flex flex-wrap align-items-center mt-30 mt-md-0">
-                        <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
-                        <a href="#"><i class="fa-solid fa-code-compare"></i></a>
-                        <a href="#"><i class="fa-regular fa-heart"></i></a>
-                        <a href="#"><i class="fa-solid fa-print"></i></a>
+                        <a href="javascript:;" class="save-url"><i class="fa-solid fa-share-nodes"></i></a>
+                        <a href="javascript:;" class="like-car"><i class="fa-regular fa-heart"></i></a>
+                        <a href="javascript:;" class="print-page"><i class="fa-solid fa-print"></i></a>
                     </div>
                 </div>
             </div>
