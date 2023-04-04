@@ -20,6 +20,11 @@ class RentalController extends BaseController
             return $this->helper->redirect('home');
         }
         $car = $car->fetch();
+        if($this->helper->getCarType($car['id_typu'])) {
+            $car['typ'] = $this->helper->getCarType($car['id_typu'])['nazwa_typu'];
+        } else {
+            $car['typ'] = 'Nieznany';
+        }
         return view('rental', compact('car'));
     }
 }

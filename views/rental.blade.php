@@ -2,7 +2,7 @@
 
 <!--hero banner start-->
 <div class="cr-hero-banner">
-    <img src="<?= $config->base_url ?>assets/img/rental/banner.jpg" alt="not found" class="img-fluid">
+    <img src="<?= $config->base_url ?>assets/img/cars/<?= $car['image_path']?>" alt="not found" class="img-fluid">
 </div>
 <!--hero banner end-->
 
@@ -14,7 +14,7 @@
                 <div class="car-info-box bg-white rounded d-flex flex-wrap align-items-center justify-content-between">
                     <div class="info-left">
                         <h3><?= $car['marka'].' '.$car['model']?></h3>
-                        <span class="pricing text-primary d-block fw-bold mt-4"><?= $car['cena_za_dzien'];?>/<span>Dziennie</span></span>
+                        <span class="pricing text-primary d-block fw-bold mt-4"><?= $car['cena_za_dzien'];?> zł/<span>za dzień</span></span>
                     </div>
                     <div class="right-btns d-flex flex-wrap align-items-center mt-30 mt-md-0">
                         <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
@@ -36,29 +36,29 @@
             <div class="col-xl-8">
                 <div class="rental-feature-box bg-white rounded overflow-hidden">
                     <div class="title-wrapper d-flex mb-30">
-                        <h4 class="mb-0 flex-shrink-0">Key Features</h4>
+                        <h4 class="mb-0 flex-shrink-0">Kluczowe cechy</h4>
                         <span class="spacer align-self-end ms-3"></span>
                     </div>
                     <div class="row g-4">
                         <div class="col-lg-3 col-md-4 col-sm-6">
                             <div class="iv_info_item d-flex align-items-center">
                                 <span class="icon-wrapper d-inline-flex align-items-center justify-content-center border rounded flex-shrink-0">
-                                        <i class="flaticon-drive"></i>
+                                    <i class="flaticon-drive"></i>
                                 </span>
                                 <div class="info_content">
-                                    <span class="meta">Body Type</span>
-                                    <span class="title">Crossover</span>
+                                    <span class="meta">Typ nadwozia</span>
+                                    <span class="title"><?= $car['typ'];?></span>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-4 col-sm-6">
                             <div class="iv_info_item d-flex align-items-center">
-                                        <span class="icon-wrapper d-inline-flex align-items-center justify-content-center border rounded flex-shrink-0">
+                                <span class="icon-wrapper d-inline-flex align-items-center justify-content-center border rounded flex-shrink-0">
                                         <i class="flaticon-speedometer"></i>
                                     </span>
                                 <div class="info_content">
-                                    <span class="meta">Mileage</span>
-                                    <span class="title">70,000 (Mi)</span>
+                                    <span class="meta">Przebieg</span>
+                                    <span class="title"><?= $car['przebieg'];?> (km)</span>
                                 </div>
                             </div>
                         </div>
@@ -90,19 +90,19 @@
                                         <i class="flaticon-engine"></i>
                                     </span>
                                 <div class="info_content">
-                                    <span class="meta">Engine Size</span>
-                                    <span class="title">1,599 (cc)</span>
+                                    <span class="meta">Moc silnika</span>
+                                    <span class="title"><?= $car['Moc'];?> (KM)</span>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-4 col-sm-6">
                             <div class="iv_info_item d-flex align-items-center">
-                                        <span class="icon-wrapper d-inline-flex align-items-center justify-content-center border rounded flex-shrink-0">
+                                <span class="icon-wrapper d-inline-flex align-items-center justify-content-center border rounded flex-shrink-0">
                                         <i class="flaticon-new-year"></i>
-                                    </span>
+                                </span>
                                 <div class="info_content">
-                                    <span class="meta">Year</span>
-                                    <span class="title">2018</span>
+                                    <span class="meta">Rok</span>
+                                    <span class="title"><?= $car['rok_produkcji']?></span>
                                 </div>
                             </div>
                         </div>
@@ -112,41 +112,41 @@
                                         <i class="flaticon-steering-wheel-1"></i>
                                     </span>
                                 <div class="info_content">
-                                    <span class="meta">Drivetrian</span>
-                                    <span class="title">Front Wheel</span>
+                                    <span class="meta">Napęd</span>
+                                    <span class="title"><?= $car['napęd']?></span>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-4 col-sm-6">
                             <div class="iv_info_item d-flex align-items-center">
-                                        <span class="icon-wrapper d-inline-flex align-items-center justify-content-center border rounded flex-shrink-0">
+                                <span class="icon-wrapper d-inline-flex align-items-center justify-content-center border rounded flex-shrink-0">
                                         <i class="flaticon-petrol"></i>
-                                    </span>
+                                </span>
                                 <div class="info_content">
-                                    <span class="meta">Fuel Type</span>
-                                    <span class="title">Diesel</span>
+                                    <span class="meta">Paliwo</span>
+                                    <span class="title"><?= $car['rodzaj_paliwa']?></span>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-4 col-sm-6">
                             <div class="iv_info_item d-flex align-items-center">
-                                        <span class="icon-wrapper d-inline-flex align-items-center justify-content-center border rounded flex-shrink-0">
+                                <span class="icon-wrapper d-inline-flex align-items-center justify-content-center border rounded flex-shrink-0">
                                         <i class="flaticon-drive"></i>
-                                    </span>
+                                </span>
                                 <div class="info_content">
-                                    <span class="meta">Color</span>
-                                    <span class="title">Black</span>
+                                    <span class="meta">Kolor</span>
+                                    <span class="title"><?= $car['kolor']?></span>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-4 col-sm-6">
                             <div class="iv_info_item d-flex align-items-center">
-                                        <span class="icon-wrapper d-inline-flex align-items-center justify-content-center border rounded flex-shrink-0">
+                                <span class="icon-wrapper d-inline-flex align-items-center justify-content-center border rounded flex-shrink-0">
                                         <i class="flaticon-gas-tank"></i>
-                                    </span>
+                                </span>
                                 <div class="info_content">
-                                    <span class="meta">Cylinders</span>
-                                    <span class="title">06</span>
+                                    <span class="meta">Cylindry</span>
+                                    <span class="title"><?= $car['liczba_cylindrow']?></span>
                                 </div>
                             </div>
                         </div>
@@ -157,7 +157,7 @@
                                     </span>
                                 <div class="info_content">
                                     <span class="meta">VIN</span>
-                                    <span class="title">1C4TJPBA1CD</span>
+                                    <span class="title"><?= $car['VIN']?></span>
                                 </div>
                             </div>
                         </div>
@@ -168,7 +168,7 @@
                                     </span>
                                 <div class="info_content">
                                     <span class="meta">Drzwi</span>
-                                    <span class="title">2 Doors</span>
+                                    <span class="title"><?= $car['liczba_drzwi']?></span>
                                 </div>
                             </div>
                         </div>
@@ -178,7 +178,7 @@
                         <span class="spacer align-self-end ms-3"></span>
                     </div>
                     <p>
-
+                        <?= $car['description']?>
                     </p>
                 </div>
             </div>
