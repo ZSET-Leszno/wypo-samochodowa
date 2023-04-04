@@ -31,7 +31,7 @@
 <!--main content wrapper start-->
 <div class="main-wrapper">
     <!--header area start-->
-    <header class="header-style-one header-sticky">
+    <header class="header-style-one header-sticky <?= (isset($bg)) ? 'border-0' : '' ?>">
         <div class="at_topbar d-none d-sm-block bg-white">
             <div class="container">
                 <div class="row align-items-center">
