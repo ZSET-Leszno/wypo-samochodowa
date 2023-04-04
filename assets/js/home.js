@@ -90,8 +90,6 @@ $(document).ready(function () {
                     $('#contact-form').hide();
                     $('#contact-success').show();
                 } else {
-                    $('#contact-form').trigger("reset");
-                    $('#contact-form').hide();
                     $('#contact-error').show();
                 }
             }
@@ -134,5 +132,23 @@ $(document).ready(function () {
         } else {
             Notiflix.Notify.failure('Wystąpił błąd! Odśwież stronę i spróbuj ponownie.');
         }
+    });
+    $('#login-form').submit(function (e) {
+        e.preventDefault();
+        $.ajax({
+            url: $(this).attr('action'),
+            type: $(this).attr('method'),
+            data: $(this).serialize(),
+            dataType: 'json',
+            success: function (response) {
+                if (response['success']) {
+                    Notiflix.Notify.success(response['message']).then(function () {
+                        $(location).attr('href', response['redirect']);
+                    });
+                } else {
+                    Notiflix.Notify.failure(response['message']);
+                }
+            }
+        });
     });
 });

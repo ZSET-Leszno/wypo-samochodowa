@@ -27,12 +27,12 @@
             <div class="col-xl-5 col-xxl-4">
                 <div class="login-form-area">
                     <h2 class="mb-5">Witaj!</h2>
-                    <form class="login-form">
-                        <label class="fw-semibold text-secondary mb-2">Email</label>
-                        <input type="email" placeholder="Wpisz swój adres email" class="w-100 rounded">
+                    <form class="login-form" action="/api/auth/login" method="post">
+                        <label class="fw-semibold text-secondary mb-2" for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Wpisz swój adres email" class="w-100 rounded">
 
-                        <label class="fw-semibold text-secondary mb-2 mt-4">Hasło</label>
-                        <input type="password" placeholder="Wpisz swoje hasło" class="w-100 rounded">
+                        <label class="fw-semibold text-secondary mb-2 mt-4" for="password">Hasło</label>
+                        <input type="password" name="password" id="password" placeholder="Wpisz swoje hasło" class="w-100 rounded">
                         <div class="login-btns col-12 mt-40">
                             <button type="submit" class="btn btn-primary">Zaloguj się</button>
                         </div>
