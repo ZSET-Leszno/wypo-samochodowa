@@ -120,10 +120,13 @@ $(document).ready(function () {
                 dataType: 'json',
                 success: function (response) {
                     if (response['success']) {
-                        Notiflix.Notify.success('Dodano do ulubionych!');
+                        Notiflix.Notify.success(response['message']);
                     } else {
-                        Notiflix.Notify.failure('Wystąpił błąd!');
+                        Notiflix.Notify.failure(response['message']);
                     }
+                },
+                error: function (response) {
+                    Notiflix.Notify.failure('Wystąpił błąd! Odśwież stronę i spróbuj ponownie.');
                 }
             });
         } else {
