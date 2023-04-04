@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b52d023e-96a4-4d47-ac34-3998f40c2257" name="Changes" comment="feat: add login.blade.php">
-      <change afterPath="$PROJECT_DIR$/app/Controllers/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="b52d023e-96a4-4d47-ac34-3998f40c2257" name="Changes" comment="feat: add LoginController.php">
+      <change afterPath="$PROJECT_DIR$/assets/img/login-illustration.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/partials/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/header.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +85,7 @@
       <recent name="C:\Users\Admin\Desktop\app\app\Config" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\Desktop\wypo-samochodowa\assets\img" />
       <recent name="C:\Users\Admin\Desktop\app\app\Config" />
       <recent name="C:\Users\Admin\Desktop\app\app\Helpers" />
     </key>
@@ -132,14 +131,7 @@
       <workItem from="1679412529201" duration="15487000" />
       <workItem from="1679490029171" duration="1315000" />
       <workItem from="1680631995301" duration="1046000" />
-      <workItem from="1680646860583" duration="3781000" />
-    </task>
-    <task id="LOCAL-00055" summary="feat: add cars listing">
-      <created>1679419636686</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1679419636686</updated>
+      <workItem from="1680646860583" duration="3868000" />
     </task>
     <task id="LOCAL-00056" summary="feat: remove promo car featured">
       <created>1679419677066</created>
@@ -477,7 +469,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680650579822</updated>
     </task>
-    <option name="localTasksCounter" value="104" />
+    <task id="LOCAL-00104" summary="feat: add LoginController.php">
+      <created>1680650700248</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1680650700248</updated>
+    </task>
+    <option name="localTasksCounter" value="105" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -496,7 +495,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fix: application/json content-type" />
     <MESSAGE value="feat: ContactController.php form api" />
     <MESSAGE value="fix: composer.lock" />
     <MESSAGE value="fix: composer.json" />
@@ -521,7 +519,8 @@
     <MESSAGE value="fix: rental view" />
     <MESSAGE value="fix: footer view" />
     <MESSAGE value="feat: add login.blade.php" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add login.blade.php" />
+    <MESSAGE value="feat: add LoginController.php" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add LoginController.php" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

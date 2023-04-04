@@ -26,7 +26,7 @@
         <div class="row">
             <div class="col-xl-5 col-xxl-4">
                 <div class="login-form-area">
-                    <h2 class="mb-5">Witaj!<br>Zaloguj się, aby korzystać z serwisu.</h2>
+                    <h2 class="mb-5">Witaj!</h2>
                     <form class="login-form">
                         <label class="fw-semibold text-secondary mb-2">Email</label>
                         <input type="email" placeholder="Wpisz swój adres email" class="w-100 rounded">
