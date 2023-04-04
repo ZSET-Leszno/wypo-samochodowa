@@ -69,8 +69,8 @@
                             <hr>
                             <p class="mb-0">Nasz zespół odpowie w możliwie jak najszybszym terminie.</p>
                         </div>
-                        <div id="contact-error" class="alert alert-danger" role="alert" style="display: none;">
-                            <h4 class="alert-heading">Upssss...</h4>
+                        <div h4 class="alert-heading">Upssss...</h4>
+                            <id="contact-error" class="alert alert-danger" role="alert" style="display: none;">
                             <p>Coś poszło nie tak. Odśwież stronę i spróbuj ponownie. Nie poddawaj się!</p>
                             <hr>
                             <p class="mb-0">Możesz użyć także tradycyjnej metody wysłania swojego pytania.</p>
