@@ -1,13 +1,6 @@
 @include('partials.header', ['title' => 'Wypożycz: '.$car['marka'].' '.$car['model'], 'bg' => 'bg-secondary'])
-
-<!--hero banner start-->
-<div class="cr-hero-banner">
-    <img src="{{ $config->base_url }}assets/img/cars/{{ $car['image_path']}}" alt="not found" class="img-fluid">
-</div>
-<!--hero banner end-->
-
 <!--car info-->
-<section class="car-info pb-30">
+<section class="car-info pb-30 pt-100">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -21,6 +14,7 @@
                         <a href="javascript:;" class="like-car" data-id="{{ $car['id_samochodu']}}"><i class="fa-regular fa-heart"></i></a>
                         <a href="javascript:;" class="print-page"><i class="fa-solid fa-print"></i></a>
                     </div>
+                    <div class="col-12"><img src="{{ $config->base_url }}assets/img/cars/{{ $car['image_path']}}"></div>
                 </div>
             </div>
         </div>
