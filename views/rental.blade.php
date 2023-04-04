@@ -2,7 +2,7 @@
 
 <!--hero banner start-->
 <div class="cr-hero-banner">
-    <img src="<?= $config->base_url ?>assets/img/cars/<?= $car['image_path']?>" alt="not found" class="img-fluid">
+    <img src="{{ $config->base_url }}assets/img/cars/{{ $car['image_path']}}" alt="not found" class="img-fluid">
 </div>
 <!--hero banner end-->
 
@@ -13,12 +13,12 @@
             <div class="col-12">
                 <div class="car-info-box bg-white rounded d-flex flex-wrap align-items-center justify-content-between">
                     <div class="info-left">
-                        <h3><?= $car['marka'].' '.$car['model']?></h3>
-                        <span class="pricing text-primary d-block fw-bold mt-4"><?= $car['cena_za_dzien'];?> zł/<span>za dzień</span></span>
+                        <h3>{{ $car['marka'].' '.$car['model']}}</h3>
+                        <span class="pricing text-primary d-block fw-bold mt-4">{{ $car['cena_za_dzien'];}} zł/<span>za dzień</span></span>
                     </div>
                     <div class="right-btns d-flex flex-wrap align-items-center mt-30 mt-md-0">
                         <a href="javascript:;" class="save-url"><i class="fa-solid fa-share-nodes"></i></a>
-                        <a href="javascript:;" class="like-car"><i class="fa-regular fa-heart"></i></a>
+                        <a href="javascript:;" class="like-car" data-id="{{ $car['id_samochodu']}}"><i class="fa-regular fa-heart"></i></a>
                         <a href="javascript:;" class="print-page"><i class="fa-solid fa-print"></i></a>
                     </div>
                 </div>
@@ -46,7 +46,7 @@
                                 </span>
                                 <div class="info_content">
                                     <span class="meta">Typ nadwozia</span>
-                                    <span class="title"><?= $car['typ'];?></span>
+                                    <span class="title">{{ $car['typ'];}}</span>
                                 </div>
                             </div>
                         </div>
@@ -57,7 +57,7 @@
                                     </span>
                                 <div class="info_content">
                                     <span class="meta">Przebieg</span>
-                                    <span class="title"><?= $car['przebieg'];?> (km)</span>
+                                    <span class="title">{{ $car['przebieg'];}} (km)</span>
                                 </div>
                             </div>
                         </div>
@@ -68,7 +68,7 @@
                                     </span>
                                 <div class="info_content">
                                     <span class="meta">Skrzynia Biegów</span>
-                                    <span class="title"><?= $car['skrzynia_biegow']?></span>
+                                    <span class="title">{{ $car['skrzynia_biegow']}}</span>
                                 </div>
                             </div>
                         </div>
@@ -79,7 +79,7 @@
                                     </span>
                                 <div class="info_content">
                                     <span class="meta">Stan</span>
-                                    <span class="title"><?= $car['stan_pojazdu']?></span>
+                                    <span class="title">{{ $car['stan_pojazdu']}}</span>
                                 </div>
                             </div>
                         </div>
@@ -90,7 +90,7 @@
                                     </span>
                                 <div class="info_content">
                                     <span class="meta">Moc silnika</span>
-                                    <span class="title"><?= $car['Moc'];?> (KM)</span>
+                                    <span class="title">{{ $car['Moc']}} (KM)</span>
                                 </div>
                             </div>
                         </div>
@@ -101,7 +101,7 @@
                                 </span>
                                 <div class="info_content">
                                     <span class="meta">Rok</span>
-                                    <span class="title"><?= $car['rok_produkcji']?></span>
+                                    <span class="title">{{ $car['rok_produkcji']}}</span>
                                 </div>
                             </div>
                         </div>
@@ -112,7 +112,7 @@
                                     </span>
                                 <div class="info_content">
                                     <span class="meta">Napęd</span>
-                                    <span class="title"><?= $car['napęd']?></span>
+                                    <span class="title">{{ $car['napęd']}}</span>
                                 </div>
                             </div>
                         </div>
@@ -123,7 +123,7 @@
                                 </span>
                                 <div class="info_content">
                                     <span class="meta">Paliwo</span>
-                                    <span class="title"><?= $car['rodzaj_paliwa']?></span>
+                                    <span class="title">{{ $car['rodzaj_paliwa']}}</span>
                                 </div>
                             </div>
                         </div>
@@ -134,7 +134,7 @@
                                 </span>
                                 <div class="info_content">
                                     <span class="meta">Kolor</span>
-                                    <span class="title"><?= $car['kolor']?></span>
+                                    <span class="title">{{ $car['kolor']}}</span>
                                 </div>
                             </div>
                         </div>
@@ -145,7 +145,7 @@
                                 </span>
                                 <div class="info_content">
                                     <span class="meta">Cylindry</span>
-                                    <span class="title"><?= $car['liczba_cylindrow']?></span>
+                                    <span class="title">{{ $car['liczba_cylindrow']}}</span>
                                 </div>
                             </div>
                         </div>
@@ -156,7 +156,7 @@
                                     </span>
                                 <div class="info_content">
                                     <span class="meta">VIN</span>
-                                    <span class="title"><?= $car['VIN']?></span>
+                                    <span class="title">{{ $car['VIN']}}</span>
                                 </div>
                             </div>
                         </div>
@@ -167,7 +167,7 @@
                                     </span>
                                 <div class="info_content">
                                     <span class="meta">Drzwi</span>
-                                    <span class="title"><?= $car['liczba_drzwi']?></span>
+                                    <span class="title">{{ $car['liczba_drzwi']}}</span>
                                 </div>
                             </div>
                         </div>
@@ -177,7 +177,7 @@
                         <span class="spacer align-self-end ms-3"></span>
                     </div>
                     <p>
-                        <?= $car['description']?>
+                        {{ $car['description']}}
                     </p>
                 </div>
             </div>

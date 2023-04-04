@@ -262,7 +262,7 @@
                                                         </div>
                                                         <div class="accordion-collapse collapse {{ ($index == 0) ? 'show' : '' }}" id="ac_{{ $sectionId }}_{{$index}}" data-bs-parent="#accordion_{{ $sectionId }}">
                                                             <div class="accordion-body">
-                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consectetur rhoncus nisl eget scelerisque. Phasellus non dignissim diam. </p>
+                                                                <p>{{$item['odpowiedz']}}</p>
                                                             </div>
                                                         </div>
                                                     </div>

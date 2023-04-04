@@ -22,6 +22,7 @@
     <title>CarShare - {{ $title or 'undefined'}}</title>
     <!--style:css-->
     <link rel="stylesheet" href="{{ $config->base_url }}assets/css/main.css" />
+    <meta name="csrf-token" content="{{ $csrf_token }}">
 </head>
 
 <body>

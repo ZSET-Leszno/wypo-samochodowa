@@ -107,4 +107,27 @@ $(document).ready(function () {
         document.body.removeChild(dummy);
         Notiflix.Notify.success('Skopiowano adres strony do schowka!');
     });
+    $('.like-car').on('click', function () {
+        const id = $(this).data('id');
+        if (id) {
+            $.ajax({
+                url: baseUrl + 'api/car/like/' + id,
+                type: 'POST',
+                data: {
+                    _token: $('meta[name="csrf-token"]').attr('content'),
+                    id: id
+                },
+                dataType: 'json',
+                success: function (response) {
+                    if (response['success']) {
+                        Notiflix.Notify.success('Dodano do ulubionych!');
+                    } else {
+                        Notiflix.Notify.failure('Wystąpił błąd!');
+                    }
+                }
+            });
+        } else {
+            Notiflix.Notify.failure('Wystąpił błąd! Odśwież stronę i spróbuj ponownie.');
+        }
+    });
 });

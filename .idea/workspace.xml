@@ -5,19 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b52d023e-96a4-4d47-ac34-3998f40c2257" name="Changes" comment="feat: add rental view">
-      <change afterPath="$PROJECT_DIR$/assets/img/cars/bmwgranturismo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cars/ferrari458mm.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cars/ferrarif12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cars/ferrariportofino.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cars/fordexplorer.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cars/mazdamiata.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cars/mercedesbenze400.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cars/paganizonda.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cars/toyotacumry.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/notiflix-aio-3.2.5.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/partials/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/partials/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/header.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/rental.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/rental.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -141,14 +132,7 @@
       <workItem from="1679412529201" duration="15487000" />
       <workItem from="1679490029171" duration="1315000" />
       <workItem from="1680631995301" duration="1046000" />
-      <workItem from="1680646860583" duration="2154000" />
-    </task>
-    <task id="LOCAL-00043" summary="fix: change api CarController.php">
-      <created>1679415937675</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1679415937675</updated>
+      <workItem from="1680646860583" duration="2501000" />
     </task>
     <task id="LOCAL-00044" summary="fix: change api files">
       <created>1679416148383</created>
@@ -486,7 +470,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680648708829</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="feat: add rental view">
+      <created>1680649048754</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1680649048754</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
