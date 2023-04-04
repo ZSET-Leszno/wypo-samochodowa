@@ -68,8 +68,8 @@
                                         <i class="flaticon-energy"></i>
                                     </span>
                                 <div class="info_content">
-                                    <span class="meta">Transmission</span>
-                                    <span class="title">Autometic</span>
+                                    <span class="meta">Skrzynia Biegów</span>
+                                    <span class="title"><?= $car['skrzynia_biegow']?></span>
                                 </div>
                             </div>
                         </div>
@@ -79,8 +79,8 @@
                                         <i class="flaticon-car-repair"></i>
                                     </span>
                                 <div class="info_content">
-                                    <span class="meta">Condition</span>
-                                    <span class="title">Used</span>
+                                    <span class="meta">Stan</span>
+                                    <span class="title"><?= $car['stan_pojazdu']?></span>
                                 </div>
                             </div>
                         </div>
@@ -186,7 +186,8 @@
                 <div class="sidebar-widgets-wrapper">
                     <div class="sidebar-widget reservation-widget bg-white rounded widget-padding">
                         <h4 class="mb-30">Rezerwacja pojazdu</h4>
-                        <form action="#">
+                        @if($_SESSION['isLogged'])
+                            <form action="#">
                             <div class="row">
                                 <div class="col-xl-12">
                                     <div class="input-field">
@@ -221,6 +222,11 @@
                             </div>
                             <button type="submit" class="btn btn-primary w-100 mt-40">Rezerwacja tego samochodu</button>
                         </form>
+                        @else
+                            <div class="alert alert-danger" role="alert">
+                                Aby zarezerwować ten samochód musisz się zalogować!
+                            </div>
+                        @endif
                     </div>
                 </div>
             </div>
