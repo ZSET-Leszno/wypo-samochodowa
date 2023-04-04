@@ -65,7 +65,7 @@
                 </div>
             </div>
         </div>
-        <div class="at_header_nav">
+        <div class="at_header_nav <?= (isset($bg)) ? $bg : '' ?>">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-6 col-lg-3">

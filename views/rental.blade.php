@@ -1,4 +1,4 @@
-@include('partials.header', ['title' => 'Wypożycz: '.$car['marka'].' '.$car['model']])
+@include('partials.header', ['title' => 'Wypożycz: '.$car['marka'].' '.$car['model'], 'bg' => 'bg-secondary'])
 
 <!--hero banner start-->
 <div class="cr-hero-banner">
