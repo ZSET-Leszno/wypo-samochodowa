@@ -150,7 +150,7 @@
                                     </span>
                                 <div class="info_content">
                                     <span class="meta">VIN</span>
-                                    <span class="title">{{ $car['VIN']}}</span>
+                                    <span class="title">{{ substr($car['VIN'], 10)}}...</span>
                                 </div>
                             </div>
                         </div>
