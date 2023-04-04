@@ -106,6 +106,9 @@ $(document).ready(function () {
         temp.remove();
         Notiflix.Notify.success('Skopiowano adres strony do schowka!');
     });
+    $('.print-page').on('click', function () {
+        window.print();
+    });
     $('.like-car').on('click', function () {
         const id = $(this).data('id');
         if (id) {
