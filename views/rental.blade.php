@@ -186,7 +186,7 @@
                 <div class="sidebar-widgets-wrapper">
                     <div class="sidebar-widget reservation-widget bg-white rounded widget-padding">
                         <h4 class="mb-30">Rezerwacja pojazdu</h4>
-                        @if($_SESSION['isLogged'])
+                        @if(isset($_SESSION['isLogged']) && $_SESSION['isLogged'] === true)
                             <form action="#">
                             <div class="row">
                                 <div class="col-xl-12">
