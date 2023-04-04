@@ -1,7 +1,8 @@
 @include('partials.header', ['title' => 'Wypożycz: '.$car['marka'].' '.$car['model']])
+
 <!--hero banner start-->
 <div class="cr-hero-banner">
-    <img src="assets/img/rental/banner.jpg" alt="not found" class="img-fluid">
+    <img src="<?= $config->base_url ?>assets/img/rental/banner.jpg" alt="not found" class="img-fluid">
 </div>
 <!--hero banner end-->
 
@@ -41,9 +42,9 @@
                     <div class="row g-4">
                         <div class="col-lg-3 col-md-4 col-sm-6">
                             <div class="iv_info_item d-flex align-items-center">
-                                        <span class="icon-wrapper d-inline-flex align-items-center justify-content-center border rounded flex-shrink-0">
+                                <span class="icon-wrapper d-inline-flex align-items-center justify-content-center border rounded flex-shrink-0">
                                         <i class="flaticon-drive"></i>
-                                    </span>
+                                </span>
                                 <div class="info_content">
                                     <span class="meta">Body Type</span>
                                     <span class="title">Crossover</span>

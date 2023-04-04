@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b52d023e-96a4-4d47-ac34-3998f40c2257" name="Changes" comment="feat: add RentalController.php">
-      <change afterPath="$PROJECT_DIR$/views/rental.blade.php" afterDir="false" />
+    <list default="true" id="b52d023e-96a4-4d47-ac34-3998f40c2257" name="Changes" comment="feat: add rental view">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/contact.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/rental.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/rental.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,14 +128,7 @@
       <workItem from="1679412529201" duration="15487000" />
       <workItem from="1679490029171" duration="1315000" />
       <workItem from="1680631995301" duration="1046000" />
-      <workItem from="1680646860583" duration="328000" />
-    </task>
-    <task id="LOCAL-00036" summary="fix: CSRF token">
-      <created>1679414630334</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1679414630334</updated>
+      <workItem from="1680646860583" duration="467000" />
     </task>
     <task id="LOCAL-00037" summary="fix: fix MainHelper.php">
       <created>1679414670717</created>
@@ -474,7 +466,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679491276356</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="feat: add rental view">
+      <created>1680647217015</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1680647217015</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -492,7 +491,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix: change api CarController.php" />
     <MESSAGE value="fix: change api files" />
     <MESSAGE value="fix: change MainHelper.php" />
     <MESSAGE value="fix: Home page fix" />
@@ -517,7 +515,8 @@
     <MESSAGE value="fix: home blade" />
     <MESSAGE value="feat: add Routes" />
     <MESSAGE value="feat: add RentalController.php" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add RentalController.php" />
+    <MESSAGE value="feat: add rental view" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add rental view" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
